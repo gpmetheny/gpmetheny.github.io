@@ -1,0 +1,17 @@
+body {
+    background: url('../img/city.svg'), url('../img/crescent.svg'), linear-gradient(rgb(13, 172, 252), rgb(202, 237, 252));
+    width: 100%;
+    height: 100vh;
+    background-position: bottom, center right, center;
+    background-repeat: no-repeat;
+    background-size: 100%, 25%, 100%;
+}
+
+@media (min-width: 726px) {
+
+    body {
+        background-position: bottom right, top right, center;
+        background-size: 50%, 10%, 100%;
+    }
+
+}
