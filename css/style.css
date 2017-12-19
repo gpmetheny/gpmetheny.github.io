@@ -1,20 +1,33 @@
 body {
     font-family: 'Exo', sans-serif;
-    background: linear-gradient(rgb(0, 0, 0), rgb(6, 21, 136), rgb(13, 172, 252), rgb(202, 237, 252));
+    background: linear-gradient(#000000, #061588, #0dacfc, #caedfc);
     width: 100%;
     height: 100vh;
     background-size: 300%;
     background-repeat: repeat;
     background-position: bottom;
-    animation: night 10000ms 2000ms forwards;
+    animation: night 8000ms 2000ms ease-in forwards;
 }
 
 .name {
+    color: #000;
     position: fixed;
     top: 0%;
-    right: 20%;
-    margin-left: .5rem;
-    animation: lighten 8000ms 2000ms forwards;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    animation: lighten 6000ms 2000ms ease-in forwards;
+    text-align: center;
+}
+
+.name h4 {
+    font-weight: 200;
+    text-transform: lowercase;
+}
+
+#sun {
+    position: fixed;
+    top: 100%;
+    left: 100%;
 }
 
 #moon {
@@ -24,13 +37,16 @@ body {
     right: 5%;
     z-index: 100;
     opacity: 0;
-    animation: moonrise 8000ms 2000ms forwards;
+    animation: moonrise 6000ms 3000ms forwards;
 }
 
 #stars {
+    height: 5rem;
     position: fixed;
-    top: 30%;
+    top: 38%;
     left: 5%;
+    opacity: 0;
+    animation: appear 6000ms 6000ms forwards;
 }
 
 #skyline {
@@ -42,22 +58,17 @@ body {
 }
 
 #mountain {
-    width: 100%;
+    width: 95%;
     position: fixed;
     bottom: 10%;
+    left: 2.5%;
     z-index: 190;
 }
 
-@media (min-width: 726px) {
+@media (min-width: 526px) {
 
     .name {
-        margin-top: 3rem;
-    }
-
-    #moon {
-        height: 9rem;
-        top: 5%;
-        animation: moonrise 10000ms 2000ms forwards;
+        right: 20%;
     }
 
     #stars {
@@ -91,6 +102,37 @@ body {
 
 }
 
+@media (min-width: 1025px) {
+    .name {
+        margin-top: 5rem;
+        right: 25%;
+    }
+
+    .name h1 {
+        font-size: 4rem;
+    }
+
+    .name h4 {
+        font-size: 2.4rem;
+    }
+
+    #sun {
+        height: 40rem;
+        top: 30%;
+        left: 30%;
+        animation: sunset 8000ms 3000ms ease-in forwards;
+    }
+
+    #moon {
+        height: 9rem;
+        top: 5%;
+    }
+
+    #stars {
+        height: 9rem;
+    }
+}
+
 @keyframes night {
     0% {background-position: bottom;}
     100% {background-position: top;}
@@ -98,17 +140,35 @@ body {
 
 @keyframes lighten {
     0% {color: #000;}
-    100% {color: #fff;}
+    100% {color: #caedfc;}
+}
+
+@keyframes appear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes sunset {
+    0% {
+        top: 30%;
+        left: 30%;
+        opacity: 1;
+    }
+    100%{
+        top: 100%;
+        left: 70%;
+        opacity: 0;
+    }
 }
 
 @keyframes moonrise {
     0% {
-        top: 100%;
+        top: 90%;
         right: 5%;
         opacity: 0;
     }
     100% {
-        top: 20%;
+        top: 23%;
         right: 5%;
         opacity: 1;
     }
