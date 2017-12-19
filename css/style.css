@@ -3,6 +3,7 @@ body {
     background: linear-gradient(#000000, #061588, #0dacfc, #caedfc);
     width: 100%;
     height: 100vh;
+    max-height: 100vh;
     background-size: 300%;
     background-repeat: repeat;
     background-position: bottom;
@@ -11,11 +12,15 @@ body {
 
 .name {
     color: #000;
-    /* position: fixed;
-    top: 0%; */
-    margin: 2rem auto;
-    animation: lighten 6000ms 2000ms ease-in forwards;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+    top: 2rem;
+    left: 0;
     text-align: center;
+    animation: lighten 6000ms 2000ms ease-in forwards;
 }
 
 .name h4 {
@@ -57,10 +62,6 @@ footer {
     align-self: center;
     animation: lighten 3000ms 8000ms ease-in forwards;
     z-index: 325;
-}
-
-footer {
-    
 }
 
 #sun {
