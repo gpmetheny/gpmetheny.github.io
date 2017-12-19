@@ -24,6 +24,45 @@ body {
     text-transform: lowercase;
 }
 
+.social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 325;
+}
+
+.social img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: .5rem;
+}
+
+#copyright {
+    color: #000;
+    position: fixed;
+    left: 12%;
+    right: 12%;
+    bottom: 2.5rem;
+    animation: lighten 3000ms 8000ms ease-in forwards;
+    z-index: 325;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 4rem;
+    width: 100%;
+    background: #000;
+    z-index: 300;
+}
+
 #sun {
     position: fixed;
     top: 100%;
@@ -52,7 +91,7 @@ body {
 #skyline {
     width: 100%;
     position: fixed;
-    bottom: 0;
+    bottom: 3.75rem;
     z-index: 200;
     margin: 0;
 }
@@ -60,7 +99,7 @@ body {
 #mountain {
     width: 95%;
     position: fixed;
-    bottom: 10%;
+    bottom: 8rem;
     left: 2.5%;
     z-index: 190;
 }
@@ -114,6 +153,34 @@ body {
 
     .name h4 {
         font-size: 2.4rem;
+    }
+
+    .social {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        top: 5%;
+        right: 5%;
+    }
+    
+    .social img {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: .5rem;
+    }
+
+    #copyright {
+        color: #000;
+        position: fixed;
+        bottom: 5%;
+        left: 20%;
+        animation: lighten 3000ms 8000ms ease-in forwards;
+        z-index: 300;
+    }
+
+    footer {
+        display: none;
     }
 
     #sun {
