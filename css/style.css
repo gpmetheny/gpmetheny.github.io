@@ -17,10 +17,10 @@ body {
     align-content: center;
     position: fixed;
     width: 100%;
-    top: 2rem;
+    top: 1.5rem;
     left: 0;
     text-align: center;
-    animation: lighten 6000ms 2000ms ease-in forwards;
+    animation: lighten 2000ms 6000ms ease-in forwards;
 }
 
 .name h4 {
@@ -34,7 +34,9 @@ footer {
     left: 0;
     height: 4rem;
     width: 100%;
+    padding: 0 .5rem;
     background: #000;
+    color: #caedfc;
     z-index: 300;
     display: flex;
     flex-direction: column;
@@ -43,9 +45,9 @@ footer {
 
 .social {
     list-style: none;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     z-index: 325;
@@ -58,9 +60,7 @@ footer {
 }
 
 #copyright {
-    color: #000;
     align-self: center;
-    animation: lighten 3000ms 8000ms ease-in forwards;
     z-index: 325;
 }
 
@@ -108,7 +108,22 @@ footer {
 @media (min-width: 526px) {
 
     .name {
-        right: 20%;
+        top: 1rem;
+    }
+
+    .name h1 {
+        font-size: 2rem;
+    }
+
+    .name h4 {
+        font-size: 1.25rem;
+    }
+
+    footer {
+        height: 2.5rem;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     #stars {
@@ -118,12 +133,12 @@ footer {
     #skyline {
         width: 60%;
         right: -2%;
-        bottom: -2%;
+        bottom: 2rem;
     }
 
     #mountain {
         width: 60%;
-        left: 0;
+        left: -2rem;
         bottom: 0;
     }
 
@@ -142,7 +157,7 @@ footer {
 
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1020px) {
     .name {
         margin-top: 5rem;
         right: 25%;
@@ -199,6 +214,10 @@ footer {
     #stars {
         height: 9rem;
     }
+
+    #skyline {
+        bottom: -2%;
+    }
 }
 
 @keyframes night {
@@ -236,7 +255,7 @@ footer {
         opacity: 0;
     }
     100% {
-        top: 23%;
+        top: 18%;
         right: 5%;
         opacity: 1;
     }
