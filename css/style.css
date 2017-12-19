@@ -11,10 +11,9 @@ body {
 
 .name {
     color: #000;
-    position: fixed;
-    top: 0%;
-    margin-top: 2rem;
-    margin-left: 1rem;
+    /* position: fixed;
+    top: 0%; */
+    margin: 2rem auto;
     animation: lighten 6000ms 2000ms ease-in forwards;
     text-align: center;
 }
@@ -24,16 +23,26 @@ body {
     text-transform: lowercase;
 }
 
-.social {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+footer {
     position: fixed;
     bottom: 0;
     left: 0;
+    height: 4rem;
+    width: 100%;
+    background: #000;
+    z-index: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     z-index: 325;
 }
 
@@ -45,22 +54,13 @@ body {
 
 #copyright {
     color: #000;
-    position: fixed;
-    left: 12%;
-    right: 12%;
-    bottom: 2.5rem;
+    align-self: center;
     animation: lighten 3000ms 8000ms ease-in forwards;
     z-index: 325;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 4rem;
-    width: 100%;
-    background: #000;
-    z-index: 300;
+    
 }
 
 #sun {
