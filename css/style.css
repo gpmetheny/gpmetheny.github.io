@@ -105,7 +105,8 @@ footer {
     z-index: 190;
 }
 
-@media (min-width: 526px) {
+@media (min-width: 526px)
+    and (orientation: landscape) {
 
     .name {
         top: 1rem;
@@ -157,9 +158,9 @@ footer {
 
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 765px) {
     .name {
-        margin-top: 5rem;
+        top: 5rem;
         right: 25%;
     }
 
@@ -199,13 +200,6 @@ footer {
         display: none;
     }
 
-    #sun {
-        height: 40rem;
-        top: 30%;
-        left: 30%;
-        animation: sunset 8000ms 3000ms ease-in forwards;
-    }
-
     #moon {
         height: 9rem;
         top: 5%;
@@ -218,6 +212,34 @@ footer {
     #skyline {
         bottom: -2%;
     }
+}
+
+@media (min-width: 765px)
+    and (orientation: portrait) {
+
+        /* .name {
+            top: 6rem;
+        } */
+
+        #mountain {
+        bottom: 7rem;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    .name {
+        top: 10%;
+    }
+
+    #sun {
+        height: 40rem;
+        top: 30%;
+        left: 30%;
+        animation: sunset 8000ms 3000ms ease-in forwards;
+    }
+
 }
 
 @keyframes night {
@@ -251,12 +273,12 @@ footer {
 @keyframes moonrise {
     0% {
         top: 90%;
-        right: 5%;
+        right: 15%;
         opacity: 0;
     }
     100% {
-        top: 18%;
-        right: 5%;
+        top: 25%;
+        right: 15%;
         opacity: 1;
     }
 }
