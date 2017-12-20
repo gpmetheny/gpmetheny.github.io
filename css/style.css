@@ -4,10 +4,20 @@ body {
     width: 100%;
     height: 100vh;
     max-height: 100vh;
-    background-size: 300%;
-    background-repeat: repeat;
+    background-size: 100% 300%;  /* firefox requires both width & height declarations */
     background-position: bottom;
     animation: night 8000ms 2000ms ease-in forwards;
+}
+
+a {
+    color: #caedfc;
+    transition: color 200ms ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #0dacfc;
 }
 
 .name {
@@ -32,7 +42,7 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 5rem;
+    height: 8rem;
     width: 100%;
     padding: .5rem;
     background: #000;
@@ -41,27 +51,45 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .social {
     list-style: none;
     margin: 0;
     padding: 0;
-    /* width: 100%; */
     display: flex;
     justify-content: center;
     z-index: 325;
 }
 
-.social img {
+.social svg {
     width: 1.5rem;
     height: 1.5rem;
-    margin: .5rem;
+    margin: .2rem;
+}
+
+.social a path {
+    fill: #caedfc;
+    transition: fill 200ms ease-in-out;
+}
+
+.social a:hover path,
+.social a:hover path {
+    fill: #0dacfc;
+}
+
+#email, 
+#copyright {
+    /* display: block; */
+    /* align-self: center; */
+    z-index: 325;
 }
 
 #copyright {
-    align-self: center;
-    z-index: 325;
+    margin-top: 1.5rem;
+    font-size: .85rem;
+    font-weight: 200;
 }
 
 #sun {
@@ -92,7 +120,7 @@ footer {
 #skyline {
     width: 100%;
     position: fixed;
-    bottom: 4.75rem;
+    bottom: 7.75rem;
     z-index: 200;
     margin: 0;
 }
@@ -100,7 +128,7 @@ footer {
 #mountain {
     width: 95%;
     position: fixed;
-    bottom: 9rem;
+    bottom: 12rem;
     left: 2.5%;
     z-index: 190;
 }
@@ -122,9 +150,18 @@ footer {
 
     footer {
         height: 2.5rem;
-        align-items: center;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    #email {
+        
+    }
+
+    #copyright {
+        margin-top: 0;
+        /* justify-self: flex-end; */
     }
 
     #stars {
@@ -139,22 +176,9 @@ footer {
 
     #mountain {
         width: 60%;
-        left: -2rem;
+        left: -5rem;
         bottom: 0;
     }
-
-    /* @keyframes moonrise {
-        0% {
-            top: 100%;
-            right: 5%;
-            opacity: 0;
-        }
-        100% {
-            top: 10%;
-            right: 5%;
-            opacity: 1;
-        } keyframes in media query not working...
-    } */
 
 }
 
@@ -176,9 +200,13 @@ footer {
 
     footer {
         height: 5rem;
-        align-items: center;
         flex-direction: row;
+        align-items: center;
         justify-content: space-between;
+    }
+
+    #copyright {
+        margin-top: 0;
     }
 
     #moon {
@@ -194,10 +222,6 @@ footer {
 
 @media (min-width: 765px)
     and (orientation: portrait) {
-
-        /* .name {
-            top: 6rem;
-        } */
 
     #sun {
         top: 100%;
@@ -219,13 +243,24 @@ footer {
 
     #sun {
         height: 40rem;
-        transform: translateY(20%);
-        top: 30%;
+        /* transform: translateY(20%); */
+        top: 45%;
         left: 30%;
         animation: sunset 8000ms 3000ms ease-in forwards;
     }
 
 }
+
+@media (min-width: 765px)
+    and (min-height: 400px)
+    and (orientation: landscape) {
+
+        footer {
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+
+    }
 
 @media (min-width: 1025px) {
 
@@ -242,30 +277,41 @@ footer {
     }
 
     .social {
-        list-style: none;
         display: flex;
         justify-content: flex-end;
         position: fixed;
-        top: 5%;
-        right: 5%;
+        top: 3rem;
+        right: 5rem;
+        opacity: 0;
+        animation: appear 3000ms 8000ms ease-in forwards;
     }
     
-    .social img {
+    .social svg {
         width: 1.5rem;
         height: 1.5rem;
-        margin: .5rem;
+        margin-left: .5rem;
+    }
+
+    #email {
+        position: fixed;
+        top: 5.5rem;
+        right: 5rem;
+        opacity: 0;
+        animation: appear 3000ms 8000ms ease-in forwards;
     }
 
     #copyright {
-        color: #000;
+        /* color: #000; */
         position: fixed;
-        bottom: 5%;
-        left: 18%;
-        animation: lighten 3000ms 8000ms ease-in forwards;
+        bottom: 3rem;
+        left: 5rem;
+        /* transform: translateX(50%); */
+        opacity: 0;
+        animation: appear 3000ms 8000ms ease-in forwards;
     }
 
     #sun {
-        transform: translateY(0%);
+        /* transform: translateY(0%); */
     }
 
     #skyline {
@@ -275,30 +321,50 @@ footer {
 }
 
 @keyframes night {
-    0% {background-position: bottom;}
-    100% {background-position: top;}
+    0% {
+        background-position: bottom;
+        transform: rotateY(0.01deg);  /* smooths animations in Firefox */
+    }
+    100% {
+        background-position: top;
+        transform: rotateY(0.01deg);
+    }
 }
 
 @keyframes lighten {
-    0% {color: #000;}
-    100% {color: #caedfc;}
+    0% {
+        color: #000;
+        transform: rotateY(0.01deg);
+    }
+    100% {
+        color: #caedfc;
+        transform: rotateY(0.01deg);
+    }
 }
 
 @keyframes appear {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+        transform: rotateY(0.01deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0.01deg);
+    }
 }
 
 @keyframes sunset {
     0% {
-        top: 30%;
+        top: 45%;
         left: 30%;
         opacity: 1;
+        transform: rotateY(0.01deg);
     }
     100%{
         top: 100%;
         left: 70%;
         opacity: 0;
+        transform: rotateY(0.01deg);
     }
 }
 
@@ -307,10 +373,12 @@ footer {
         top: 90%;
         right: 15%;
         opacity: 0;
+        transform: rotateY(0.01deg);
     }
     100% {
         top: 25%;
         right: 15%;
         opacity: 1;
+        transform: rotateY(0.01deg);
     }
 }
