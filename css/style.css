@@ -3,7 +3,7 @@ Fixes:
 
 height: 100vh with overflow: hidden causes footer to disappear on mobile in landscape mode, since address bar is considered part of viewport and can't scroll past it
 
-
+for most mobile browsers, 100vh refers to the largest possible viewport height, not actual visible height. 100% is supposed to show actual vh, but this completely broke the layout and animations, at least for desktop and device simulator (maybe since I used % to place most of my fixed position items?)
 
 */
 
@@ -11,8 +11,8 @@ body {
     font-family: 'Exo', sans-serif;
     background: linear-gradient(#000000, #061588, #0dacfc, #caedfc);
     width: 100%;
-    height: 110vh;
-    max-height: 100vh;
+    height: 110vh;  /* workaround for mobile vh to have more scrollable content... */
+    /* max-height: 100%; <-- I don't think this actually did anything */
     background-size: 100% 300%;  /* firefox requires both width & height declarations */
     background-position: bottom;
     animation: night 8000ms 2000ms ease-in forwards;
@@ -278,6 +278,7 @@ footer {
 @media (min-width: 1370px) {
 
     body {
+        height: 100vh;
         overflow: hidden;  /* firefox requires this, or it will scroll to show full background, offscreen animations, etc. */
     }
     
