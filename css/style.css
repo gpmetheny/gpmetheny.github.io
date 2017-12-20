@@ -56,7 +56,7 @@ footer {
     padding: .5rem;
     background: #000;
     color: #caedfc;
-    z-index: 300;
+    z-index: 400;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,7 +69,7 @@ footer {
     padding: 0;
     display: flex;
     justify-content: center;
-    z-index: 325;
+    z-index: 500;
 }
 
 .social svg {
@@ -90,7 +90,7 @@ footer {
 
 #email, 
 #copyright {
-    z-index: 325;
+    z-index: 500;
 }
 
 #copyright {
@@ -128,7 +128,7 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 7.75rem;
-    z-index: 200;
+    z-index: 300;
     margin: 0;
 }
 
@@ -137,7 +137,7 @@ footer {
     position: fixed;
     bottom: 12rem;
     left: 2.5%;
-    z-index: 190;
+    z-index: 200;
 }
 
 @media (min-width: 526px)
