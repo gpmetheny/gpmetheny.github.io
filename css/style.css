@@ -29,7 +29,7 @@ a:focus {
     color: #0dacfc;
 }
 
-.name {
+header {
     color: #000;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@ a:focus {
     animation: lighten 2000ms 6000ms ease-in forwards;
 }
 
-.name h4 {
+header h4 {
     font-weight: 200;
     text-transform: lowercase;
 }
@@ -150,15 +150,15 @@ footer {
 @media (min-width: 526px)
     and (orientation: landscape) {
 
-    .name {
+    header {
         top: 1rem;
     }
 
-    .name h1 {
+    header h1 {
         font-size: 2rem;
     }
 
-    .name h4 {
+    header h4 {
         font-size: 1.25rem;
     }
 
@@ -198,16 +198,16 @@ footer {
 @media (min-width: 765px)
     and (min-height: 400px) {
     
-    .name {
+    header {
         top: 5rem;
         right: 25%;
     }
 
-    .name h1 {
+    header h1 {
         font-size: 4rem;
     }
 
-    .name h4 {
+    header h4 {
         font-size: 2.4rem;
     }
 
@@ -276,7 +276,7 @@ footer {
 
 @media (min-width: 1025px) {
 
-    .name {
+    header {
         top: 10%;
     }
 
