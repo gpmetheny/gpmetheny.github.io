@@ -1,3 +1,12 @@
+/* 
+Fixes:
+
+height: 100vh with overflow: hidden causes footer to disappear on mobile in portait mode, since address bar is considered part of viewport and can't scroll past it
+
+
+
+*/
+
 body {
     font-family: 'Exo', sans-serif;
     background: linear-gradient(#000000, #061588, #0dacfc, #caedfc);
@@ -6,7 +15,6 @@ body {
     max-height: 100vh;
     background-size: 100% 300%;  /* firefox requires both width & height declarations */
     background-position: bottom;
-    overflow: hidden;  /* firefox requires this, or it will scroll to show full background, offscreen animations, etc. */
     animation: night 8000ms 2000ms ease-in forwards;
 }
 
@@ -269,6 +277,10 @@ footer {
 
 @media (min-width: 1370px) {
 
+    body {
+        overflow: hidden;  /* firefox requires this, or it will scroll to show full background, offscreen animations, etc. */
+    }
+    
     footer {
         background: transparent;
     }
