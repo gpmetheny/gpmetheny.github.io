@@ -374,13 +374,13 @@ footer {
 @keyframes moonrise {
     0% {
         top: 90%;
-        right: 15%;
+        right: 5%;
         opacity: 0;
         transform: rotateY(0.01deg);
     }
     100% {
         top: 25%;
-        right: 15%;
+        right: 5%;
         opacity: 1;
         transform: rotateY(0.01deg);
     }
