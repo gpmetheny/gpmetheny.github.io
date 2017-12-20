@@ -134,6 +134,7 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 7.75rem;
+    right: 0%;
     /* z-index: 300; */
     margin: 0;
 }
