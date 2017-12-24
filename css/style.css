@@ -5,6 +5,13 @@ height: 100vh with overflow: hidden causes footer to disappear on mobile in land
 
 for most mobile browsers, 100vh refers to the largest possible viewport height, not actual visible height. 100% is supposed to show actual vh, but this completely broke the layout and animations, at least for desktop and device simulator (maybe since I used % to place most of my fixed position items?)
 
+Other notes:
+
+transform-origin for SVG: default is top left of canvas, use 50% 50% or center center
+(https://teamtreehouse.com/library/animating-svg-with-css/transitions-and-transforms/transform-origin-in-firefox)
+
+transform origin bug in Firefox: need to use absolute values (like px)
+
 */
 
 body {
@@ -117,8 +124,8 @@ footer {
     top: 100%;
     right: 5%;
     /* z-index: 100; */
-    opacity: 0;
-    animation: moonrise 6000ms 6000ms forwards;
+    /* opacity: 0; */
+    animation: moonrise 6000ms 6000ms forwards ease-out;
 }
 
 #stars {
@@ -223,9 +230,13 @@ footer {
         margin-top: 0;
     }
 
+    #skyline {
+        bottom: 4.5rem;
+    }
+
     #moon {
         height: 9rem;
-        top: 5%;
+        /* top: 5%; */
     }
 
     #stars {
@@ -255,18 +266,20 @@ footer {
 @media (min-width: 765px)
     and (orientation: landscape) {
 
-    #sun {
-        width: 40rem;
-        top: 45%;
-        left: 30%;
-        animation: sunset 8000ms 3000ms ease-in forwards;
-    }
+    
 
 }
 
 @media (min-width: 765px)
     and (min-height: 400px)
     and (orientation: landscape) {
+
+        #sun {
+            width: 40%;
+            top: 45%;
+            left: 30%;
+            animation: sunset 8000ms 2000ms ease-in forwards;
+        }
 
         footer {
             padding-left: 5rem;
@@ -327,7 +340,7 @@ footer {
     }
 
     #skyline {
-        bottom: -2%;
+        bottom: -.5rem;
     }
 
 }
@@ -367,30 +380,28 @@ footer {
 
 @keyframes sunset {
     0% {
-        top: 45%;
-        left: 30%;
-        opacity: 1;
+        /* opacity: 1; */
         transform: rotateY(0.01deg);
     }
     100%{
-        top: 100%;
-        left: 70%;
-        opacity: 0;
-        transform: rotateY(0.01deg);
+        transform: translateX(20vw)
+                   translateY(40vh)
+                   rotateY(0.01deg);
+        transform-origin: 50% 50%;
+        /* opacity: 0; */
+        /* transform: rotateY(0.01deg); */
     }
 }
 
 @keyframes moonrise {
     0% {
-        top: 90%;
-        right: 5%;
-        opacity: 0;
+        /* opacity: 0; */
         transform: rotateY(0.01deg);
     }
     100% {
-        top: 25%;
-        right: 5%;
-        opacity: 1;
-        transform: rotateY(0.01deg);
+        transform: translateY(-80vh) rotateY(0.01deg);
+        transform-origin: 50% 50%;
+        /* opacity: 1; */
+        /* transform: rotateY(0.01deg); */
     }
 }
