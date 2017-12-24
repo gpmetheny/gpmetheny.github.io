@@ -132,6 +132,7 @@ footer {
 
 #skyline {
     width: 100%;
+    height: auto;
     position: fixed;
     bottom: 7.75rem;
     right: 0%;
@@ -189,7 +190,7 @@ footer {
 
     #mountain {
         width: 60%;
-        left: -5rem;
+        left: -3rem;
         bottom: 0;
     }
 
@@ -255,7 +256,7 @@ footer {
     and (orientation: landscape) {
 
     #sun {
-        height: 40rem;
+        width: 40rem;
         top: 45%;
         left: 30%;
         animation: sunset 8000ms 3000ms ease-in forwards;
