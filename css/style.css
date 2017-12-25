@@ -114,8 +114,11 @@ footer {
 
 #sun {
     position: fixed;
-    top: 100%;
-    left: 100%;
+    width: 200%;
+    top: -10%;
+    left: -50%;
+    right: -50%;
+    animation: sunset 8000ms 2000ms ease-in forwards;
 }
 
 #moon {
@@ -153,6 +156,17 @@ footer {
     bottom: 12rem;
     left: 2.5%;
     /* z-index: 200; */
+}
+
+@media (orientation: portrait) {
+
+    #sun {
+        /* width: 200%; */
+        top: 30%;
+        /* left: -50%; */
+        /* right: -50%; */
+    }
+
 }
 
 @media (min-width: 526px)
@@ -248,10 +262,10 @@ footer {
 @media (min-width: 765px)
     and (orientation: portrait) {
 
-    #sun {
+    /* #sun {
         top: 100%;
         left: 100%;
-    }
+    } */
 
     #skyline {
         bottom: 4rem;
@@ -275,10 +289,14 @@ footer {
     and (orientation: landscape) {
 
         #sun {
-            width: 40%;
-            top: 45%;
-            left: 30%;
-            animation: sunset 8000ms 2000ms ease-in forwards;
+            /* width: 40%; */
+            /* top: 45%; */
+            /* left: 30%; */
+            /* animation: sunset 8000ms 2000ms ease-in forwards; */
+        }
+
+        #sun {
+            top: 20%;
         }
 
         footer {
@@ -343,6 +361,10 @@ footer {
         bottom: -.5rem;
     }
 
+    #sun {
+        top: -10%;
+    }
+
 }
 
 @keyframes night {
@@ -384,8 +406,8 @@ footer {
         transform: rotateY(0.01deg);
     }
     100%{
-        transform: translateX(20vw)
-                   translateY(40vh)
+        transform: translateX(30vw)
+                   translateY(80vh)
                    rotateY(0.01deg);
         transform-origin: 50% 50%;
         /* opacity: 0; */
