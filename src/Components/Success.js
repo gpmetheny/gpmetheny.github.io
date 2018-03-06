@@ -9,30 +9,14 @@ class Success extends Component {
   render() {
     return (
       <div className="pt-3 d-flex align-items-center justify-content-center content-wrapper" id="success">
-        <div className="success-wrapper container d-flex flex-column flex-md-row align-items-center justify-content-center px-md-5">
-          <div>
-            <h1 className="text-center mb-3">contactMe()</h1>
+        <div className="success-wrapper container d-flex flex-column align-items-center justify-content-around px-md-5">
+          <div className="mb-5">
+            <h1 className="text-center mb-3">contactMe(<span style={{color: 'darkcyan'}}>🗹</span>)</h1>
+            <h3>Thanks! I'll be in touch soon!</h3>
           </div>
-          <h3>Thanks! I'll be in touch soon!</h3>
-          {/* <form action="https://formspree.io/gabbie.metheny@gmail.com" method="POST">
-            <div className="form-row text-center">
-              <div className="form-group offset-md-4 col-md-4">
-                <input type="text" className="form-control" name="name" placeholder="Name" />
-              </div>
-              <div className="form-group col-md-4">
-                <input type="email" className="form-control" name="_replyto" placeholder="Email" />
-              </div>
-              <div className="form-group offset-md-4 col-md-8">
-                <textarea className="form-control" name="message" placeholder="Say hi..." rows="10" cols="60"></textarea>
-                <input type="hidden" name="_subject" value="Website Contact" />
-                <input type="hidden" name="_next" value={"#success"} />
-                <input type="text" name="_gotcha" style={{display: 'none'}} />
-              </div>
-              <div className="form-group offset-md-4 col-md-8">
-                <input type="submit" className="btn btn-info" value="Submit" />
-              </div>
-            </div>
-          </form> */}
+          <div className="mt-5">
+            <a href="#work"><span>🠔 </span>back to my work</a>
+          </div>
         </div>
       </div>
     );
