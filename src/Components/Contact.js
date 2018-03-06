@@ -24,7 +24,7 @@ class Contact extends Component {
               <div className="form-group offset-md-4 col-md-8">
                 <textarea className="form-control" name="message" placeholder="Say hi..." rows="10" cols="60"></textarea>
                 <input type="hidden" name="_subject" value="Website Contact" />
-                {/* <input type="hidden" name="_next" value="//site.io/thanks.html" /> */}
+                <input type="hidden" name="_next" value="//gpmetheny.github.io" />
                 <input type="text" name="_gotcha" style={{display: 'none'}} />
               </div>
               <div className="form-group offset-md-4 col-md-8">
