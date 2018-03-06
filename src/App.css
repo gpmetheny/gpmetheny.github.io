@@ -299,17 +299,18 @@ main {
   width: 98%;
 }
 
-.content-wrapper {
+#about,
+#contact,
+#success {
   opacity: 0;
-  animation: fadein 1s 1s forwards;
+  animation: fadein .7s forwards;
   /* min-height: 100%; */
 }
 
-/* #work,
-#about,
-#contact {
-  display: none;
-} */
+#work {
+  opacity: 0;
+  animation: fadein 1s 1s forwards;
+}
 
 #work h1,
 #about h1,
@@ -318,14 +319,9 @@ main {
   font-family: 'Roboto Mono', monospace;
 }
 
-/* #about,
-#contact {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.success-wrapper {
   height: 100%;
-} */
+}
 
 pre {
   background: #222;
