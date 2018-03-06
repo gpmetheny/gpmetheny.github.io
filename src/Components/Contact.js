@@ -13,7 +13,7 @@ class Contact extends Component {
           <div>
             <h1 className="text-center mb-3">contactMe()</h1>
           </div>
-          <form action="https://formspree.io/you@email.com" method="POST">
+          <form action="https://formspree.io/gabbie.metheny@gmail.com" method="POST">
             <div className="form-row text-center">
               <div className="form-group offset-md-4 col-md-4">
                 <input type="text" className="form-control" name="name" placeholder="Name" />
