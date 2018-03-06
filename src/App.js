@@ -13,6 +13,7 @@ import Feature from './Components/Feature';
 import Work from './Components/Work';
 import About from './Components/About';
 import Contact from './Components/Contact';
+import Success from './Components/Success';
 import './App.css';
 
 class App extends Component {
