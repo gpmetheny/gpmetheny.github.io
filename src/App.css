@@ -313,7 +313,8 @@ main {
 
 #work h1,
 #about h1,
-#contact h1 {
+#contact h1,
+#success h1 {
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -495,7 +496,8 @@ footer {
   }
 
   #about,
-  #contact {
+  #contact,
+  #success {
     min-height: 80vh;
   }
 
