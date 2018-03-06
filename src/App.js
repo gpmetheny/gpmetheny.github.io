@@ -59,6 +59,7 @@ componentDidMount() {
             <Route path="/work" component={Work} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
+            <Route path="/success" component={Success} />
             {/* <About /> */}
           </main>
           <footer>
