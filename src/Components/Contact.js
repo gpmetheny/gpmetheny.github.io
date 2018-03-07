@@ -18,13 +18,13 @@ class Contact extends Component {
             <form action="https://formspree.io/gabbie.metheny@gmail.com" method="POST">
               <div className="form-row text-center">
                 <div className="form-group offset-lg-4 col-lg-4">
-                  <input type="text" className="form-control" name="name" placeholder="Name" />
+                  <input type="text" className="form-control" name="name" placeholder="Name" required />
                 </div>
                 <div className="form-group col-lg-4">
-                  <input type="email" className="form-control" name="_replyto" placeholder="Email" />
+                  <input type="email" className="form-control" name="_replyto" placeholder="Email" required />
                 </div>
                 <div className="form-group offset-lg-4 col-lg-8">
-                  <textarea className="form-control" name="message" placeholder="Say hi..." rows="10" cols="60"></textarea>
+                  <textarea className="form-control" name="message" placeholder="Say hi..." rows="10" cols="60" required></textarea>
                   <input type="hidden" name="_subject" value="Website Contact" />
                   <input type="hidden" name="_next" value={"#success"} />
                   <input type="text" name="_gotcha" style={{display: 'none'}} />
