@@ -345,8 +345,8 @@ pre {
 
 /* progressive image loading, kind of */
 #about-img-wrapper {
-  width: 100%;
-  max-width: 300px;
+  width: 200px;
+  height: 200px;
   background-color: #FDCAD3;
   border-radius: 50%;
 }
@@ -510,6 +510,11 @@ pre {
 
   pre {
     font-size: 1rem;
+  }
+
+  #about-img-wrapper {
+    width: 300px;
+    height: 300px;
   }
 
   /* footer {
