@@ -16,7 +16,7 @@ a,
 a:hover,
 a:active,
 a:visited {
-  color: #01BD5C;
+  color: turquoise;
   /* font-weight: bold; */
   text-decoration: none;
   transition: all .3s;

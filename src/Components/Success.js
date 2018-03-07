@@ -13,16 +13,14 @@ class Success extends Component {
         <div className="pt-3 d-flex align-items-center justify-content-center success-wrapper">
           <div className="container d-flex flex-column align-items-center justify-content-around px-md-5">
             <div className="mb-5 text-center">
-              <h1 className="mb-3">contactMe(<span style={{color: '#01BD5C'}}>&#128505;</span>)</h1>
-              {/* 🗹 */}
+              <h1 className="mb-3">contactMe(<i className="material-icons" style={{color: 'turquoise', fontSize: '2rem'}}>done</i>)</h1>
               <h4>Thanks! I'll be in touch soon!</h4>
             </div>
             <div className="mt-5">
               <a href="#work">
                 back to my work
-                <p className="text-center" style={{fontSize: '4rem'}}>&#129104;</p>
+                <p className="text-center"><i className="material-icons" style={{fontSize: '4rem'}}>keyboard_arrow_left</i></p>
               </a>
-              {/* 🡐 */}
             </div>
           </div>
         </div>

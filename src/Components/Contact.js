@@ -30,7 +30,7 @@ class Contact extends Component {
                   <input type="text" name="_gotcha" style={{display: 'none'}} />
                 </div>
                 <div className="form-group offset-lg-4 col-lg-8">
-                  <input type="submit" className="btn btn-success" value="Submit" />
+                  <input type="submit" className="btn btn-danger" value="Submit" />
                 </div>
               </div>
             </form>
