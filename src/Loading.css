@@ -1,0 +1,53 @@
+#loading,
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#loading {
+  height: 80%;
+  width: 100%;
+  position: fixed;
+  animation: fadeout 1s 3s ease-in forwards;
+}
+
+.circle {
+  background: #F94E6D;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  margin: .5rem;
+}
+
+.circle:nth-child(1) {
+  opacity: .5;
+  /* background: blue; */
+  animation: fadeinout .6s ease-in-out 5 both;
+}
+
+.circle:nth-child(2) {
+  opacity: .5;
+  /* background: purple; */
+  animation: fadeinout .6s .15s ease-in-out 5 both;
+}
+
+.circle:nth-child(3) {
+  opacity: .5;
+  /* background: red; */
+  animation: fadeinout .6s .3s ease-in-out 5 both;
+}
+
+@keyframes fadeinout {
+  20% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  to {
+    opacity: 0;
+  }
+}
