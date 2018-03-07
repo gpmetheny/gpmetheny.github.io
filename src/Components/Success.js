@@ -13,7 +13,7 @@ class Success extends Component {
         <div className="pt-3 d-flex align-items-center justify-content-center success-wrapper">
           <div className="container d-flex flex-column align-items-center justify-content-around px-md-5">
             <div className="mb-5 text-center">
-              <h1 className="mb-3">contactMe(<i className="material-icons" style={{color: 'turquoise', fontSize: '2rem'}}>done</i>)</h1>
+              <h1 className="mb-3">contactMe(<i className="material-icons" style={{color: '#222', fontSize: '2rem'}}>done</i>)</h1>
               <h4>Thanks! I'll be in touch soon!</h4>
             </div>
             <div className="mt-5">

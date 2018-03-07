@@ -1,9 +1,18 @@
 body {
   overflow-x: hidden;
   width: 100%;
-  color: #F94E6D;
+  color: #222;
   font-family: 'Roboto', sans-serif;
   /* background-color: #222; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #F94E6D;
 }
 
 ul, li {
@@ -16,9 +25,10 @@ a,
 a:hover,
 a:active,
 a:visited {
-  color: turquoise;
+  font-family: 'Roboto Mono', monospace;
+  color: #222; /* #119328 */
   /* font-weight: bold; */
-  text-decoration: none;
+  text-decoration: underline;
   transition: all .3s;
 }
 
@@ -41,6 +51,7 @@ img#avatar {
 
 nav h3 {
   font-size: 1.5rem;
+  color: white;
   font-family: 'Roboto Mono', monospace;
   margin: 0;
 }
@@ -67,6 +78,13 @@ nav ul li {
 nav ul li a {
   height: 0rem;
   transition: all .3 .3s;
+}
+
+nav a,
+nav a:hover,
+nav a:active,
+nav a:visited {
+  text-decoration: none;
 }
 
 nav a,
@@ -280,6 +298,10 @@ main {
   align-items: center;
 }
 
+#welcome a {
+  text-decoration: none;
+}
+
 #welcome .btn {
   font-family: 'Roboto Mono', monospace;
   transform: scale(.75);
@@ -289,12 +311,11 @@ main {
   transition: .3s;
   animation: fadein 1s 3s forwards;
   border: 1px solid white;
-  background-color: #F94E6D;
 }
 
 #welcome .btn:hover {
   border: 1px solid white;
-  background-color: #01BD5C;
+  background-color: #F94E6D;
 }
 
 #welcome .btn span {
@@ -395,12 +416,13 @@ pre {
   align-items: space-around;
 } */
 
-/* footer {
-  height: 3rem;
+footer {
+  color: #F94E6D;
+  /* height: 3rem;
   display: flex;
   flex-direction: column-reverse;
-  align-items: center;
-} */
+  align-items: center; */
+}
 
 .social-icon {
   /* text-align: center; */

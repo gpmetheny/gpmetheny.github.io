@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 class Work extends Component {
   componentWillMount() {
-    // document.querySelector('body').style.background = '#FDCAD3';
+    // document.querySelector('body').style.background = '#222';
   }
 
   componentDidMount() {
@@ -25,7 +25,7 @@ class Work extends Component {
 
   render() {
     return (
-      <div className="jumbotron jumbotron-fluid content-wrapper">
+      <div className="jumbotron jumbotron-fluid content-wrapper mb-0">
         <div id="loading">
           <div className="circle"></div>
           <div className="circle"></div>
@@ -58,7 +58,7 @@ class Work extends Component {
             <a href="https://github.com/pb-livin/bojack-ipsum/tree/gh-pages" target="_blank" rel="noopener noreferrer"><small><em>view source code on GitHub</em></small></a>
           </div>
           <div className="row d-flex">
-            <div className="col-12 py-3 mb-lg-5" id="bojack-frame">
+            <div className="col-12 py-3 mb-lg-3" id="bojack-frame">
               <iframe title="BoJack Ipsum" src="https://pb-livin.github.io/bojack-ipsum/" frameBorder="1" width="100%" height="100%" />
             </div>
           </div>
