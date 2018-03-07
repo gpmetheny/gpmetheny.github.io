@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 class Work extends Component {
   componentWillMount() {
-    
+    // document.querySelector('body').style.background = '#FDCAD3';
   }
 
   componentDidMount() {
@@ -15,6 +15,7 @@ class Work extends Component {
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     document.querySelector('nav ul li:nth-child(2) a').classList.add('active-link');
     document.querySelector('nav').classList.remove('menuActive');
+    // document.querySelector('body').style.background = 'transparent';
   }
 
   componentWillUnmount() {
@@ -24,8 +25,15 @@ class Work extends Component {
 
   render() {
     return (
-      <div className="jumbotron jumbotron-fluid content-wrapper" id="work">
-        <div className="container pt-3">
+      <div className="jumbotron jumbotron-fluid content-wrapper">
+        <div id="loading">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle">
+            {/* Loading<span>.</span><span>.</span><span>.</span> */}
+          </div>
+        </div>
+        <div className="container pt-3" id="work">
           <h1 className="text-center">CSS Animations</h1>
           <div className="pens-wrapper row mb-lg-5">
             <div className="pens col-12 col-lg-4 py-3">

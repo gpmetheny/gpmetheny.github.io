@@ -318,8 +318,9 @@ main {
 }
 
 #work {
+  /* display: none; */
   opacity: 0;
-  animation: fadein 1s 1s forwards;
+  animation: fadein .5s 2.5s forwards;
 }
 
 #work h1,
