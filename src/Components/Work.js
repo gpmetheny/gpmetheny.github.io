@@ -27,9 +27,9 @@ class Work extends Component {
     return (
       <div className="jumbotron jumbotron-fluid content-wrapper">
         <div id="loading">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle">
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle">
             {/* Loading<span>.</span><span>.</span><span>.</span> */}
           </div>
         </div>
