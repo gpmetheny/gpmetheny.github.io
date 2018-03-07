@@ -39,7 +39,7 @@ componentDidMount() {
               <div className="menu-wrap">
                 <NavLink className="logo-wrap" to="/">
                   <img src={monstera} alt="site logo" id="avatar" className="pr-2" />
-                  <h3>/^Gab+[iy]e?$/</h3>
+                  <h3>^Gab+[iy]e?$</h3>
                 </NavLink>
                 <div className="icon-wrap">
                   <span className="icon" id="icon-top"></span>

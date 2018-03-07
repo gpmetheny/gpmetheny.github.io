@@ -14,8 +14,10 @@ class About extends Component {
         <div className="pt-3 d-flex align-items-center justify-content-center about-wrapper">
           <div className="container">
             <div className="row">
-              <div className="col-md-6 col-lg-4 text-center">
-                <img src={angry_jack} alt="Gabbie" className="img-fluid px-5 pb-3" />
+              <div className="col-md-6 col-lg-4">
+                <div className="my-2 mx-auto" id="about-img-wrapper">
+                  <img src={angry_jack} alt="Gabbie" />
+                </div>
               </div>
               <div className="col-md-6 col-lg-8">
                 <div className="container">

@@ -95,7 +95,7 @@ a.active-link {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: .5rem;
+  padding: 1rem .75rem 1rem .75rem;
 }
 
 .icon-wrap {
@@ -103,9 +103,9 @@ a.active-link {
   flex-direction: column;
   justify-content: space-between;
   margin: auto 0;
-  padding: .5rem;
-  width: 2.5rem;
-  height: 2.5rem;
+  padding: 1rem .75rem 1rem .75rem;
+  width: 3rem;
+  height: 3.5rem;
   cursor: pointer;
 }
 
@@ -344,14 +344,20 @@ pre {
 }
 
 /* progressive image loading, kind of */
-#about img {
+#about-img-wrapper {
+  width: 100%;
   max-width: 300px;
-  /* height: 300px;
-  width: 300px; */
+  background-color: #FDCAD3;
+  border-radius: 50%;
+}
+
+#about img {
+  width: 100%;
+  height: auto;
   opacity: 0;
   filter: blur(5px);
   border-radius: 50%;
-  animation: unblur 2s 1s forwards, fadein 0s 1s forwards;
+  animation: unblur 3s 1.5s forwards, fadein .5s 1s forwards;
 }
 
 .purple {
@@ -456,7 +462,7 @@ pre {
 
   nav ul li a {
     height: initial;
-    padding: .5rem;
+    padding: 1rem .75rem 1rem .75rem;
   }
 
   /* nav ul {
