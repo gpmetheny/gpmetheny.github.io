@@ -25,7 +25,7 @@ class Work extends Component {
   render() {
     return (
       <div className="jumbotron jumbotron-fluid content-wrapper" id="work">
-        <div className="container pt-5">
+        <div className="container pt-3">
           <h1 className="text-center">CSS Animations</h1>
           <div className="pens-wrapper row mb-lg-5">
             <div className="pens col-12 col-lg-4 py-3">

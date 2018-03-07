@@ -62,16 +62,20 @@ componentDidMount() {
             <Route path="/success" component={Success} />
             {/* <About /> */}
           </main>
-          <footer>
+          <footer className="container py-3">
           {/* fix footer! put in container, row, columns dependent on screen size, add in some padding-top and -bottom
           check styles applied in App.css */}
-            <span>&copy; 2018 Gabbie Metheny</span>
-            <ul>
-              <li className="social-icon"><a href="https://www.twitter.com/gpmetheny" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="Twitter Icon" /></a></li>
-              <li className="social-icon"><a href="https://www.linkedin.com/in/gpmetheny" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedIn Logo" /></a></li>
-              <li className="social-icon"><a href="https://www.github.com/gpmetheny" target="_blank" rel="noopener noreferrer"><img src={github} alt="GitHub Logo" /></a></li>
-              <li className="social-icon"><a href="https://www.codepen.io/gpmetheny" target="_blank" rel="noopener noreferrer"><img src={codepen} alt="Codepen Logo" /></a></li>
-            </ul>
+            <div className="row d-flex flex-column-reverse flex-md-row justify-content-around">
+              <span className="text-center py-1">&copy; 2018 Gabbie Metheny</span>
+              <div className="py-1">
+                <ul className="d-flex justify-content-center">
+                  <li className="social-icon"><a href="https://www.twitter.com/gpmetheny" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="Twitter Icon" /></a></li>
+                  <li className="social-icon"><a href="https://www.linkedin.com/in/gpmetheny" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedIn Logo" /></a></li>
+                  <li className="social-icon"><a href="https://www.github.com/gpmetheny" target="_blank" rel="noopener noreferrer"><img src={github} alt="GitHub Logo" /></a></li>
+                  <li className="social-icon"><a href="https://www.codepen.io/gpmetheny" target="_blank" rel="noopener noreferrer"><img src={codepen} alt="Codepen Logo" /></a></li>
+                </ul>
+              </div>
+            </div>
           </footer>
         </div>
       </HashRouter>
