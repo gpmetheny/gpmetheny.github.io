@@ -25,7 +25,7 @@ class Work extends Component {
 
   render() {
     return (
-      <div className="jumbotron jumbotron-fluid content-wrapper mb-0">
+      <div className="jumbotron jumbotron-fluid content-wrapper">
         <div id="loading">
           <div className="circle"></div>
           <div className="circle"></div>
@@ -34,7 +34,7 @@ class Work extends Component {
           </div>
         </div>
         <div className="container pt-3" id="work">
-          <h1 className="text-center">CSS Animations</h1>
+          <h2 className="text-center">CSS Animations</h2>
           <div className="pens-wrapper row mb-lg-5">
             <div className="pens col-12 col-lg-4 py-3">
               <p data-height="350" data-theme-id="32730" data-slug-hash="bLJVBK" data-default-tab="result" data-user="gpmetheny" data-embed-version="2" data-pen-title="Pure CSS Spinning Atom" className="codepen">See the Pen <a href="https://codepen.io/gpmetheny/pen/bLJVBK/">Pure CSS Spinning Atom</a> by Gabbie (<a href="https://codepen.io/gpmetheny">@gpmetheny</a>) on <a href="https://codepen.io">CodePen</a>.</p>
@@ -46,14 +46,14 @@ class Work extends Component {
               <p data-height="350" data-theme-id="32730" data-slug-hash="BYbgEv" data-default-tab="result" data-user="gpmetheny" data-embed-version="2" data-pen-title="Pure CSS Spinning Loader #3" className="codepen">See the Pen <a href="https://codepen.io/gpmetheny/pen/BYbgEv/">Pure CSS Spinning Loader #3</a> by Gabbie (<a href="https://codepen.io/gpmetheny">@gpmetheny</a>) on <a href="https://codepen.io">CodePen</a>.</p>
             </div>
           </div>
-          <h1 className="text-center">FizzBuzz</h1>
+          <h2 className="text-center">FizzBuzz</h2>
           <div className="pens-wrapper row d-flex">
             <div className="pens col-12 py-3 mb-lg-5">
               <p data-height="250" data-theme-id="32730" data-slug-hash="mXYELw" data-default-tab="js,result" data-user="gpmetheny" data-embed-version="2" data-pen-title="FizzBuzz" className="codepen">See the Pen <a href="https://codepen.io/gpmetheny/pen/mXYELw/">FizzBuzz</a> by Gabbie (<a href="https://codepen.io/gpmetheny">@gpmetheny</a>) on <a href="https://codepen.io">CodePen</a>.</p>
             </div>
           </div>
-          <h1 className="text-center">Websites</h1>
-          <div className="d-flex flex-column align-items-center">
+          <h2 className="text-center">Websites</h2>
+          <div className="d-flex flex-column align-items-center text-center">
             <a href="https://pb-livin.github.io/bojack-ipsum/" target="_blank" rel="noopener noreferrer"><strong>BoJack Ipsum</strong> (lorem ipsum generator)</a>
             <a href="https://github.com/pb-livin/bojack-ipsum/tree/gh-pages" target="_blank" rel="noopener noreferrer"><small><em>view source code on GitHub</em></small></a>
           </div>

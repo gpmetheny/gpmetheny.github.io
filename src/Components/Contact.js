@@ -13,7 +13,7 @@ class Contact extends Component {
         <div className="d-flex align-items-center justify-content-center my-auto contact-wrapper pt-3">
           <div className="container d-flex flex-column flex-lg-row align-items-center justify-content-center px-md-5 mx-md-5">
             <div>
-              <h1 className="text-center mb-3">contactMe()</h1>
+              <h2 className="text-center mb-3">contactMe()</h2>
             </div>
             <form action="https://formspree.io/gabbie.metheny@gmail.com" method="POST">
               <div className="form-row text-center">

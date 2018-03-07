@@ -21,7 +21,7 @@ class About extends Component {
               </div>
               <div className="col-md-6 col-lg-8">
                 <div className="container">
-                  <h1 className="text-center mb-3">aboutMe()</h1>
+                  <h2 className="text-center mb-3">aboutMe()</h2>
                   <p className="text-dark">Hey there! I am a coder, mama and avid coffee drinker residing in the Highland Park neighborhood of Los Angeles, California. When I'm not coding, momming, or caffeinating, I'm probably sleeping. Just kidding! I don't sleep.</p>
                   <p className="text-dark">I have a strong front-end development background, with back-end experience in Node.js and Python. I love making SVGs and CSS animations, but I also really enjoy digging in to the nitty gritty of JavaScript and programming logic.</p>
                   <p className="text-center"><a href="#contact">I'd love to hear from you!</a></p>

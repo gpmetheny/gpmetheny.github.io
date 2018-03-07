@@ -13,6 +13,7 @@ h4,
 h5,
 h6 {
   color: #F94E6D;
+  font-family: 'Roboto Mono', monospace;
 }
 
 ul, li {
@@ -194,6 +195,7 @@ main {
 .jumbotron {
   background: transparent;
   padding: 0;
+  margin: 0;
 }
 
 .top span,
@@ -344,12 +346,12 @@ main {
   animation: fadein .5s 2.5s forwards;
 }
 
-#work h1,
+/* #work h1,
 #about h1,
 #contact h1,
 #success h1 {
   font-family: 'Roboto Mono', monospace;
-}
+} */
 
 .success-wrapper {
   height: 100%;
