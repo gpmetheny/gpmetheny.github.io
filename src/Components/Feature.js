@@ -29,6 +29,7 @@ class Feature extends Component {
 
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     // document.querySelector('.logo-wrap').classList.add('active-link');
+    document.querySelector('nav').classList.remove('menuActive');
   }
 
   render() {

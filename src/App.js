@@ -63,6 +63,8 @@ componentDidMount() {
             {/* <About /> */}
           </main>
           <footer>
+          {/* fix footer! put in container, row, columns dependent on screen size, add in some padding-top and -bottom
+          check styles applied in App.css */}
             <span>&copy; 2018 Gabbie Metheny</span>
             <ul>
               <li className="social-icon"><a href="https://www.twitter.com/gpmetheny" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="Twitter Icon" /></a></li>
