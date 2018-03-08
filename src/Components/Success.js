@@ -7,9 +7,23 @@ class Success extends Component {
   }
 
   componentDidMount() {
+    // twitter script
+    let script = document.createElement('script');
+    script.src = 'https://platform.twitter.com/widgets.js';
+    script.charset = 'utf-8';
+    script.async = true;
+    script.id = "twitterScript";
+    document.querySelector('body').appendChild(script);
+
+    // menu
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     document.querySelector('nav ul li:nth-child(3) a').classList.add('active-link');
     document.querySelector('nav').classList.remove('menuActive');
+  }
+
+  componentWillUnmount() {
+    let script = document.querySelector('#twitterScript');
+    document.querySelector('body').removeChild(script);
   }
 
   render() {
@@ -18,7 +32,14 @@ class Success extends Component {
         <div className="pt-3 d-flex align-items-center justify-content-center success-wrapper">
           <div className="container d-flex flex-column align-items-center justify-content-around px-md-5">
             <div className="mb-5 text-center">
-              <h2 className="mb-3">contactMe(<i className="material-icons" style={{color: '#222', fontSize: '1.5rem'}}>done</i>)</h2>
+
+              <div className="d-flex flex-column align-items-center justify-content-between mb-3">
+                <h2 className="text-center">contactMe(<i className="material-icons" style={{color: '#222', fontSize: '1.5rem'}}>done</i>)</h2>
+                <a href="https://twitter.com/gpmetheny?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @gpmetheny</a>
+              </div>
+
+
+              {/* <h2 className="mb-3">contactMe(<i className="material-icons" style={{color: '#222', fontSize: '1.5rem'}}>done</i>)</h2> */}
               <p>Thanks! I'll be in touch soon!</p>
             </div>
             <div className="mt-5">

@@ -6,12 +6,20 @@ class Contact extends Component {
   }
 
   componentDidMount() {
+    // twitter script
+    let script = document.createElement('script');
+    script.src = 'https://platform.twitter.com/widgets.js';
+    script.charset = 'utf-8';
+    script.async = true;
+    script.id = "twitterScript";
+    document.querySelector('body').appendChild(script);
+
+    // menu
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     document.querySelector('nav ul li:nth-child(3) a').classList.add('active-link');
     document.querySelector('nav').classList.remove('menuActive');
 
-//  'focus', 'blur',
-
+    // form listener
     document.querySelector('form').addEventListener('keyup', () => {
       let count=0;
       document.querySelectorAll('.required').forEach(field => {
@@ -28,14 +36,28 @@ class Contact extends Component {
     });
   }
 
+  componentWillUnmount() {
+    let script = document.querySelector('#twitterScript');
+    document.querySelector('body').removeChild(script);
+  }
+
   render() {
     return (
       <div className="jumbotron jumbotron-fluid content-wrapper" id="contact">
-        <div className="d-flex align-items-center justify-content-center my-auto contact-wrapper pt-3">
+        <div className="d-flex align-items-center justify-content-center my-auto contact-wrapper pt-3 mb-3">
           <div className="container d-flex flex-column flex-lg-row align-items-center justify-content-center px-md-5 mx-md-5">
-            <div>
-              <h2 className="text-center mb-3">contactMe()</h2>
+            <div className="d-flex flex-column align-items-center justify-content-between mb-3">
+              <h2 className="text-center">contactMe()</h2>
+              <a href="https://twitter.com/gpmetheny?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @gpmetheny</a>
             </div>
+
+              {/* <div class="row">
+                <div className="col-6">
+                  <a href="https://twitter.com/intent/tweet?screen_name=gpmetheny&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @gpmetheny</a>
+                </div>
+              </div>
+            </div> */}
+
             <form action="https://formspree.io/gabbie.metheny@gmail.com" method="POST">
             
               <div className="form-row text-center">
