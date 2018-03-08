@@ -63,8 +63,11 @@ class Contact extends Component {
               </div>
 
               <div className="form-row text-center">
-                <div className="form-group offset-lg-2 col-lg-10">
+                <div className="form-group offset-lg-2 col-lg-10 mb-0">
                   <textarea className="form-control required" name="message" placeholder="Say hi..." rows="10" cols="60" required></textarea>
+                </div>
+                <div className="form-group offset-lg-2 col-lg-10">
+                  <small>contact form powered by <a href="https://formspree.io/" target="_blank" rel="noopener noreferrer">Formspree</a></small>
                 </div>
               </div>
 
