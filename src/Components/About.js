@@ -19,12 +19,12 @@ class About extends Component {
         <div className="pt-3 d-flex align-items-center justify-content-center about-wrapper">
           <div className="container">
             <div className="row">
-              <div className="col-md-6 col-lg-4">
+              <div className="col-md-4">
                 <div className="my-2 mx-auto" id="about-img-wrapper">
                   <img src={angry_jack} alt="Gabbie" />
                 </div>
               </div>
-              <div className="col-md-6 col-lg-8">
+              <div className="col-md-8">
                 <div className="container">
                   <h2 className="text-center mb-3">aboutMe()</h2>
                   <p className="text-dark">Hey there! I am a coder, mama and avid coffee drinker residing in the Highland Park neighborhood of Los Angeles, California. When I'm not coding, momming, or caffeinating, I'm probably sleeping. Just kidding! I don't sleep. I do, however, enjoy hiking, weightlifting, antiquing, and eating unnatural quantities of avocado toast.</p>
