@@ -28,8 +28,8 @@ a:active,
 a:visited {
   font-family: 'Roboto Mono', monospace;
   color: #222; /* #119328 */
-  /* font-weight: bold; */
-  text-decoration: underline;
+  font-weight: bold;
+  text-decoration: none;
   transition: all .3s;
 }
 
@@ -85,6 +85,7 @@ nav a,
 nav a:hover,
 nav a:active,
 nav a:visited {
+  font-weight: normal;
   text-decoration: none;
 }
 

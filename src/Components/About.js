@@ -23,7 +23,7 @@ class About extends Component {
                 <div className="container">
                   <h2 className="text-center mb-3">aboutMe()</h2>
                   <p className="text-dark">Hey there! I am a coder, mama and avid coffee drinker residing in the Highland Park neighborhood of Los Angeles, California. When I'm not coding, momming, or caffeinating, I'm probably sleeping. Just kidding! I don't sleep.</p>
-                  <p className="text-dark">I have a strong front-end development background, with back-end experience in Node.js and Python. I love making SVGs and CSS animations, but I also really enjoy digging in to the nitty gritty of JavaScript and programming logic.</p>
+                  <p className="text-dark">I have a solid front-end development background, with experience in React, Node.js, MongoDB, Express, and Python. While I have an aesthetic eye and love creating SVGs and CSS animations, I also really enjoy digging in to the nitty gritty of JavaScript and programming logic. I am a determined problem solver who welcomes new challenges.</p>
                   <p className="text-center"><a href="#contact">I'd love to hear from you!</a></p>
                 </div>
               </div>
