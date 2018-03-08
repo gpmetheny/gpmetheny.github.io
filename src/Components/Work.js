@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 class Work extends Component {
   componentWillMount() {
@@ -75,7 +76,7 @@ class Work extends Component {
           </div>
           <div className="d-flex flex-column align-items-center text-center mb-5 mt-3">
             <div className="row">
-              <p><a href="#about" className="more">more about my work {'>>'}</a></p>
+              <p><Link to="/about" className="more">more about my work {'>>'}</Link></p>
             </div>
           </div>
         </div>

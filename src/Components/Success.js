@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 class Success extends Component {
   componentDidMount() {
@@ -17,7 +18,7 @@ class Success extends Component {
               <p>Thanks! I'll be in touch soon!</p>
             </div>
             <div className="mt-5">
-              <a href="#work" className="more">{'<<'} back to my work</a>
+              <Link to="/work" className="more">{'<<'} back to my work</Link>
             </div>
           </div>
         </div>
