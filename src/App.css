@@ -428,13 +428,13 @@ main {
   align-items: space-around;
 } */
 
-footer {
+/* footer {
   color: #F94E6D;
-  /* height: 3rem;
+  height: 3rem;
   display: flex;
   flex-direction: column-reverse;
-  align-items: center; */
-}
+  align-items: center;
+} */
 
 .social-icon {
   /* text-align: center; */
@@ -445,13 +445,14 @@ footer {
 }
 
 /* need to add as svg in html before this styling will work */
-/* .social-icon a path {
-  fill: #F94E6D;
+.social-icon a path {
+  /* fill: black; */
+  transition: .3s ease;
 }
 
 .social-icon a:hover path {
   fill: #F94E6D;
-} */
+}
 
 .social-icon a img {
   transition: .5s;
