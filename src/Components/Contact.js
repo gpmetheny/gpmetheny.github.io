@@ -5,6 +5,23 @@ class Contact extends Component {
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     document.querySelector('nav ul li:nth-child(3) a').classList.add('active-link');
     document.querySelector('nav').classList.remove('menuActive');
+
+//  'focus', 'blur',
+
+    document.querySelector('form').addEventListener('keyup', () => {
+      let count=0;
+      document.querySelectorAll('.required').forEach(field => {
+        if (field.value !== '') {
+          count += 1;
+          if (count === document.querySelectorAll('.required').length) {
+            document.querySelector('#submit').disabled = false;
+            return;
+          } else {
+            document.querySelector('#submit').disabled = true;
+          }
+        }
+      });
+    });
   }
 
   render() {
@@ -18,19 +35,19 @@ class Contact extends Component {
             <form action="https://formspree.io/gabbie.metheny@gmail.com" method="POST">
               <div className="form-row text-center">
                 <div className="form-group offset-lg-4 col-lg-4">
-                  <input type="text" className="form-control" name="name" placeholder="Name" required />
+                  <input type="text" className="form-control required" name="name" placeholder="Name" required />
                 </div>
                 <div className="form-group col-lg-4">
-                  <input type="email" className="form-control" name="_replyto" placeholder="Email" required />
+                  <input type="email" className="form-control required" name="_replyto" placeholder="Email" required />
                 </div>
                 <div className="form-group offset-lg-4 col-lg-8">
-                  <textarea className="form-control" name="message" placeholder="Say hi..." rows="10" cols="60" required></textarea>
+                  <textarea className="form-control required" name="message" placeholder="Say hi..." rows="10" cols="60" required></textarea>
                   <input type="hidden" name="_subject" value="Website Contact" />
                   <input type="hidden" name="_next" value={"#success"} />
                   <input type="text" name="_gotcha" style={{display: 'none'}} />
                 </div>
                 <div className="form-group offset-lg-4 col-lg-8">
-                  <input type="submit" className="btn btn-danger" value="Submit" />
+                  <input type="submit" className="btn btn-danger" value="Submit" id="submit" disabled />
                 </div>
               </div>
             </form>
