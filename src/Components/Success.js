@@ -17,10 +17,7 @@ class Success extends Component {
               <p>Thanks! I'll be in touch soon!</p>
             </div>
             <div className="mt-5">
-              <a href="#work">
-                back to my work
-                <p className="text-center"><i className="material-icons" style={{fontSize: '4rem'}}>keyboard_arrow_left</i></p>
-              </a>
+              <a href="#work" className="more">{'<<'} back to my work</a>
             </div>
           </div>
         </div>

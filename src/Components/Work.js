@@ -31,7 +31,7 @@ class Work extends Component {
           <div className="circle"></div>
           <div className="circle"></div>
         </div>
-        <div className="container pt-3" id="work">
+        <div className="container pt-3 pt-lg-5" id="work">
           <h2 className="text-center">CSS Animations</h2>
           <div className="pens-wrapper row mb-5">
             <div className="pens col-12 col-lg-4 py-3">
@@ -70,7 +70,12 @@ class Work extends Component {
           <div className="d-flex flex-column align-items-center text-center mb-5">
             <div className="row">
               <h6 className="col-10 offset-1">BoJack Ipsum</h6>
-              <p className="col-lg-10 offset-lg-1">NSFW: <a href="https://pb-livin.github.io/bojack-ipsum/" target="_blank" rel="noopener noreferrer">lorem ipsum generator</a> that generates plain text and html versions of dummy text from transcripts from <a href="https://www.netflix.com/title/70300800" target="_blank" rel="noopener noreferrer">Netflix's BoJack Horseman</a> (view source code on <a href="https://github.com/pb-livin/bojack-ipsum/tree/gh-pages" target="_blank" rel="noopener noreferrer">GitHub)</a></p>
+              <p className="col-lg-10 offset-lg-1">NSFW: <a href="https://pb-livin.github.io/bojack-ipsum/" target="_blank" rel="noopener noreferrer">lorem ipsum generator</a> that generates plain text and html versions of dummy text from transcripts from <a href="https://www.netflix.com/title/70300800" target="_blank" rel="noopener noreferrer">Netflix's BoJack Horseman</a> (view source code on <a href="https://github.com/pb-livin/bojack-ipsum/tree/gh-pages" target="_blank" rel="noopener noreferrer">GitHub</a>).</p>
+            </div>
+          </div>
+          <div className="d-flex flex-column align-items-center text-center mb-5">
+            <div className="row">
+              <p><a href="#about" className="more">more about my work {'>>'}</a></p>
             </div>
           </div>
         </div>

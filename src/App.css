@@ -358,14 +358,23 @@ main {
   height: 100%;
 }
 
-pre {
+/* pre {
   background: #222;
   color: white;
   white-space: pre-wrap;
-}
+} */
 
 #bojack-frame {
   height: 90vh;
+}
+
+.more {
+  padding: .5rem;
+  background-color: #F94E6D;
+}
+
+.more:hover {
+  background-color: #222;
 }
 
 /* progressive image loading, kind of */
