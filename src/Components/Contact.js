@@ -37,23 +37,50 @@ class Contact extends Component {
               <h2 className="text-center mb-3">contactMe()</h2>
             </div>
             <form action="https://formspree.io/gabbie.metheny@gmail.com" method="POST">
+            
               <div className="form-row text-center">
-                <div className="form-group offset-lg-4 col-lg-4">
-                  <input type="text" className="form-control required" name="name" placeholder="Name" required />
+                <div className="form-group offset-lg-2 col-lg-5">
+                  <input type="text" className="form-control required" name="firstName" placeholder="First Name" required />
                 </div>
-                <div className="form-group col-lg-4">
-                  <input type="email" className="form-control required" name="_replyto" placeholder="Email" required />
-                </div>
-                <div className="form-group offset-lg-4 col-lg-8">
-                  <textarea className="form-control required" name="message" placeholder="Say hi..." rows="10" cols="60" required></textarea>
-                  <input type="hidden" name="_subject" value="Website Contact" />
-                  <input type="hidden" name="_next" value={"#success"} />
-                  <input type="text" name="_gotcha" style={{display: 'none'}} />
-                </div>
-                <div className="form-group offset-lg-4 col-lg-8">
-                  <input type="submit" className="btn btn-danger" value="Submit" id="submit" disabled />
+                <div className="form-group col-lg-5">
+                  <input type="text" className="form-control required" name="lastName" placeholder="Last Name" required />
                 </div>
               </div>
+
+              <div className="form-row text-center">
+                <div className="form-group offset-lg-2 col-lg-5">
+                  <input type="text" className="form-control" name="company" placeholder="Company (optional)" />
+                </div>
+                <div className="form-group col-lg-5">
+                  <input type="text" className="form-control" name="title" placeholder="Title (optional)" />
+                </div>
+              </div>
+
+              <div className="form-row text-center">
+                <div className="form-group offset-lg-2 col-lg-10">
+                  <input type="email" className="form-control required" name="_replyto" placeholder="Email" required />
+                </div>
+              </div>
+
+              <div className="form-row text-center">
+                <div className="form-group offset-lg-2 col-lg-10">
+                  <textarea className="form-control required" name="message" placeholder="Say hi..." rows="10" cols="60" required></textarea>
+                </div>
+              </div>
+
+              <div className="form-row text-center" id="hiddenFields">
+                <input type="hidden" name="_subject" value="Website Contact" />
+                <input type="hidden" name="_next" value={"#success"} />
+                <input type="text" name="_gotcha" style={{display: 'none'}} />
+              </div>
+
+              <div className="form-row text-center">
+                <div className="form-group offset-lg-2 col-lg-10">
+                  <input type="submit" className="btn btn-dark" value="Submit" id="submit" disabled />
+                </div>
+              </div>
+                  
+                  
             </form>
           </div>
         </div>
