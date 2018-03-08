@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 
 class Contact extends Component {
+  componentWillMount() {
+    window.scrollTo(0, 0);
+  }
+
   componentDidMount() {
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     document.querySelector('nav ul li:nth-child(3) a').classList.add('active-link');

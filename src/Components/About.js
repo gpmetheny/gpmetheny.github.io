@@ -3,6 +3,10 @@ import {Link} from 'react-router-dom';
 import angry_jack from '../img/angry_jack.jpg';
 
 class About extends Component {
+  componentWillMount() {
+    window.scrollTo(0, 0);
+  }
+
   componentDidMount() {
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     document.querySelector('nav ul li:nth-child(1) a').classList.add('active-link');

@@ -3,6 +3,10 @@ import {Link} from 'react-router-dom';
 import portfolioLogo from '../img/portfolio-logo.svg';
 
 class Feature extends Component {
+  componentWillMount() {
+    window.scrollTo(0, 0);
+  }
+
   componentDidMount() {
     const topTriangles = document.querySelectorAll('.top span');
     const bottomTriangles = document.querySelectorAll('.bottom span');
@@ -29,7 +33,6 @@ class Feature extends Component {
     })()
 
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
-    // document.querySelector('.logo-wrap').classList.add('active-link');
     document.querySelector('nav').classList.remove('menuActive');
   }
 
