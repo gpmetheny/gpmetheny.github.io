@@ -43,7 +43,7 @@ class Work extends Component {
             <div className="pens col-12 col-lg-4 py-3">
               <p data-height="350" data-theme-id="32730" data-slug-hash="BYbgEv" data-default-tab="result" data-user="gpmetheny" data-embed-version="2" data-pen-title="Pure CSS Spinning Loader #3" className="codepen">See the Pen <a href="https://codepen.io/gpmetheny/pen/BYbgEv/">Pure CSS Spinning Loader #3</a> by Gabbie (<a href="https://codepen.io/gpmetheny">@gpmetheny</a>) on <a href="https://codepen.io">CodePen</a>.</p>
             </div>
-            <div className="d-flex flex-column align-items-center text-center">
+            <div className="d-flex flex-column align-items-center text-center mt-3">
               <div className="row">
                 <h6 className="col-10 offset-1">Pure CSS animations using keyframes and transforms.</h6>
                 <p className="col-lg-10 offset-lg-1">Cocktail glass SVG is my original creation, other animations were built using CSS divs, spans and pseudoelements. See more of my animations on <a href="https://codepen.io/gpmetheny" target="_blank" rel="noopener noreferrer">Codepen</a>.</p>
@@ -56,7 +56,7 @@ class Work extends Component {
               <p data-height="250" data-theme-id="32730" data-slug-hash="mXYELw" data-default-tab="js,result" data-user="gpmetheny" data-embed-version="2" data-pen-title="FizzBuzz" className="codepen">See the Pen <a href="https://codepen.io/gpmetheny/pen/mXYELw/">FizzBuzz</a> by Gabbie (<a href="https://codepen.io/gpmetheny">@gpmetheny</a>) on <a href="https://codepen.io">CodePen</a>.</p>
             </div>
           </div>
-          <div className="d-flex flex-column align-items-center text-center mb-5">
+          <div className="d-flex flex-column align-items-center text-center mb-5 mt-3">
             <div className="row">
               <h6 className="col-10 offset-1">My JavaScript solution to the classic coder conundrum.</h6>
             </div>
@@ -67,13 +67,13 @@ class Work extends Component {
               <iframe title="BoJack Ipsum" src="https://pb-livin.github.io/bojack-ipsum/" frameBorder="1" width="100%" height="100%" />
             </div>
           </div>
-          <div className="d-flex flex-column align-items-center text-center mb-5">
+          <div className="d-flex flex-column align-items-center text-center mb-5 mt-3">
             <div className="row">
               <h6 className="col-10 offset-1">BoJack Ipsum</h6>
               <p className="col-lg-10 offset-lg-1">NSFW: <a href="https://pb-livin.github.io/bojack-ipsum/" target="_blank" rel="noopener noreferrer">lorem ipsum generator</a> that generates plain text and html versions of dummy text from transcripts from <a href="https://www.netflix.com/title/70300800" target="_blank" rel="noopener noreferrer">Netflix's BoJack Horseman</a> (view source code on <a href="https://github.com/pb-livin/bojack-ipsum/tree/gh-pages" target="_blank" rel="noopener noreferrer">GitHub</a>).</p>
             </div>
           </div>
-          <div className="d-flex flex-column align-items-center text-center mb-5">
+          <div className="d-flex flex-column align-items-center text-center mb-5 mt-3">
             <div className="row">
               <p><a href="#about" className="more">more about my work {'>>'}</a></p>
             </div>
