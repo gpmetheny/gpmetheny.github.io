@@ -131,7 +131,7 @@ class Feature extends Component {
         </div>
         <div className="jumbotron jumbotron-fluid text-center" id="welcome">
           <img src={portfolioLogo} alt="Gabbie Metheny | Full-Stack JavaScript Developer" className="logo" />
-          <Link to="/work" className="btn btn-lg btn-dark">see my work<span> {'>>'}</span></Link>
+          <Link to="/work" className="more">see my work<span> {'>>'}</span></Link>
         </div>
         <div className="group">
           <div className="top">
