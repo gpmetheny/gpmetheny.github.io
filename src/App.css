@@ -173,7 +173,7 @@ a.active-link {
 }
 
 nav.menuActive ul {
-  height: 9rem;
+  height: 12rem;
 }
 
 nav.menuActive ul li {
@@ -305,27 +305,19 @@ main {
   text-decoration: none;
 }
 
-#welcome .btn {
-  font-family: 'Roboto Mono', monospace;
+#welcome .more {
+  width: 10rem;
   transform: scale(.75);
-  color: white;
   opacity: 0;
-  width: 14rem;
   transition: .3s;
   animation: fadein 1s 3s forwards;
-  border: 1px solid white;
 }
 
-#welcome .btn:hover {
-  border: 1px solid white;
-  background-color: #F94E6D;
-}
-
-#welcome .btn span {
+#welcome .more span {
   display: none;
 }
 
-#welcome .btn:hover span {
+#welcome .more:hover span {
   display: inline;
 }
 
@@ -341,7 +333,8 @@ main {
   animation: fadein .7s forwards;
 }
 
-#work {
+#work,
+#resume {
   /* display: none; */
   opacity: 0;
   animation: fadein .5s 2.5s forwards;
@@ -392,6 +385,19 @@ main {
   filter: blur(5px);
   border-radius: 50%;
   animation: unblur 3s 1.5s forwards, fadein .5s 1s forwards;
+}
+
+#resume-header img {
+  width: 100%;
+}
+
+#card {
+  display: none;
+}
+
+#skills-graph {
+  width: 100%;
+  max-width: 35rem;
 }
 
 .purple {
@@ -530,8 +536,68 @@ main {
     max-width: 800px;
   }
 
-  #welcome .btn {
+  #welcome .more {
     transform: scale(1);
+  }
+
+  #card {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    width: 15rem;
+    height: 20rem;
+    margin: 0 auto;
+    background: #FDCAD3;
+    border-radius: .75rem;
+  }
+
+  #experience {
+    max-width: 15rem;
+    margin: 0 auto;
+  }
+
+  #card-top {
+    width: 100%;
+    height: 12rem;
+  }
+
+  #card-bottom {
+    width: 100%;
+    height: 8rem;
+  }
+
+  #card-photo {
+    width: 12rem;
+    height: 12rem;
+    border-top-left-radius: .75rem;
+  }
+
+  #card-top ul {
+    width: 3rem;
+  }
+
+  #card-bottom ul {
+    width: 100%;
+  }
+
+  #card .social-icon {
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+  }
+
+  #card-monstera {
+    width: 2rem;
+  }
+
+  #card li {
+    font-size: .85rem;
+  }
+
+  #card i {
+    font-size: .85rem;
+    padding-right: .65rem;
   }
 
   /* pre {
