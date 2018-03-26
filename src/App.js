@@ -11,6 +11,7 @@ import monstera from './img/monstera.svg';
 // import twitter from './img/twitter.svg';
 import Feature from './Components/Feature';
 import Work from './Components/Work';
+import Resume from './Components/Resume';
 import About from './Components/About';
 import Contact from './Components/Contact';
 import Success from './Components/Success';
@@ -51,6 +52,7 @@ componentDidMount() {
               <ul>
                 <li><NavLink to="/about">About</NavLink></li>
                 <li><NavLink to="/work">Work</NavLink></li>
+                <li><NavLink to="/resume">Resume</NavLink></li>
                 <li><NavLink to="/contact">Contact</NavLink></li>
               </ul>
             </nav>
@@ -59,6 +61,7 @@ componentDidMount() {
             <Route path="/" exact component={Feature} />
             <Route path="/work" component={Work} />
             <Route path="/about" component={About} />
+            <Route path="/resume" component={Resume} />
             <Route path="/contact" component={Contact} />
             <Route path="/success" component={Success} />
             {/* <About /> */}
