@@ -27,7 +27,7 @@ class Resume extends Component {
         <div className="container pt-3 pt-lg-5" id="resume">
           <div className="row">
             <div className="col-md-7 col-lg-8">
-              <div id="resume-header">
+              <div className="mb-3" id="resume-header">
                 <img src={portfolioLogo} alt="Gabbie Metheny | Full-Stack JavaScript Developer" />
                 {/* <h1>Gabbie Metheny</h1>
                 <p>Full-Stack JavaScript Developer</p> */}
@@ -72,7 +72,7 @@ class Resume extends Component {
                 </div>
               </div>
               <div id="experience">
-                <h3 className="pt-md-3">experience</h3>
+                <h3 className="pt-md-5">experience</h3>
                 <p>
                   <strong>Self</strong> -
                   Code-At-Home Mom<br />
