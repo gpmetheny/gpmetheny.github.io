@@ -11,10 +11,10 @@ class Feature extends Component {
     const topTriangles = document.querySelectorAll('.top span');
     const bottomTriangles = document.querySelectorAll('.bottom span');
     const topColors = [
-      'turquoise', 'darkcyan', 'burlywood', 'transparent', 'bisque', '#F94E6D', 'transparent', 'transparent', 'transparent'
+      '#222', '#F94E6D', '#aaa', 'transparent', '#FDCAD3', '#F94E6D', 'transparent', 'transparent', 'transparent'
     ];
     const bottomColors = [
-      'turquoise', 'transparent', 'transparent', 'transparent', 'transparent'
+      '#222', 'transparent', 'transparent', 'transparent', 'transparent'
     ];
 
     (function changeBackground() {
