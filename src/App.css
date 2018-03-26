@@ -307,7 +307,6 @@ main {
 
 #welcome .more {
   width: 10rem;
-  transform: scale(.75);
   opacity: 0;
   transition: .3s;
   animation: fadein 1s 3s forwards;
@@ -536,10 +535,6 @@ main {
     max-width: 800px;
   }
 
-  #welcome .more {
-    transform: scale(1);
-  }
-
   #card {
     display: flex;
     flex-direction: column;
@@ -547,14 +542,14 @@ main {
     font-weight: bold;
     width: 15rem;
     height: 20rem;
-    margin: 0 auto;
+    margin: 0 0 0 auto;
     background: #FDCAD3;
     border-radius: .75rem;
   }
 
   #experience {
     max-width: 15rem;
-    margin: 0 auto;
+    margin: 0 0 0 auto;
   }
 
   #card-top {
