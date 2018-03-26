@@ -204,7 +204,7 @@ main {
   opacity: 0;
 }
 
-.top span:nth-child(even) {
+/* .top span:nth-child(even) {
   animation: fadein 1s 2s forwards;
 }
 
@@ -218,7 +218,7 @@ main {
 
 .bottom span:nth-child(odd) {
   animation: fadein 1s 3s forwards;
-}
+} */
 
 /* .group:nth-child(odd) {
   margin-left: ;
@@ -296,9 +296,7 @@ main {
 } */
 
 #welcome {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-height: 75vh;
 }
 
 #welcome a {
@@ -307,9 +305,6 @@ main {
 
 #welcome .more {
   width: 10rem;
-  opacity: 0;
-  transition: .3s;
-  animation: fadein 1s 3s forwards;
 }
 
 #welcome .more span {
