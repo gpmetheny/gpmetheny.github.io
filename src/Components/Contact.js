@@ -101,7 +101,7 @@ class Contact extends Component {
 
               <div className="form-row text-center">
                 <div className="form-group offset-lg-2 col-lg-10">
-                  <input type="submit" className="btn btn-dark" value="Submit" id="submit" disabled />
+                  <input type="submit" className="btn btn-danger" value="Submit" id="submit" disabled />
                 </div>
               </div>
                   
