@@ -42,7 +42,9 @@ class Resume extends Component {
               </div>
               <div>
                 <h3 className="pt-md-3">skills</h3>
-                <img src={skills} alt="Technical and soft skills graphs" className="pb-2" id="skills-graph" />
+                <div className="text-center">
+                  <img src={skills} alt="Technical and soft skills graphs" className="pb-2" id="skills-graph" />
+                </div>
               </div>
             </div>
             <div className="col-md-5 col-lg-4">
