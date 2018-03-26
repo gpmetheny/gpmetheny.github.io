@@ -116,9 +116,8 @@ class Resume extends Component {
             </div>
           </div>
           <div>
-            <div className="row text-center">
-                <Link to="/work" className="more col-12 col-md-4 offset-md-1">{'<<'} back to my work</Link>
-                <Link to="/contact" className="more col-12 col-md-4 offset-md-2">get in touch {'>>'}</Link>
+            <div className="d-flex align-items-center justify-content-center text-center">
+                <Link to="/contact" className="more m-3">contact me {'>>'}</Link>
             </div>
           </div>
           
