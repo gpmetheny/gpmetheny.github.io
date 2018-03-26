@@ -10,7 +10,7 @@
   height: 80%;
   width: 100%;
   position: fixed;
-  animation: fadeout 1s 3s ease-in forwards;
+  animation: fadeout .25s 2.5s ease-in forwards;
 }
 
 .circle {
