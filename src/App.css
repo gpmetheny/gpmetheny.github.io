@@ -29,7 +29,7 @@ a:visited {
   font-family: 'Roboto Mono', monospace;
   color: #222; /* #119328 */
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
   transition: all .3s;
 }
 
@@ -358,6 +358,7 @@ main {
 .more {
   padding: .5rem;
   background-color: #F94E6D;
+  text-decoration: none !important;
 }
 
 .more:hover {
@@ -540,6 +541,10 @@ main {
     margin: 0 0 0 auto;
     background: #FDCAD3;
     border-radius: .75rem;
+  }
+
+  #card a {
+    text-decoration: none;
   }
 
   #experience {
