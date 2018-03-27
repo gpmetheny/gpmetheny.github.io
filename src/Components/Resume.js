@@ -35,10 +35,10 @@ class Resume extends Component {
               <div>
                 <h3 className="pt-md-3">tl;dr</h3>
                 <p><strong>I am a self-taught full-stack developer living in Los Angeles, CA.</strong></p>
-                <p>I'm very comfortable with front-end development, and I enjoy creating SVGs and CSS animations. I'm familiar with the most common front end libraries and frameworks, and I recently rebuilt <Link to="/">my personal website</Link> using React. You can see some of my <Link to="/work">animations</Link> there as well.</p>
-                <p>To practice my skills, I designed a <a href="https://pb-livin.github.io/bojack-ipsum" target="_blank" rel="noopener noreferrer">lorem ipsum generator</a> that pulls random quotes from Netflix's BoJack Horseman to make a user-specified number of paragraphs of dummy text, and I plan to add a feature where the user could request quotes by character.</p>
-                <p>While building the lorem ipsum generator, I found I needed a reliable way to get episode transcripts. I created a Node.js parser that converts Netflix subtitles (XML-formatted) into proper transcripts, complete with human-readable timestamps.</p>
-                <p>In addition to Node.js, I've picked up some Java and Python, and I use the command line daily. I am always looking for new things to learn.</p>
+                <p>I create engaging front-end user experiences, including original SVGs and CSS animations. I have strong knowledge of common <strong>front-end libraries and frameworks</strong>, and I recently rebuilt <Link to="/">my personal website</Link> using <strong>React</strong>. Some of my <Link to="/work">animations</Link> can be viewed there as well.</p>
+                <p>You can see an example of my back-end and database work with my <a href="https://pb-livin.github.io/bojack-ipsum" target="_blank" rel="noopener noreferrer">lorem ipsum generator</a>, also linked on my website, which pulls random quotes from Netflix's BoJack Horseman to make a user-specified number of paragraphs of dummy text. Check back soon to see a feature allowing the user to request quotes by specific characters.</p>
+                <p>While building the lorem ipsum generator, I found I needed a reliable way to get episode transcripts. I created a <strong>Node.js parser</strong> that converts <strong>XML-formatted</strong> Netflix subtitles into proper transcripts, complete with human-readable timestamps.</p>
+                <p>In addition to Node.js, I've picked up essential <strong>Java</strong> and <strong>Python</strong>, and I have a high comfort level with the command line. I am always looking for new things to learn.</p>
               </div>
               <div>
                 <h3 className="pt-md-3">skills</h3>
