@@ -395,6 +395,12 @@ main {
   max-width: 35rem;
 }
 
+.twitter-wrap {
+  height: 2rem;
+  opacity: 0;
+  animation: fadein 2s forwards;
+}
+
 .purple {
   color: orchid;
 }

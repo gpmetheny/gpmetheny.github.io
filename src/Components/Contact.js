@@ -48,7 +48,9 @@ class Contact extends Component {
           <div className="container d-flex flex-column flex-lg-row align-items-center justify-content-center px-md-5 mx-md-5">
             <div className="d-flex flex-column align-items-center justify-content-between mb-3">
               <h2 className="text-center">contactMe()</h2>
-              <a href="https://twitter.com/gpmetheny?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @gpmetheny</a>
+              <div className="twitter-wrap">
+                <a href="https://twitter.com/gpmetheny?ref_src=twsrc%5Etfw" className="twitter-follow-button" data-show-count="false">Follow @gpmetheny</a>
+              </div>
             </div>
 
               {/* <div class="row">

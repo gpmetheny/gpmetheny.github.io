@@ -35,7 +35,9 @@ class Success extends Component {
 
               <div className="d-flex flex-column align-items-center justify-content-between mb-3">
                 <h2 className="text-center">contactMe(<i className="material-icons" style={{color: '#222', fontSize: '1.5rem'}}>done</i>)</h2>
-                <a href="https://twitter.com/gpmetheny?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @gpmetheny</a>
+                <div className="twitter-wrap">
+                  <a href="https://twitter.com/gpmetheny?ref_src=twsrc%5Etfw" className="twitter-follow-button" data-show-count="false">Follow @gpmetheny</a>
+                </div>
               </div>
 
 
