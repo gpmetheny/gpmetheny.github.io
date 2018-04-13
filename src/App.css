@@ -334,8 +334,9 @@ main {
   width: 2rem;
   border: 1px solid #000;
   border-radius: 50%;
+  filter: invert(1);
   /* background-color: #FDCAD3; */
-  opacity: .8;
+  /* opacity: .8; */
   margin: .25rem;
   transition: .2s;
 }
@@ -347,7 +348,7 @@ main {
 }
 
 .tech-wrap:hover {
-  opacity: 1;
+  filter: invert(0);
 }
 
 #html5 {
@@ -402,55 +403,75 @@ main {
   background-color: #E7E8E8;
 }
 
-.tech-wrap:hover svg[alt="html5"] {
+#javascript svg {
+  fill: #fff;
+}
+
+#react svg {
+  fill: #fff;
+}
+
+#android svg {
+  fill: #fff;
+}
+
+/* #nodejs svg {
+  fill: #fff;
+}
+
+#mongodb svg {
+  fill: #fff;
+} */
+
+#html5:hover svg {
   fill: #E34F26;
 }
 
-.tech-wrap:hover svg[alt="css3"] {
+#css3:hover svg {
   fill: #1572B6;
 }
 
-.tech-wrap:hover svg[alt="bootstrap"] {
+#bootstrap:hover svg {
   fill: #563D7C;
 }
 
-.tech-wrap:hover svg[alt="javascript"] {
+#javascript:hover svg {
   fill: #F7DF1E;
 }
 
-.tech-wrap:hover svg[alt="jquery"] {
+#jquery:hover svg {
   fill: #0769AD;
 }
 
-.tech-wrap:hover svg[alt="react"] {
+#react:hover svg {
   fill: #61DAFB;
 }
 
-.tech-wrap:hover svg[alt="android"] {
+#android:hover svg {
   fill: #A4C639;
 }
 
-.tech-wrap:hover svg[alt="nodejs"] {
+#nodejs:hover svg {
   fill: #339933;
 }
 
-.tech-wrap:hover svg[alt="mongodb"] {
+#mongodb:hover svg {
   fill: #47A248;
 }
 
-.tech-wrap:hover svg[alt="npm"] {
+#npm:hover svg {
   fill: #CB3837;
 }
 
-.tech-wrap:hover svg[alt="python"] {
+#python:hover svg {
   fill: #3776AB;
 }
 
-.tech-wrap:hover svg[alt="git"] {
+#git:hover svg {
   fill: #F05032;
 }
 
-.tech-wrap:hover svg[alt="github"] {
+#github:hover svg {
   fill: #181717;
 }
 
