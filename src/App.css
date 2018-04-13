@@ -189,7 +189,7 @@ nav.menuActive ul li a {
 }
 
 main {
-  min-height: calc(98vh - 7rem);
+  min-height: calc(98vh - 20rem);
   overflow-x: hidden;
 }
 
@@ -299,6 +299,16 @@ main {
   min-height: 75vh;
 }
 
+#welcome h1 {
+  color: #181717;
+  font-size: 1.8rem;
+}
+
+#welcome h6 {
+  color: #8B8B8B;
+  font-size: 1rem;
+}
+
 #welcome a {
   text-decoration: none;
 }
@@ -317,6 +327,131 @@ main {
 
 .logo {
   width: 98%;
+}
+
+.tech-wrap {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid #000;
+  border-radius: 50%;
+  /* background-color: #FDCAD3; */
+  opacity: .8;
+  margin: .25rem;
+  transition: .2s;
+}
+
+.tech-wrap svg {
+  width: 100%;
+  padding: 25%;
+  transition: fill .2s;
+}
+
+.tech-wrap:hover {
+  opacity: 1;
+}
+
+#html5 {
+  background-color: #1CB0D9;
+}
+
+#css3 {
+  background-color: #EA8D49;
+}
+
+#bootstrap {
+  background-color: #A9C283;
+}
+
+#javascript {
+  background-color: #0820E1;
+}
+
+#jquery {
+  background-color: #F89652;
+}
+
+#react {
+  background-color: #9E2504;
+}
+
+#android {
+  background-color: #5B39C6;
+}
+
+#nodejs {
+  background-color: #CC66CC;
+}
+
+#mongodb {
+  background-color: #B85DB7;
+}
+
+#npm {
+  background-color: #34C7C8;
+}
+
+#python {
+  background-color: #C88954;
+}
+
+#git {
+  background-color: #0FAFCD;
+}
+
+#github {
+  background-color: #E7E8E8;
+}
+
+.tech-wrap:hover svg[alt="html5"] {
+  fill: #E34F26;
+}
+
+.tech-wrap:hover svg[alt="css3"] {
+  fill: #1572B6;
+}
+
+.tech-wrap:hover svg[alt="bootstrap"] {
+  fill: #563D7C;
+}
+
+.tech-wrap:hover svg[alt="javascript"] {
+  fill: #F7DF1E;
+}
+
+.tech-wrap:hover svg[alt="jquery"] {
+  fill: #0769AD;
+}
+
+.tech-wrap:hover svg[alt="react"] {
+  fill: #61DAFB;
+}
+
+.tech-wrap:hover svg[alt="android"] {
+  fill: #A4C639;
+}
+
+.tech-wrap:hover svg[alt="nodejs"] {
+  fill: #339933;
+}
+
+.tech-wrap:hover svg[alt="mongodb"] {
+  fill: #47A248;
+}
+
+.tech-wrap:hover svg[alt="npm"] {
+  fill: #CB3837;
+}
+
+.tech-wrap:hover svg[alt="python"] {
+  fill: #3776AB;
+}
+
+.tech-wrap:hover svg[alt="git"] {
+  fill: #F05032;
+}
+
+.tech-wrap:hover svg[alt="github"] {
+  fill: #181717;
 }
 
 .about-wrapper,
@@ -532,9 +667,29 @@ main {
     transition: all .3 .3s;
   } */
 
+  main {
+    min-height: calc(98vh - 12rem);
+  }
+
   .logo {
     width: 75%;
     max-width: 800px;
+  }
+
+  #welcome h1 {
+    color: #181717;
+    font-size: 4rem;
+  }
+  
+  #welcome h6 {
+    color: #8B8B8B;
+    font-size: 1.5rem;
+  }
+
+  .tech-wrap {
+    height: 4rem;
+    width: 4rem;
+    margin: .5rem;
   }
 
   #card {
