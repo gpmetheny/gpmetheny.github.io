@@ -330,8 +330,10 @@ main {
 }
 
 .tech-wrap {
-  height: 2rem;
-  width: 2rem;
+  width: 3rem;
+  height: 3rem;
+  max-width: calc(100vw / 10);
+  max-height: calc(100vw / 10);
   border: 1px solid #000;
   border-radius: 50%;
   filter: invert(1);
