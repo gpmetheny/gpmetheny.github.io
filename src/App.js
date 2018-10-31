@@ -5,10 +5,6 @@ import {
   HashRouter
 } from 'react-router-dom';
 import monstera from './img/monstera.svg';
-// import codepen from './img/codepen.svg';
-// import github from './img/github.svg';
-// import linkedin from './img/linkedin.svg';
-// import twitter from './img/twitter.svg';
 import Feature from './Components/Feature';
 import Work from './Components/Work';
 import Resume from './Components/Resume';
