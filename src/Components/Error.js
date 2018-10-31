@@ -17,7 +17,6 @@ class Error extends Component {
 
     // menu
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
-    document.querySelector('nav ul li:nth-child(4) a').classList.add('active-link');
     document.querySelector('nav').classList.remove('menuActive');
   }
 
