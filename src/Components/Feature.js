@@ -44,7 +44,10 @@ class Feature extends Component {
 
             <div className="col-12 d-flex flex-column justify-content-center my-4">
               <h1>Gabbie Metheny</h1>
-              <h6><em>/* full-stack developer */</em></h6>
+              <h6><em>{
+                // eslint-disable-next-line
+                }/* full-stack developer */
+              </em></h6>
             </div>
 
             <div className="col-12 d-flex justify-content-center px-0">
