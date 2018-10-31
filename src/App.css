@@ -425,7 +425,8 @@ main {
 
 .about-wrapper,
 .contact-wrapper,
-.success-wrapper {
+.success-wrapper,
+.error-wrapper {
   min-height: 75vh;
   opacity: 0;
   animation: fadein .7s forwards;
@@ -437,7 +438,8 @@ main {
   animation: fadein .5s 2.5s forwards;
 }
 
-.success-wrapper {
+.success-wrapper,
+.error-wrapper {
   height: 100%;
 }
 

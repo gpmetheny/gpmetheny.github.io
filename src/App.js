@@ -11,8 +11,10 @@ import Resume from './Components/Resume';
 import About from './Components/About';
 import Contact from './Components/Contact';
 import Success from './Components/Success';
+import Error from './Components/Error';
 import './Loading.css';
 import './App.css';
+import Switch from 'react-router-dom/Switch';
 
 class App extends Component {
 componentDidMount() {
@@ -54,12 +56,15 @@ componentDidMount() {
             </nav>
           </header>
           <main>
-            <Route path="/" exact component={Feature} />
-            <Route path="/work" component={Work} />
-            <Route path="/about" component={About} />
-            <Route path="/resume" component={Resume} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/success" component={Success} />
+            <Switch>
+              <Route path="/" exact component={Feature} />
+              <Route path="/work" component={Work} />
+              <Route path="/about" component={About} />
+              <Route path="/resume" component={Resume} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/success" component={Success} />
+              <Route component={Error} />
+            </Switch>
             {/* <About /> */}
           </main>
           <hr />
