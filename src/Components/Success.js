@@ -39,9 +39,6 @@ class Success extends Component {
                   <a href="https://twitter.com/gpmetheny?ref_src=twsrc%5Etfw" className="twitter-follow-button" data-show-count="false">Follow @gpmetheny</a>
                 </div>
               </div>
-
-
-              {/* <h2 className="mb-3">contactMe(<i className="material-icons" style={{color: '#222', fontSize: '1.5rem'}}>done</i>)</h2> */}
               <p>Thanks! I'll be in touch soon!</p>
             </div>
             <div className="mt-5">

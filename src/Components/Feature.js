@@ -7,30 +7,6 @@ class Feature extends Component {
   }
 
   componentDidMount() {
-    // const topTriangles = document.querySelectorAll('.top span');
-    // const bottomTriangles = document.querySelectorAll('.bottom span');
-    // const topColors = [
-    //   '#222', '#666', '#aaa', 'transparent', '#666', '#aaa', 'transparent', 'transparent', 'transparent'
-    // ];
-    // const bottomColors = [
-    //   '#222', 'transparent', 'transparent', 'transparent', 'transparent'
-    // ];
-
-    // (function changeBackground() {
-    //   let index = 0;
-    //   for (index=0; index<topTriangles.length; index++) {
-    //     let randomColorIndex = Math.floor(Math.random() * 9);
-    //     let randomColor = topColors[randomColorIndex];
-    //     topTriangles[index].style.borderTopColor = randomColor;
-    //   }
-      
-    //   for (index=0; index<bottomTriangles.length; index++) {
-    //     let randomColorIndex = Math.floor(Math.random() * 5);
-    //     let randomColor = bottomColors[randomColorIndex];
-    //     bottomTriangles[index].style.borderBottomColor = randomColor;
-    //   }
-    // })()
-
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     document.querySelector('nav').classList.remove('menuActive');
   }

@@ -29,8 +29,6 @@ class Resume extends Component {
             <div className="col-md-7 col-lg-8">
               <div className="mb-3" id="resume-header">
                 <img src={portfolioLogo} alt="Gabbie Metheny | Full-Stack JavaScript Developer" />
-                {/* <h1>Gabbie Metheny</h1>
-                <p>Full-Stack JavaScript Developer</p> */}
               </div>
               <div>
                 <h3 className="pt-md-3">tl;dr</h3>

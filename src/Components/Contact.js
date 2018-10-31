@@ -53,13 +53,6 @@ class Contact extends Component {
               </div>
             </div>
 
-              {/* <div class="row">
-                <div className="col-6">
-                  <a href="https://twitter.com/intent/tweet?screen_name=gpmetheny&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @gpmetheny</a>
-                </div>
-              </div>
-            </div> */}
-
             <form action="https://formspree.io/gabbie.metheny@gmail.com" method="POST">
             
               <div className="form-row text-center">

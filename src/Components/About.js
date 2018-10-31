@@ -32,7 +32,6 @@ class About extends Component {
                   <div className="d-flex align-items-center justify-content-center text-center">
                     <Link to="/resume" className="more">see my resume {'>>'}</Link>
                   </div>
-                  {/* <p className="text-center mt-5"><Link to="/contact" className="more">I'd love to hear from you!</Link></p> */}
                 </div>
               </div>
             </div>
