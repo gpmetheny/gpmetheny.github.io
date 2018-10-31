@@ -3,7 +3,6 @@ body {
   width: 100%;
   color: #222;
   font-family: 'Roboto', sans-serif;
-  /* background-color: #222; */
 }
 
 h1,
@@ -27,7 +26,7 @@ a:hover,
 a:active,
 a:visited {
   font-family: 'Roboto Mono', monospace;
-  color: #222; /* #119328 */
+  color: #222;
   font-weight: bold;
   text-decoration: underline;
   transition: all .3s;
@@ -41,8 +40,6 @@ a:active {
 nav {
   display: flex;
   flex-direction: column;
-  /* padding: .5rem; */
-  /* min-height: 3rem; */
   background: #222;
 }
 
@@ -70,7 +67,6 @@ nav ul li {
   text-transform: lowercase;
   font-family: 'Roboto Mono', monospace;
   border-top: 2px solid #F94E6D;
-  /* padding: .5rem; */
   height: 0rem;
   opacity: 0;
   transition: height .3s .3s, opacity .1s .4s;
@@ -106,7 +102,6 @@ a.active-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* padding: .5rem; */
   align-items: center;
 }
 
@@ -163,13 +158,15 @@ a.active-link {
 .menuActive #icon-top {
   top: .625rem;
   transform: rotateZ(45deg) scaleX(1.2);
-  transition: top .3s, transform .3s .3s; /* moves line down to center before rotating and scaling */
+  /* moves line down to center before rotating and scaling */
+  transition: top .3s, transform .3s .3s;
 }
 
 .menuActive #icon-bottom {
   bottom: .625rem;
   transform: rotateZ(-45deg) scaleX(1.2);
-  transition: bottom .3s, transform .3s .3s; /* moves line up to center before rotating and scaling */
+  /* moves line up to center before rotating and scaling */
+  transition: bottom .3s, transform .3s .3s;
 }
 
 nav.menuActive ul {
@@ -179,13 +176,11 @@ nav.menuActive ul {
 nav.menuActive ul li {
   opacity: 1;
   height: 3rem;
-  /* line-height: 1; */
 }
 
 nav.menuActive ul li a {
   height: 3rem;
   display: block;
-  /* margin-top: .25rem; */
 }
 
 main {
@@ -204,44 +199,16 @@ main {
   opacity: 0;
 }
 
-/* .top span:nth-child(even) {
-  animation: fadein 1s 2s forwards;
-}
-
-.top span:nth-child(odd) {
-  animation: fadein 1s 1.5s forwards;
-}
-
-.bottom span:nth-child(even) {
-  animation: fadein 1s 1s forwards;
-}
-
-.bottom span:nth-child(odd) {
-  animation: fadein 1s 3s forwards;
-} */
-
-/* .group:nth-child(odd) {
-  margin-left: ;
-  margin-right: 1.05rem;
-}
-
-.group:nth-child(even) {
-  margin-left: 1.05rem;
-  margin-right: ;
-} */
-
 .top,
 .bottom {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* margin-right: -4.2rem; */
 }
 
 .bottom {
   margin-top: -3.625rem;
-  /* margin-right: 2.1rem; */
 }
 
 .top {
@@ -277,23 +244,12 @@ main {
   transform: scale(1);
 }
 
-.jumbotron .container {
-  /* background: white; */
-}
-
 #feature,
 #welcome,
-#work,
-/*#about,
-#contact*/ {
+#work {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-
-/* #feature {
-  opacity: 0;
-  animation: fadein .5s forwards;
-} */
 
 #welcome {
   min-height: 75vh;
@@ -337,8 +293,6 @@ main {
   border: 1px solid #000;
   border-radius: 50%;
   filter: invert(1);
-  /* background-color: #FDCAD3; */
-  /* opacity: .8; */
   margin: .25rem;
   transition: .2s;
 }
@@ -417,14 +371,6 @@ main {
   fill: #fff;
 }
 
-/* #nodejs svg {
-  fill: #fff;
-}
-
-#mongodb svg {
-  fill: #fff;
-} */
-
 #html5:hover svg {
   fill: #E34F26;
 }
@@ -487,27 +433,13 @@ main {
 
 #work,
 #resume {
-  /* display: none; */
   opacity: 0;
   animation: fadein .5s 2.5s forwards;
 }
 
-/* #work h1,
-#about h1,
-#contact h1,
-#success h1 {
-  font-family: 'Roboto Mono', monospace;
-} */
-
 .success-wrapper {
   height: 100%;
 }
-
-/* pre {
-  background: #222;
-  color: white;
-  white-space: pre-wrap;
-} */
 
 #bojack-frame {
   height: 90vh;
@@ -587,22 +519,7 @@ main {
   color: #F94E6D;
 }
 
-/* footer ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: space-around;
-} */
-
-/* footer {
-  color: #F94E6D;
-  height: 3rem;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-} */
-
 .social-icon {
-  /* text-align: center; */
   width: 1.5rem;
   height: 1.5rem;
   margin-right: .5rem;
@@ -611,7 +528,6 @@ main {
 
 /* need to add as svg in html before this styling will work */
 .social-icon a path {
-  /* fill: black; */
   transition: .3s ease;
 }
 
@@ -636,7 +552,6 @@ main {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* padding: 0 1rem; */
   }
 
   img#avatar {
@@ -649,7 +564,6 @@ main {
 
   nav ul {
     display: flex;
-    /* justify-content: center; */
     width: auto;
     height: initial;
   }
@@ -665,30 +579,6 @@ main {
     height: initial;
     padding: 1rem .75rem 1rem .75rem;
   }
-
-  /* nav ul {
-    text-align: center;
-    display: block;
-    width: 100%;
-    height: 0rem;
-    transition: all .3s .3s;
-  }
-  
-  nav ul li {
-    font-size: 1.5rem;
-    text-transform: lowercase;
-    font-family: 'Roboto Mono', monospace;
-    border-top: 2px solid #F94E6D;
-    padding: .5rem;
-    height: 0rem;
-    opacity: 0;
-    transition: height .3s .3s, opacity .1s .4s;
-  }
-  
-  nav ul li a {
-    height: 0rem;
-    transition: all .3 .3s;
-  } */
 
   main {
     min-height: calc(98vh - 12rem);
@@ -778,20 +668,6 @@ main {
     font-size: .85rem;
     padding-right: .65rem;
   }
-
-  /* pre {
-    font-size: 1rem;
-  } */
-
-  /* footer {
-    flex-direction: row;
-    justify-content: space-around;
-  } */
-
-  /* footer ul li {
-    margin-left: 1rem;
-    margin-right: 0;
-  } */
 }
 
 @media (min-width: 1000px) {
