@@ -39,10 +39,10 @@ class App extends Component {
               <div className="menu-wrap">
                 <NavLink className="logo-wrap" to="/">
                   <img src={monstera} alt="site logo" id="avatar" className="pr-2" />
-                  <h3>
-                    <span id="regex">^Gab+[iy]e?$</span>{
+                  <h3 aria-label="Gabbie">
+                    <span id="regex" aria-hidden={true}>^Gab+[iy]e?$</span>{
                       // eslint-disable-next-line
-                    }<span id="gabbie">/* Gabbie */</span>
+                    }<span id="gabbie" aria-hidden={true}>/* Gabbie */</span>
                     </h3>
                 </NavLink>
                 <div className="icon-wrap">
