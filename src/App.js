@@ -17,18 +17,18 @@ import './App.css';
 import Switch from 'react-router-dom/Switch';
 
 class App extends Component {
-componentDidMount() {
+  componentDidMount() {
 
-  document.querySelector('nav').addEventListener('click', (e) => {
-    if (e.target.className === 'icon-wrap' || e.target.className === 'icon') {
-      document.querySelector('nav').classList.toggle('menuActive');
-    }
-    if (e.target.tagName === 'A') {
-      document.querySelector('nav').classList.remove('menuActive');
-    }
-  });
-  
-}
+    document.querySelector('nav').addEventListener('click', (e) => {
+      if (e.target.className === 'icon-wrap' || e.target.className === 'icon') {
+        document.querySelector('nav').classList.toggle('menuActive');
+      }
+      if (e.target.tagName === 'A') {
+        document.querySelector('nav').classList.remove('menuActive');
+      }
+    });
+    
+  }
 
   render() {
     return (
@@ -39,7 +39,11 @@ componentDidMount() {
               <div className="menu-wrap">
                 <NavLink className="logo-wrap" to="/">
                   <img src={monstera} alt="site logo" id="avatar" className="pr-2" />
-                  <h3>^Gab+[iy]e?$</h3>
+                  <h3>
+                    <span id="regex">^Gab+[iy]e?$</span>{
+                      // eslint-disable-next-line
+                    }<span id="gabbie">/* Gabbie */</span>
+                    </h3>
                 </NavLink>
                 <div className="icon-wrap">
                   <span className="icon" id="icon-top"></span>

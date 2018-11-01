@@ -56,6 +56,20 @@ nav h3 {
   margin: 0;
 }
 
+nav h3 #gabbie {
+  display: none;
+}
+
+nav h3:hover #regex,
+nav h3:focus #regex {
+  display: none;
+}
+
+nav h3:hover #gabbie,
+nav h3:focus #gabbie {
+  display: unset;
+}
+
 nav ul {
   text-align: center;
   display: block;
