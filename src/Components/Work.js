@@ -58,7 +58,7 @@ class Work extends Component {
           </div>
           <div className="d-flex flex-column align-items-center text-center mb-5 mt-3">
             <div className="row">
-              <h6 className="col-10 offset-1">My JavaScript solution to the classic coder conundrum.</h6>
+              <h6>My JavaScript solution to the classic coder conundrum.</h6>
             </div>
           </div>
           <h2 className="text-center">Websites</h2>
