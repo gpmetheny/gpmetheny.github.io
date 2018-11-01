@@ -132,6 +132,9 @@ a.active-link {
 }
 
 .icon-wrap {
+  border: none;
+  outline: none;
+  background: transparent;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -143,7 +146,7 @@ a.active-link {
 }
 
 .icon {
-  width: 100%;
+  width: 1.5rem;
   height: .25rem;
   background: white;
 }

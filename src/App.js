@@ -46,11 +46,11 @@ class App extends Component {
                     }<span id="gabbie" aria-hidden={true}>/* Gabbie */</span>
                     </h3>
                 </NavLink>
-                <div className="icon-wrap">
+                <button className="icon-wrap">
                   <span className="icon" id="icon-top"></span>
                   <span className="icon" id="icon-center"></span>
                   <span className="icon" id="icon-bottom"></span>
-                </div>
+                </button>
               </div>
               <ul>
                 <li><NavLink to="/about">About</NavLink></li>
