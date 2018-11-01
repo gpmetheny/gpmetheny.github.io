@@ -550,7 +550,6 @@ main {
   margin-left: .5rem;
 }
 
-/* need to add as svg in html before this styling will work */
 .social-icon a path {
   transition: .3s ease;
 }
@@ -558,15 +557,6 @@ main {
 .social-icon a:hover path,
 .social-icon a:focus path {
   fill: #F94E6D;
-}
-
-.social-icon a img {
-  transition: .5s;
-}
-
-.social-icon a:hover img,
-.social-icon a:focus img {
-  transform: scale(1.2);
 }
 
 @media (min-width: 768px) {
