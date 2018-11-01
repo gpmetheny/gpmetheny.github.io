@@ -7,6 +7,9 @@ class Work extends Component {
   }
 
   componentDidMount() {
+    document.querySelector('.logo-wrap').focus();
+    document.querySelector('.logo-wrap').blur();
+    
     let script = document.createElement('script');
     script.src = 'https://static.codepen.io/assets/embed/ei.js';
     script.async = true;

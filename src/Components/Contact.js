@@ -6,6 +6,9 @@ class Contact extends Component {
   }
 
   componentDidMount() {
+    document.querySelector('.logo-wrap').focus();
+    document.querySelector('.logo-wrap').blur();
+    
     // twitter script
     let script = document.createElement('script');
     script.src = 'https://platform.twitter.com/widgets.js';

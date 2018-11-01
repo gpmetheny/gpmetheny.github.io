@@ -2,11 +2,21 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
 class Feature extends Component {
+  
   componentWillMount() {
     window.scrollTo(0, 0);
   }
 
   componentDidMount() {
+    document.querySelector('.logo-wrap').focus();
+    document.querySelector('.logo-wrap').blur();
+    
+    // document.activeElement.blur();
+    // document.querySelector('body').focus();
+    // window.focus();
+    // document.querySelector('.logo-wrap').setAttribute("tabindex", "-1");
+    // document.querySelector('.logo-wrap').style.outline = 'none';
+    
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     document.querySelector('nav').classList.remove('menuActive');
   }
