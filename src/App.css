@@ -56,17 +56,17 @@ nav h3 {
   margin: 0;
 }
 
-nav h3 #gabbie {
+.logo-wrap #gabbie {
   display: none;
 }
 
-nav h3:hover #regex,
-nav h3:focus #regex {
+.logo-wrap:hover #regex,
+.logo-wrap:focus #regex {
   display: none;
 }
 
-nav h3:hover #gabbie,
-nav h3:focus #gabbie {
+.logo-wrap:hover #gabbie,
+.logo-wrap:focus #gabbie {
   display: unset;
 }
 
