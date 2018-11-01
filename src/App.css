@@ -23,6 +23,7 @@ ul, li {
 
 a,
 a:hover,
+a:focus,
 a:active,
 a:visited {
   font-family: 'Roboto Mono', monospace;
@@ -33,6 +34,7 @@ a:visited {
 }
 
 a:hover,
+a:focus,
 a:active {
   color: #F94E6D;
 }
@@ -79,6 +81,7 @@ nav ul li a {
 
 nav a,
 nav a:hover,
+nav a:focus,
 nav a:active,
 nav a:visited {
   font-weight: normal;
@@ -90,7 +93,8 @@ nav a:visited {
   color: white;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
   color: #F94E6D;
 }
 
@@ -240,7 +244,9 @@ main {
 }
 
 .bottom span:hover,
-.top span:hover {
+.bottom span:focus,
+.top span:hover,
+.top span:focus {
   transform: scale(1);
 }
 
@@ -277,7 +283,8 @@ main {
   display: none;
 }
 
-#welcome .more:hover span {
+#welcome .more:hover span,
+#welcome .more:focus span {
   display: inline;
 }
 
@@ -303,7 +310,8 @@ main {
   transition: fill .2s;
 }
 
-.tech-wrap:hover {
+.tech-wrap:hover,
+.tech-wrap:focus {
   filter: invert(0);
 }
 
@@ -371,55 +379,68 @@ main {
   fill: #fff;
 }
 
-#html5:hover svg {
+#html5:hover svg
+#html5:focus svg {
   fill: #E34F26;
 }
 
-#css3:hover svg {
+#css3:hover svg,
+#css3:focus svg {
   fill: #1572B6;
 }
 
-#bootstrap:hover svg {
+#bootstrap:hover svg,
+#bootstrap:focus svg {
   fill: #563D7C;
 }
 
-#javascript:hover svg {
+#javascript:hover svg,
+#javascript:focus svg {
   fill: #F7DF1E;
 }
 
-#jquery:hover svg {
+#jquery:hover svg,
+#jquery:focus svg {
   fill: #0769AD;
 }
 
-#react:hover svg {
+#react:hover svg,
+#react:focus svg {
   fill: #61DAFB;
 }
 
-#android:hover svg {
+#android:hover svg,
+#android:focus svg {
   fill: #A4C639;
 }
 
-#nodejs:hover svg {
+#nodejs:hover svg,
+#nodejs:focus svg {
   fill: #339933;
 }
 
-#mongodb:hover svg {
+#mongodb:hover svg,
+#mongodb:focus svg {
   fill: #47A248;
 }
 
-#npm:hover svg {
+#npm:hover svg,
+#npm:focus svg {
   fill: #CB3837;
 }
 
-#python:hover svg {
+#python:hover svg,
+#python:focus svg {
   fill: #3776AB;
 }
 
-#git:hover svg {
+#git:hover svg,
+#git:focus svg {
   fill: #F05032;
 }
 
-#github:hover svg {
+#github:hover svg,
+#github:focus svg {
   fill: #181717;
 }
 
@@ -453,7 +474,8 @@ main {
   text-decoration: none !important;
 }
 
-.more:hover {
+.more:hover,
+.more:focus {
   background-color: #222;
 }
 
@@ -533,7 +555,8 @@ main {
   transition: .3s ease;
 }
 
-.social-icon a:hover path {
+.social-icon a:hover path,
+.social-icon a:focus path {
   fill: #F94E6D;
 }
 
@@ -541,7 +564,8 @@ main {
   transition: .5s;
 }
 
-.social-icon a:hover img {
+.social-icon a:hover img,
+.social-icon a:focus img {
   transform: scale(1.2);
 }
 
