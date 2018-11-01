@@ -152,6 +152,10 @@ a.active-link {
   cursor: pointer;
 }
 
+.icon-wrap:hover {
+  outline: none;
+}
+
 .icon {
   width: 1.5rem;
   height: .25rem;
