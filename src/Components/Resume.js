@@ -64,8 +64,8 @@ class Resume extends Component {
                   </div>
                   <div className="d-flex">
                     <ul className="d-flex flex-column mx-auto p-2">
-                      <li><strong><i class="material-icons">phone</i><a href="tel:+1-630-618-1915">(630) 618-1915</a></strong></li>
-                      <li><i class="material-icons">mail_outline</i><Link to="/contact">gabbie.metheny@gmail.com</Link></li>
+                      <li><strong><i className="material-icons">phone</i><a href="tel:+1-630-618-1915">(630) 618-1915</a></strong></li>
+                      <li><i className="material-icons">mail_outline</i><Link to="/contact">gabbie.metheny@gmail.com</Link></li>
                       <li><Link to="/">https://gpmetheny.github.io</Link></li>
                     </ul>
                   </div>
