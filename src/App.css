@@ -40,7 +40,7 @@ a:active {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   width: 100%;
   display: flex;
   flex-direction: column;
