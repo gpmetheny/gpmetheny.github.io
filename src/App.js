@@ -77,7 +77,7 @@ class App extends Component {
           <footer className="container py-3">
           {/* fix footer! put in container, row, columns dependent on screen size, add in some padding-top and -bottom
           check styles applied in App.css */}
-            <div className="row d-flex flex-column-reverse flex-md-row justify-content-around">
+            <div className="row d-flex flex-column-reverse flex-md-row justify-content-between">
               <span className="text-center py-1"><small>&copy; 2018 Gabbie Metheny</small></span>
               <div className="py-1">
                 <ul className="d-flex justify-content-center">
