@@ -163,6 +163,7 @@ a.active-link {
 }
 
 #icon-center {
+  margin: .375rem 0;
   transition: opacity .3s .2s;
 }
 
