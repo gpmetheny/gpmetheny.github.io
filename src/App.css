@@ -48,7 +48,7 @@ nav {
   z-index: 300;
 }
 
-img#avatar {
+#monstera {
   height: 1.5rem;
 }
 
@@ -601,7 +601,7 @@ main {
     align-items: center;
   }
 
-  img#avatar {
+  #monstera {
     height: 1.75rem;
   }
 
