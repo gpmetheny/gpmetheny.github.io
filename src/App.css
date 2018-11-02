@@ -608,11 +608,6 @@ main {
   transition: .3s ease;
 }
 
-/* focus style only */
-.social-icon a:focus path {
-  fill: #F94E6D;
-}
-
 .social-icon:hover #twitter-icon path {
   fill: #1DA1F2;
 }
@@ -627,6 +622,10 @@ main {
 
 .social-icon:hover #codepen-icon path {
   fill: #000000;
+}
+
+.social-icon:hover #treehouse-icon path {
+  fill: #5FCF80;
 }
 
 @media (min-width: 768px) {
@@ -739,11 +738,11 @@ main {
     width: 100%;
   }
 
-  #card .social-icon {
+  /* #card .social-icon {
     width: 2rem;
     height: 2rem;
     margin: 0;
-  }
+  } */
 
   #card-monstera {
     width: 2rem;
