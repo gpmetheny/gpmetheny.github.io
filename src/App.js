@@ -42,7 +42,7 @@ class App extends Component {
                   </svg>
                   <h3>
                     <span className="sr-only">Home</span>
-                    <span id="regex" aria-hidden={true}>^Gab+[iy]e?$</span>{
+                    <span id="regex" aria-hidden={true}>&nbsp;Gab+[iy]e?&nbsp;</span>{
                       // eslint-disable-next-line
                     }<span id="gabbie" aria-hidden={true}>/* Gabbie */</span>
                     </h3>
