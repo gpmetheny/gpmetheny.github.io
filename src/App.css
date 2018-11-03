@@ -410,68 +410,55 @@ main {
   fill: #fff;
 }
 
-#html5:hover svg
-#html5:focus svg {
+#html5:hover svg {
   fill: #E34F26;
 }
 
-#css3:hover svg,
-#css3:focus svg {
+#css3:hover svg {
   fill: #1572B6;
 }
 
-#bootstrap:hover svg,
-#bootstrap:focus svg {
+#bootstrap:hover svg {
   fill: #563D7C;
 }
 
-#javascript:hover svg,
-#javascript:focus svg {
+#javascript:hover svg {
   fill: #F7DF1E;
 }
 
-#jquery:hover svg,
-#jquery:focus svg {
+#jquery:hover svg {
   fill: #0769AD;
 }
 
-#react:hover svg,
-#react:focus svg {
+#react:hover svg {
   fill: #61DAFB;
 }
 
-#android:hover svg,
-#android:focus svg {
+#android:hover svg {
   fill: #A4C639;
 }
 
-#nodejs:hover svg,
-#nodejs:focus svg {
+#nodejs:hover svg {
   fill: #339933;
 }
 
-#mongodb:hover svg,
-#mongodb:focus svg {
+#mongodb:hover svg {
   fill: #47A248;
 }
 
-#npm:hover svg,
-#npm:focus svg {
+#npm:hover svg {
   fill: #CB3837;
 }
 
-#python:hover svg,
-#python:focus svg {
+#python:hover svg {
   fill: #3776AB;
 }
 
-#git:hover svg,
-#git:focus svg {
+#git:hover svg {
   fill: #F05032;
 }
 
-#github:hover svg,
-#github:focus svg {
+#github:hover svg {
   fill: #181717;
 }
 
