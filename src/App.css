@@ -571,23 +571,23 @@ footer .row {
   transition: .3s ease;
 }
 
-.social-icon:hover #twitter-icon path {
+#twitter-icon:hover path {
   fill: #1DA1F2;
 }
 
-.social-icon:hover #linkedin-icon path {
+#linkedin-icon:hover path {
   fill: #0077B5;
 }
 
-.social-icon:hover #github-icon path {
+#github-icon:hover path {
   fill: #181717;
 }
 
-.social-icon:hover #codepen-icon path {
+#codepen-icon.social-icon:hover path {
   fill: #000000;
 }
 
-.social-icon:hover #treehouse-icon path {
+#treehouse-icon:hover path {
   fill: #5FCF80;
 }
 
