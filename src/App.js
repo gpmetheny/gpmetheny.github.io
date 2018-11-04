@@ -15,7 +15,6 @@ import Contact from './Components/Contact';
 import Success from './Components/Success';
 import Error from './Components/Error';
 
-import './Loading.css';
 import './App.css';
 
 class App extends Component {

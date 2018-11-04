@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
+import '../Loading.css';
+
 class Work extends Component {
   componentWillMount() {
     window.scrollTo(0, 0);

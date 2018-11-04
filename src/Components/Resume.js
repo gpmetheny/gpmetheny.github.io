@@ -10,6 +10,8 @@ import angry_jack from '../img/angry_jack.jpg';
 import portfolioLogo from '../img/portfolio-logo.svg';
 import skills from '../img/skills.svg';
 
+import '../Loading.css';
+
 class Resume extends Component {
   componentWillMount() {
     window.scrollTo(0, 0);
