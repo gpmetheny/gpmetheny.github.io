@@ -24,7 +24,6 @@ import './App.css';
 
 class App extends Component {
   componentDidMount() {
-
     document.querySelector('nav').addEventListener('click', (e) => {
       if (e.target.className === 'icon-wrap' || e.target.className === 'icon') {
         document.querySelector('nav').classList.toggle('menuActive');
@@ -33,7 +32,6 @@ class App extends Component {
         document.querySelector('nav').classList.remove('menuActive');
       }
     });
-    
   }
 
   render() {
@@ -42,7 +40,9 @@ class App extends Component {
         <div className="App">
           <header>
             <nav>
+
               <div className="menu-wrap">
+
                 <NavLink className="logo-wrap" to="/">
                   <SVG
                     className="pr-2"
@@ -56,30 +56,32 @@ class App extends Component {
                       }
                     ]}
                   />
-                  {/* <svg xmlns="http://www.w3.org/2000/svg"  height="24"  >
-                    <path  />
-                  </svg> */}
                   <h3>
                     <span className="sr-only">Home</span>
                     <span id="regex" aria-hidden={true}>&nbsp;Gab+[iy]e?&nbsp;</span>{
                       // eslint-disable-next-line
                     }<span id="gabbie" aria-hidden={true}>/* Gabbie */</span>
                     </h3>
-                </NavLink>
+                </NavLink> {/* end logo wrap */}
+
                 <button className="icon-wrap">
                   <span className="icon" id="icon-top"></span>
                   <span className="icon" id="icon-center"></span>
                   <span className="icon" id="icon-bottom"></span>
-                </button>
-              </div>
+                </button> {/* end icon wrap */}
+
+              </div> {/* end menu wrap */}
+
               <ul>
                 <li><NavLink to="/about">About</NavLink></li>
                 <li><NavLink to="/work">Work</NavLink></li>
                 <li><NavLink to="/resume">Resume</NavLink></li>
                 <li><NavLink to="/contact">Contact</NavLink></li>
               </ul>
+
             </nav>
           </header>
+
           <main>
             <Switch>
               <Route path="/" exact component={Feature} />
@@ -90,14 +92,14 @@ class App extends Component {
               <Route path="/success" component={Success} />
               <Route component={Error} />
             </Switch>
-            {/* <About /> */}
           </main>
+
           <hr />
           <footer className="container py-3">
-          {/* fix footer! put in container, row, columns dependent on screen size, add in some padding-top and -bottom
-          check styles applied in App.css */}
             <div className="row d-flex flex-column-reverse flex-md-row justify-content-between">
+
               <span className="text-center py-1"><small>&copy; 2018 Gabbie Metheny</small></span>
+
               <div className="py-1">
                 <ul className="d-flex justify-content-center">
                   {socialList.map((social) => {
@@ -115,8 +117,9 @@ class App extends Component {
                     return null;
                   })}
                 </ul>
-              </div>
-            </div>
+              </div> {/* end social wrapper */}
+
+            </div> {/* end row */}
           </footer>
         </div>
       </HashRouter>
