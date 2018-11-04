@@ -7,6 +7,7 @@ class TechIcon extends Component {
       <div className="tech-wrap" id={this.props.id}>
         <SVG
           id={this.props.id}
+          title={this.props.id}
           circles={this.props.circles}
           paths={this.props.paths}
         />
