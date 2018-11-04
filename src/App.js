@@ -101,15 +101,18 @@ class App extends Component {
               <div className="py-1">
                 <ul className="d-flex justify-content-center">
                   {socialList.map((social) => {
-                    return (
-                      <SocialIcon
-                        href={social.href}
-                        key={social.id}
-                        id={social.id}
-                        paths={social.paths}
-                        circles={social.circles}
-                      />
-                    );
+                    if (social.id !== 'treehouse-icon') {
+                      return (
+                        <SocialIcon
+                          href={social.href}
+                          key={social.id}
+                          id={social.id}
+                          paths={social.paths}
+                          circles={social.circles}
+                        />
+                      );
+                    }
+                    return null;
                   })}
                 </ul>
               </div>
