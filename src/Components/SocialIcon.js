@@ -7,7 +7,7 @@ class SocialIcon extends Component {
       <li className="social-icon" id={this.props.id}>
         <a href={this.props.href} target="_blank" rel="noopener noreferrer">
           <SVG
-            id={this.props.id}
+            alt={this.props.id}
             circles={this.props.circles}
             paths={this.props.paths}
           />

@@ -4,9 +4,12 @@ class SVG extends Component {
   render() {
     return (
       <svg
-        viewBox="0 0 24 24"
+        viewBox={this.props.viewBox || "0 0 24 24"}
+        height={this.props.height}
         xmlns="http://www.w3.org/2000/svg"
-        alt={this.props.id}
+        alt={this.props.alt}
+        className={this.props.className}
+        id={this.props.id}
       >
 
         {/* title */}
