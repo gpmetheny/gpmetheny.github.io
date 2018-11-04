@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Switch from 'react-router-dom/Switch';
 
+import Footer from './Components/Footer';
 import Feature from './Components/Feature';
 import Work from './Components/Work';
 import Resume from './Components/Resume';
@@ -15,9 +16,6 @@ import Success from './Components/Success';
 import Error from './Components/Error';
 
 import SVG from './Components/SVG';
-import SocialIcon from './Components/SocialIcon';
-
-import socialList from './SVG/socialList';
 
 import './Loading.css';
 import './App.css';
@@ -95,32 +93,9 @@ class App extends Component {
           </main>
 
           <hr />
-          <footer className="container py-3">
-            <div className="row d-flex flex-column-reverse flex-md-row justify-content-between">
+          
+          <Footer />
 
-              <span className="text-center py-1"><small>&copy; 2018 Gabbie Metheny</small></span>
-
-              <div className="py-1">
-                <ul className="d-flex justify-content-center">
-                  {socialList.map((social) => {
-                    if (social.id !== 'treehouse-icon') {
-                      return (
-                        <SocialIcon
-                          href={social.href}
-                          key={social.id}
-                          id={social.id}
-                          paths={social.paths}
-                          circles={social.circles}
-                        />
-                      );
-                    }
-                    return null;
-                  })}
-                </ul>
-              </div> {/* end social wrapper */}
-
-            </div> {/* end row */}
-          </footer>
         </div>
       </HashRouter>
     );
