@@ -15,12 +15,6 @@ class Feature extends Component {
     document.querySelector('.logo-wrap').focus();
     document.querySelector('.logo-wrap').blur();
     
-    // document.activeElement.blur();
-    // document.querySelector('body').focus();
-    // window.focus();
-    // document.querySelector('.logo-wrap').setAttribute("tabindex", "-1");
-    // document.querySelector('.logo-wrap').style.outline = 'none';
-    
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     document.querySelector('nav').classList.remove('menuActive');
   }
@@ -28,7 +22,6 @@ class Feature extends Component {
   render() {
     return (
       <div className="jumbotron jumbotron-fluid d-flex content-wrapper" id="feature">
-        
         <div className="container-fluid d-flex flex-column align-items-center justify-content-center text-center align-self-center" id="welcome">
           <div className="row w-100">
 
@@ -73,12 +66,15 @@ class Feature extends Component {
             </div>
             
             <div className="col-12 my-5">
-              <Link to="/work" className="more">see my work<span> {'>>'}</span></Link>
+              <Link to="/work" className="more">
+                see my work
+                <span> {'>>'}</span>
+              </Link>
             </div>
-          </div>
-        </div>
-        
-      </div>
+
+          </div> {/* end row */}
+        </div> {/* end welcome */}
+      </div> /* end feature */
     );
   }
 }
