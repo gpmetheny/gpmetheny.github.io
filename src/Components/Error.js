@@ -9,23 +9,11 @@ class Error extends Component {
   componentDidMount() {
     document.querySelector('.logo-wrap').focus();
     document.querySelector('.logo-wrap').blur();
-    // twitter script
-    /* let script = document.createElement('script');
-    script.src = 'https://platform.twitter.com/widgets.js';
-    script.charset = 'utf-8';
-    script.async = true;
-    script.id = "twitterScript";
-    document.querySelector('body').appendChild(script); */
 
     // menu
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     document.querySelector('nav').classList.remove('menuActive');
   }
-
-  /* componentWillUnmount() {
-    let script = document.querySelector('#twitterScript');
-    document.querySelector('body').removeChild(script);
-  } */
 
   render() {
     return (
@@ -36,9 +24,6 @@ class Error extends Component {
 
               <div className="d-flex flex-column align-items-center justify-content-between mb-3">
                 <h2 className="text-center">error()</h2>
-                {/* <div className="twitter-wrap">
-                  <a href="https://twitter.com/gpmetheny?ref_src=twsrc%5Etfw" className="twitter-follow-button" data-show-count="false">Follow @gpmetheny</a>
-                </div> */}
               </div>
               <p>Not Found</p>
             </div>
