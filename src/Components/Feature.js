@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import TechIcon from './SVG/TechIcon';
+import TechIcon from './TechIcon';
 
 class Feature extends Component {
   

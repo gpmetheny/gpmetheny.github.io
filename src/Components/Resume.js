@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import SocialIcon from './SVG/SocialIcon';
+import SocialIcon from './SocialIcon';
 import angry_jack from '../img/angry_jack.jpg';
 import monstera from '../img/monstera.svg';
 import portfolioLogo from '../img/portfolio-logo.svg';

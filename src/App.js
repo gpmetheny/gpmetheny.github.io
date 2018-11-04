@@ -12,7 +12,7 @@ import About from './Components/About';
 import Contact from './Components/Contact';
 import Success from './Components/Success';
 import Error from './Components/Error';
-import SocialIcon from './Components/SVG/SocialIcon';
+import SocialIcon from './Components/SocialIcon';
 import './Loading.css';
 import './App.css';
 
