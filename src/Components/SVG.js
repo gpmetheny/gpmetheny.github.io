@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 
 class SVG extends Component {
+  static defaultProps = { viewBox: "0 0 24 24" };
+
   render() {
     return (
       <svg
-        viewBox={this.props.viewBox || "0 0 24 24"}
+        viewBox={this.props.viewBox}
         height={this.props.height}
         xmlns="http://www.w3.org/2000/svg"
         alt={this.props.alt}
