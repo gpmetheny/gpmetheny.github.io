@@ -14,8 +14,9 @@ class Footer extends Component {
 
           <div className="py-1">
             <ul className="d-flex justify-content-center">
-              {socialList.map((social) => {
-                if (social.id !== 'treehouse-icon') {
+              {socialList
+                .filter((social) => social.id !== 'treehouse-icon')
+                .map((social) => {
                   return (
                     <SocialIcon
                       href={social.href}
@@ -25,9 +26,8 @@ class Footer extends Component {
                       circles={social.circles}
                     />
                   );
-                }
-                return null;
-              })}
+                })
+              }
             </ul>
           </div> {/* end social wrapper */}
 
