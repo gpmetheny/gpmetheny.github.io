@@ -34,8 +34,9 @@ class Feature extends Component {
             </div>
 
             <div className="col-12 d-flex justify-content-center px-0">
-              {techList.map((tech, index) => {
-                if (index <= techList.length / 2) {
+              {techList
+                .filter((tech, index) => index <= techList.length / 2)
+                .map((tech) => {
                   return (
                     <TechIcon
                       key={tech.id}
@@ -44,14 +45,14 @@ class Feature extends Component {
                       circles={tech.circles}
                     />
                   );
-                }
-                return null;
-              })}
+                })
+              }
             </div>
 
             <div className="col-12 d-flex justify-content-center px-0">
-              {techList.map((tech, index) => {
-                if (index > techList.length / 2) {
+              {techList
+                .filter((tech, index) => index > techList.length / 2)
+                .map((tech) => {
                   return (
                     <TechIcon
                       key={tech.id}
@@ -60,9 +61,8 @@ class Feature extends Component {
                       circles={tech.circles}
                     />
                   );
-                }
-                return null;
-              })}
+                })
+              }
             </div>
             
             <div className="col-12 my-5">
