@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://gpmetheny.github.io",
   "dependencies": {
-    "gh-pages": "^1.1.0",
+    "gh-pages": "^2.0.1",
     "prop-types": "^15.6.2",
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.1",
