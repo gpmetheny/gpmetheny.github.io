@@ -1,7 +1,24 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+
 import SVG from './SVG';
 
 class SocialIcon extends Component {
+  static propTypes = {
+    id: PropTypes.string.isRequired,
+    href: PropTypes.string.isRequired,
+    circles: PropTypes.arrayOf(PropTypes.shape({
+      fill: PropTypes.string,
+      cx: PropTypes.string.isRequired,
+      cy: PropTypes.string.isRequired,
+      r: PropTypes.string.isRequired
+    })),
+    paths: PropTypes.arrayOf(PropTypes.shape({
+      fill: PropTypes.string,
+      d: PropTypes.string.isRequired
+    }))
+  };
+
   render() {
     return (
       <li className="social-icon" id={this.props.id}>
@@ -11,9 +28,6 @@ class SocialIcon extends Component {
             circles={this.props.circles}
             paths={this.props.paths}
           />
-          {/* <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path fill={this.props.fill} d={this.props.d}/>
-          </svg> */}
         </a>
       </li>
     );
