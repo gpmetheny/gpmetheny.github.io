@@ -7,7 +7,7 @@ import socialList from '../SVG/socialList';
 class Footer extends Component {
   render() {
     return (
-      <footer className="container py-3">
+      <footer className="container pb-3">
         <div className="row d-flex flex-column-reverse flex-md-row justify-content-between">
 
           <span className="text-center py-1"><small>&copy; 2018 Gabbie Metheny</small></span>

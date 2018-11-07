@@ -36,7 +36,7 @@ class App extends Component {
           
           <Header />
 
-          <main>
+          <main className="d-flex flex-column align-items-center justify-content-center">
             <Switch>
               <Route path="/" exact component={Feature} />
               <Route path="/work" component={Work} />

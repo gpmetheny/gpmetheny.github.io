@@ -31,7 +31,7 @@ class Work extends Component {
   render() {
     return (
       <div className="jumbotron jumbotron-fluid content-wrapper">
-        <div id="loading">
+        <div className="container" id="loading">
           <div className="circle"></div>
           <div className="circle"></div>
           <div className="circle"></div>
