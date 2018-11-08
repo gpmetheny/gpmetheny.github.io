@@ -6,10 +6,6 @@ import TechIcon from './TechIcon';
 import techList from '../SVG/techList';
 
 class Feature extends Component {
-  
-  componentWillMount() {
-    window.scrollTo(0, 0);
-  }
 
   componentDidMount() {
     document.querySelector('.logo-wrap').focus();
@@ -17,6 +13,10 @@ class Feature extends Component {
     
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     document.querySelector('nav').classList.remove('menuActive');
+  }
+  
+  componentWillUnmount() {
+    window.scrollTo(0, 0);
   }
 
   render() {

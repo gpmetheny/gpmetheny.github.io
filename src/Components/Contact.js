@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
 
 class Contact extends Component {
-  componentWillMount() {
-    window.scrollTo(0, 0);
-  }
-
   componentDidMount() {
     document.querySelector('.logo-wrap').focus();
     document.querySelector('.logo-wrap').blur();
@@ -42,6 +38,7 @@ class Contact extends Component {
   componentWillUnmount() {
     let script = document.querySelector('#twitterScript');
     document.querySelector('body').removeChild(script);
+    window.scrollTo(0, 0);
   }
 
   render() {

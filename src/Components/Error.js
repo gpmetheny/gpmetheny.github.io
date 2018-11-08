@@ -2,10 +2,6 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
 class Error extends Component {
-  componentWillMount() {
-    window.scrollTo(0, 0);
-  }
-
   componentDidMount() {
     document.querySelector('.logo-wrap').focus();
     document.querySelector('.logo-wrap').blur();
@@ -13,6 +9,10 @@ class Error extends Component {
     // menu
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     document.querySelector('nav').classList.remove('menuActive');
+  }
+
+  componentWillUnmount() {
+    window.scrollTo(0, 0);
   }
 
   render() {

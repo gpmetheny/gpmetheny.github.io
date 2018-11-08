@@ -4,10 +4,6 @@ import {Link} from 'react-router-dom';
 import '../Loading.css';
 
 class Work extends Component {
-  componentWillMount() {
-    window.scrollTo(0, 0);
-  }
-
   componentDidMount() {
     document.querySelector('.logo-wrap').focus();
     document.querySelector('.logo-wrap').blur();
@@ -26,6 +22,7 @@ class Work extends Component {
   componentWillUnmount() {
     let script = document.querySelector('#codepenScript');
     document.querySelector('body').removeChild(script);
+    window.scrollTo(0, 0);
   }
 
   render() {

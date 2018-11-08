@@ -3,10 +3,6 @@ import {Link} from 'react-router-dom';
 import angry_jack from '../img/angry_jack.jpg';
 
 class About extends Component {
-  componentWillMount() {
-    window.scrollTo(0, 0);
-  }
-
   componentDidMount() {
     document.querySelector('.logo-wrap').focus();
     document.querySelector('.logo-wrap').blur();
@@ -16,6 +12,10 @@ class About extends Component {
     document.querySelector('nav').classList.remove('menuActive');
   }
   
+  componentWillUnmount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div className="jumbotron jumbotron-fluid content-wrapper" id="about">
