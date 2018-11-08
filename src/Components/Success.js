@@ -41,7 +41,7 @@ class Success extends Component {
               </div>
               <p>Thanks! I'll be in touch soon!</p>
             </div>
-            <div className="mt-5">
+            <div className="my-5">
               <Link to="/work" className="more">{'<<'} back to my work</Link>
             </div>
           </div>

@@ -27,7 +27,7 @@ class Error extends Component {
               </div>
               <p>Not Found</p>
             </div>
-            <div className="mt-5">
+            <div className="my-5">
               <Link to="/work" className="more">{'<<'} back to my work</Link>
             </div>
           </div>

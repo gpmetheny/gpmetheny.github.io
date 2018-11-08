@@ -27,10 +27,10 @@ class Feature extends Component {
 
             <div className="col-12 d-flex flex-column justify-content-center my-4">
               <h1>Gabbie Metheny</h1>
-              <h6><em>{
+              <h5><em>{
                 // eslint-disable-next-line
                 }/* full-stack developer */
-              </em></h6>
+              </em></h5>
             </div>
 
             <div className="col-12 d-flex justify-content-center px-0">
@@ -49,7 +49,7 @@ class Feature extends Component {
               }
             </div>
 
-            <div className="col-12 d-flex justify-content-center px-0">
+            <div className="col-12 d-flex justify-content-center px-0 mb-5">
               {techList
                 .filter((tech, index) => index > techList.length / 2)
                 .map((tech) => {

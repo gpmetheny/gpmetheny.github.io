@@ -78,7 +78,7 @@ class Work extends Component {
             </div>
           </div>
           <div className="d-flex flex-column align-items-center text-center mb-5 mt-3">
-            <div className="row">
+            <div className="row my-5">
               <p><Link to="/about" className="more">more about my work {'>>'}</Link></p>
             </div>
           </div>
