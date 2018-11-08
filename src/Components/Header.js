@@ -6,6 +6,27 @@ import SVG from './SVG';
 import monstera from '../SVG/logo';
 
 class Header extends Component {
+  componentDidMount() {
+    const nav = document.querySelector('nav');
+
+    nav.addEventListener('click', (e) => {
+      if (e.target.className === 'icon-wrap' ||
+          e.target.className === 'icon') {
+        nav.classList.toggle('menuActive');
+      }
+      
+      if (e.target.tagName === 'A') {
+        nav.classList.remove('menuActive');
+      }
+    });
+
+    nav.addEventListener('focusout', () => {
+      if (nav.classList.contains('menuActive')) {
+        nav.classList.remove('menuActive');
+      }
+    });
+  }
+
   render() {
     return (
       <header>

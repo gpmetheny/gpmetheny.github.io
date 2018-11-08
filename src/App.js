@@ -18,17 +18,6 @@ import Error from './Components/Error';
 import './App.css';
 
 class App extends Component {
-  componentDidMount() {
-    document.querySelector('nav').addEventListener('click', (e) => {
-      if (e.target.className === 'icon-wrap' || e.target.className === 'icon') {
-        document.querySelector('nav').classList.toggle('menuActive');
-      }
-      if (e.target.tagName === 'A') {
-        document.querySelector('nav').classList.remove('menuActive');
-      }
-    });
-  }
-
   render() {
     return (
       <HashRouter>
