@@ -15,9 +15,9 @@ class Header extends Component {
         nav.classList.toggle('menuActive');
       }
       
-      if (e.target.tagName === 'A') {
-        nav.classList.remove('menuActive');
-      }
+      // if (e.target.tagName === 'A') {
+      //   nav.classList.remove('menuActive');
+      // }
     });
 
     nav.addEventListener('focusout', () => {
