@@ -10,18 +10,16 @@ class Header extends Component {
     const nav = document.querySelector('nav');
 
     nav.addEventListener('click', (e) => {
-      if (e.target.className === 'icon-wrap' ||
-          e.target.className === 'icon') {
+      if (e.target.className === 'icon' ||
+          e.target.className === 'icon-wrap') {
         nav.classList.toggle('menuActive');
       }
-      
-      // if (e.target.tagName === 'A') {
-      //   nav.classList.remove('menuActive');
-      // }
     });
 
-    nav.addEventListener('focusout', () => {
-      if (nav.classList.contains('menuActive')) {
+    nav.addEventListener('focusout', (e) => {
+      // will not fire if focus is on link, button, input, etc.
+      // prevents interfering w/ default behavior (ff mobile bug)
+      if (e.relatedTarget === null) {
         nav.classList.remove('menuActive');
       }
     });
