@@ -8,6 +8,7 @@ class Work extends Component {
     pensLoaded: false
   }
 
+  // https://blog.codepen.io/documentation/features/embedded-pens/
   __CodePenIFrameAddedToPage() {
     console.log("codepens embedded!");
     this.setState({
@@ -25,21 +26,25 @@ class Work extends Component {
     script.id = "codepenScript";
     document.querySelector('body').appendChild(script);
 
+    this.__CodePenIFrameAddedToPage();
+
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     document.querySelector('nav ul li:nth-child(2) a').classList.add('active-link');
     document.querySelector('nav').classList.remove('menuActive');
-
-    this.__CodePenIFrameAddedToPage();
   }
 
+  // add error handling for if pens never load
   componentDidUpdate() {
     if (!!this.state.pensLoaded) {
       setTimeout(() => {
-        // instead, toggle classes for loading, circles, and work
         document.querySelector('.loading').style.opacity = 0;
-        document.querySelector('.loading').style.transition = 'opacity .3s';
         document.querySelector('#work').style.opacity = 1;
-        document.querySelector('#work').style.transition = 'opacity .3s';
+        document.querySelectorAll('.circle').forEach((circle) => {
+          circle.style.animation = 'unset'
+        });
+        document.querySelector('.loading').style.zIndex = -1000;
+        console.log('loader removed!');
+        // approx. time needed for pens to load once they're technically embedded
       }, 3000);
     }
   }
@@ -49,10 +54,6 @@ class Work extends Component {
     document.querySelector('body').removeChild(script);
     window.scrollTo(0, 0);
   }
-
-  // <div class="cp_embed_wrapper">
-    // <iframe id="cp_embed_bLJVBK"/>
-  //</div>
 
   render() {
     return (

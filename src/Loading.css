@@ -12,6 +12,7 @@
   position: fixed;
   left: calc(50% - 7.5rem);
   right: calc(50% - 7.5rem);
+  transition: opacity .3s;
   /* animation: fadeout .25s 2.5s ease-in forwards; */
 }
 
