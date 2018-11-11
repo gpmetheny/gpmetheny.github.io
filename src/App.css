@@ -468,8 +468,8 @@ main {
 
 #work,
 #resume {
-  opacity: 0;
-  animation: fadein .5s 2.5s forwards;
+  opacity: .1;
+  /* animation: fadein .5s 2.5s forwards; */
 }
 
 /* #animations .pens {

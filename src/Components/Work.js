@@ -4,6 +4,17 @@ import {Link} from 'react-router-dom';
 import '../Loading.css';
 
 class Work extends Component {
+  state = {
+    pensLoaded: false
+  }
+
+  __CodePenIFrameAddedToPage() {
+    console.log("codepens embedded!");
+    this.setState({
+      pensLoaded: true
+    });
+  }
+
   componentDidMount() {
     document.querySelector('.logo-wrap').focus();
     document.querySelector('.logo-wrap').blur();
@@ -17,6 +28,20 @@ class Work extends Component {
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     document.querySelector('nav ul li:nth-child(2) a').classList.add('active-link');
     document.querySelector('nav').classList.remove('menuActive');
+
+    this.__CodePenIFrameAddedToPage();
+  }
+
+  componentDidUpdate() {
+    if (!!this.state.pensLoaded) {
+      setTimeout(() => {
+        // instead, toggle classes for loading, circles, and work
+        document.querySelector('.loading').style.opacity = 0;
+        document.querySelector('.loading').style.transition = 'opacity .3s';
+        document.querySelector('#work').style.opacity = 1;
+        document.querySelector('#work').style.transition = 'opacity .3s';
+      }, 3000);
+    }
   }
 
   componentWillUnmount() {
