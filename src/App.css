@@ -472,6 +472,14 @@ main {
   animation: fadein .5s 2.5s forwards;
 }
 
+/* #animations .pens {
+  height: 380px;
+}
+
+#fizzbuzz .pens {
+  height: 280px;
+} */
+
 #bojack-frame {
   height: 90vh;
 }
