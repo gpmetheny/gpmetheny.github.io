@@ -1,26 +1,11 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
+import Pen from './Pen';
+
 import '../Loading.css';
 
 class Work extends Component {
-  /* state = {
-    pensLoaded: false
-  } */
-
-  // https://blog.codepen.io/documentation/features/embedded-pens/
-  // __CodePenIFrameAddedToPage()
-  /* pensAddedToPage() {
-    setTimeout(() => {
-      if (document.querySelector('.cp_embed_iframe')) {
-        console.log('pens embedded!');
-        this.setState({
-          pensLoaded: true
-        });
-      }
-    }, 1000);
-  } */
-
   componentDidMount() {
     document.querySelector('.logo-wrap').focus();
     document.querySelector('.logo-wrap').blur();
@@ -31,28 +16,10 @@ class Work extends Component {
     script.id = "codepenScript";
     document.querySelector('body').appendChild(script);
 
-    // this.pensAddedToPage();
-
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     document.querySelector('nav ul li:nth-child(2) a').classList.add('active-link');
     document.querySelector('nav').classList.remove('menuActive');
   }
-
-  // add error handling for if pens never load
-  /* componentDidUpdate() {
-    if (!!this.state.pensLoaded) {
-      setTimeout(() => {
-        document.querySelector('.loading').style.opacity = 0;
-        document.querySelector('#work').style.opacity = 1;
-        document.querySelectorAll('.circle').forEach((circle) => {
-          circle.style.animation = 'unset'
-        });
-        document.querySelector('.loading').style.zIndex = -1000;
-        console.log('loader removed!');
-        // approx. time needed for pens to load once they're technically embedded
-      }, 3000);
-    }
-  } */
 
   componentWillUnmount() {
     let script = document.querySelector('#codepenScript');
@@ -71,15 +38,18 @@ class Work extends Component {
         <div className="container pt-3 pt-lg-5" id="work">
           <h2 className="text-center">CSS Animations</h2>
           <div className="pens-wrapper row mb-5" id="animations">
-            <div className="pens col-12 col-lg-4 py-3">
-              <p data-height="350" data-theme-id="32730" data-slug-hash="bLJVBK" data-default-tab="result" data-user="gpmetheny" data-embed-version="2" data-pen-title="Pure CSS Spinning Atom" className="codepen">See the Pen <a href="https://codepen.io/gpmetheny/pen/bLJVBK/">Pure CSS Spinning Atom</a> by Gabbie (<a href="https://codepen.io/gpmetheny">@gpmetheny</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-            </div>
-            <div className="pens col-12 col-lg-4 py-3">
-              <p data-height="350" data-theme-id="32730" data-slug-hash="YYeRQy" data-default-tab="result" data-user="gpmetheny" data-embed-version="2" data-pen-title="CSS keyframe animation: SVG cocktail glass with clinking ice" className="codepen">See the Pen <a href="https://codepen.io/gpmetheny/pen/YYeRQy/">CSS keyframe animation: SVG cocktail glass with clinking ice</a> by Gabbie (<a href="https://codepen.io/gpmetheny">@gpmetheny</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-            </div>
-            <div className="pens col-12 col-lg-4 py-3">
-              <p data-height="350" data-theme-id="32730" data-slug-hash="BYbgEv" data-default-tab="result" data-user="gpmetheny" data-embed-version="2" data-pen-title="Pure CSS Spinning Loader #3" className="codepen">See the Pen <a href="https://codepen.io/gpmetheny/pen/BYbgEv/">Pure CSS Spinning Loader #3</a> by Gabbie (<a href="https://codepen.io/gpmetheny">@gpmetheny</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-            </div> 
+            <Pen
+              dataPenTitle="Pure CSS Spinning Atom"
+              dataSlugHash="bLJVBK"
+            />
+            <Pen
+              dataPenTitle="CSS keyframe animation: SVG cocktail glass with clinking ice"
+              dataSlugHash="YYeRQy"
+            />
+            <Pen
+              dataPenTitle="Pure CSS Spinning Loader #3"
+              dataSlugHash="BYbgEv"
+            />
           </div>
           <div className="d-flex flex-column align-items-center text-center mt-3">
             <div className="row">
@@ -89,9 +59,13 @@ class Work extends Component {
           </div> 
           <h2 className="text-center">FizzBuzz</h2>
           <div className="pens-wrapper row d-flex" id="fizzbuzz">
-            <div className="pens col-12 py-3">
-              <p data-height="250" data-theme-id="32730" data-slug-hash="mXYELw" data-default-tab="js,result" data-user="gpmetheny" data-embed-version="2" data-pen-title="FizzBuzz" className="codepen">See the Pen <a href="https://codepen.io/gpmetheny/pen/mXYELw/">FizzBuzz</a> by Gabbie (<a href="https://codepen.io/gpmetheny">@gpmetheny</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-            </div>
+            <Pen
+              className="pens col-12 py-3"
+              dataPenTitle="FizzBuzz"
+              dataSlugHash="mXYELw"
+              dataHeight="250"
+              dataDefaultTab="js,result"
+            />
           </div>
           <div className="d-flex flex-column align-items-center text-center mb-5 mt-3">
             <div className="row">

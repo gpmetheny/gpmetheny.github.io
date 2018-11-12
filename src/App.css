@@ -474,13 +474,20 @@ main {
   animation: fadein .5s 2.5s forwards;
 }
 
-/* #animations .pens {
-  height: 380px;
+#animations .codepen {
+  height: 350px;
 }
 
-#fizzbuzz .pens {
-  height: 280px;
-} */
+#fizzbuzz .codepen {
+  height: 250px;
+}
+
+.codepen {
+  /* height: 100%; */
+  padding: 100px 1rem;
+  background: #FDCAD3;
+  text-align: center;
+}
 
 #bojack-frame {
   height: 90vh;
