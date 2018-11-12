@@ -471,7 +471,7 @@ main {
 #resume */ {
   opacity: .1;
   transition: opacity .5s;
-  /* animation: fadein .5s 2.5s forwards; */
+  animation: fadein .5s 2.5s forwards;
 }
 
 /* #animations .pens {

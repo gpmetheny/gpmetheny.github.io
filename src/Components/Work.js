@@ -4,17 +4,22 @@ import {Link} from 'react-router-dom';
 import '../Loading.css';
 
 class Work extends Component {
-  state = {
+  /* state = {
     pensLoaded: false
-  }
+  } */
 
   // https://blog.codepen.io/documentation/features/embedded-pens/
-  __CodePenIFrameAddedToPage() {
-    console.log("codepens embedded!");
-    this.setState({
-      pensLoaded: true
-    });
-  }
+  // __CodePenIFrameAddedToPage()
+  /* pensAddedToPage() {
+    setTimeout(() => {
+      if (document.querySelector('.cp_embed_iframe')) {
+        console.log('pens embedded!');
+        this.setState({
+          pensLoaded: true
+        });
+      }
+    }, 1000);
+  } */
 
   componentDidMount() {
     document.querySelector('.logo-wrap').focus();
@@ -26,7 +31,7 @@ class Work extends Component {
     script.id = "codepenScript";
     document.querySelector('body').appendChild(script);
 
-    this.__CodePenIFrameAddedToPage();
+    // this.pensAddedToPage();
 
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     document.querySelector('nav ul li:nth-child(2) a').classList.add('active-link');
@@ -34,7 +39,7 @@ class Work extends Component {
   }
 
   // add error handling for if pens never load
-  componentDidUpdate() {
+  /* componentDidUpdate() {
     if (!!this.state.pensLoaded) {
       setTimeout(() => {
         document.querySelector('.loading').style.opacity = 0;
@@ -47,7 +52,7 @@ class Work extends Component {
         // approx. time needed for pens to load once they're technically embedded
       }, 3000);
     }
-  }
+  } */
 
   componentWillUnmount() {
     let script = document.querySelector('#codepenScript');

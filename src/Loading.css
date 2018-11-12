@@ -14,7 +14,7 @@
   right: calc(50% - 7.5rem);
   transition: opacity .3s;
   z-index: 1000;
-  /* animation: fadeout .25s 2.5s ease-in forwards; */
+  animation: fadeout .25s 2.5s ease-in forwards;
 }
 
 .circle {
@@ -52,5 +52,6 @@
 @keyframes fadeout {
   to {
     opacity: 0;
+    z-index: -1000;
   }
 }
