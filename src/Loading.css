@@ -3,49 +3,43 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #222;
 }
 
 .loading {
-  height: 80%;
-  /* height: 280px; */
   position: fixed;
+  top: calc(50% - 2.5rem);
+  bottom: calc(50% - 2.5rem);
   left: calc(50% - 7.5rem);
   right: calc(50% - 7.5rem);
   z-index: 1000;
-  transition: opacity .3s;
   animation: fadeout .25s 2.5s ease-in forwards;
 }
 
 .circle {
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: 50%;
-  background: #fff;
   margin: .5rem;
+  background: #fff;
 }
 
 .circle::after {
   content: '';
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: 50%;
   background: #F94E6D;
-}
-
-.circle:nth-child(1)::after {
   opacity: .5;
   animation: fadeinout .6s ease-in-out 5 both;
 }
 
+.circle,
+.circle::after {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+}
+
 .circle:nth-child(2)::after {
-  opacity: .5;
-  animation: fadeinout .6s .15s ease-in-out 5 both;
+  animation-delay: .15s;
 }
 
 .circle:nth-child(3)::after {
-  opacity: .5;
-  animation: fadeinout .6s .3s ease-in-out 5 both;
+  animation-delay: .3s;
 }
 
 @keyframes fadeinout {

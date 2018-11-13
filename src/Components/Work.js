@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
+import Loader from './Loader';
 import Pen from './Pen';
-
-import '../Loading.css';
 
 class Work extends Component {
   componentDidMount() {
@@ -30,11 +29,7 @@ class Work extends Component {
   render() {
     return (
       <div className="jumbotron jumbotron-fluid content-wrapper">
-        <div className="loading">
-          <div className="circle"></div>
-          <div className="circle"></div>
-          <div className="circle"></div>
-        </div>
+        <Loader />
         <div className="container pt-3 pt-lg-5" id="work">
           <h2 className="text-center">CSS Animations</h2>
           <div className="pens-wrapper row mb-5" id="animations">

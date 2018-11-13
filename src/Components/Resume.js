@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
+import Loader from './Loader';
 import SVG from './SVG';
 import SocialIcon from './SocialIcon';
 
@@ -10,8 +11,6 @@ import socialList from '../SVG/socialList';
 import angry_jack from '../img/angry_jack.jpg';
 import portfolioLogo from '../img/portfolio-logo.svg';
 import skills from '../img/skills.svg';
-
-import '../Loading.css';
 
 class Resume extends Component {
   componentDidMount() {
@@ -30,11 +29,7 @@ class Resume extends Component {
   render() {
     return (
       <div className="jumbotron jumbotron-fluid content-wrapper">
-        <div className="loading">
-          <div className="circle"></div>
-          <div className="circle"></div>
-          <div className="circle"></div>
-        </div>
+        <Loader />
         <div className="container pt-3 pt-lg-5" id="resume">
           <div className="row">
             <div className="col-md-7 col-lg-8">
