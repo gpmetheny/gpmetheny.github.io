@@ -15,6 +15,13 @@
   animation: fadeout .25s 2.5s ease-in forwards;
 }
 
+.circle,
+.circle::after {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+}
+
 .circle {
   margin: .5rem;
   background: #fff;
@@ -25,13 +32,6 @@
   background: #F94E6D;
   opacity: .5;
   animation: fadeinout .6s ease-in-out 5 both;
-}
-
-.circle,
-.circle::after {
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: 50%;
 }
 
 .circle:nth-child(2)::after {
