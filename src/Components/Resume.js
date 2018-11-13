@@ -30,11 +30,11 @@ class Resume extends Component {
   render() {
     return (
       <div className="jumbotron jumbotron-fluid content-wrapper">
-        {/* <div className="loading">
+        <div className="loading">
           <div className="circle"></div>
           <div className="circle"></div>
           <div className="circle"></div>
-        </div> */}
+        </div>
         <div className="container pt-3 pt-lg-5" id="resume">
           <div className="row">
             <div className="col-md-7 col-lg-8">
