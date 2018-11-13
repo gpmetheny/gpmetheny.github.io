@@ -474,19 +474,24 @@ main {
   animation: fadein .5s 2.5s forwards;
 }
 
-#animations .codepen {
+#animations .codepen,
+#animations .cp_embed_wrapper {
   height: 350px;
 }
 
-#fizzbuzz .codepen {
+#fizzbuzz .codepen,
+#fizzbuzz .cp_embed_wrapper {
   height: 250px;
 }
 
 .codepen {
-  /* height: 100%; */
   padding: 100px 1rem;
-  background: #FDCAD3;
+  background: #FEE5E9;
   text-align: center;
+}
+
+.cp_embed_wrapper {
+  background: #FEE5E9;
 }
 
 #bojack-frame {

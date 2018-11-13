@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 class Pen extends Component {
   static defaultProps = {
+    dataUser: 'gpmetheny',
     dataHeight: 350,
     dataDefaultTab: 'result',
     className: 'pens col-12 col-lg-4 py-3'
@@ -17,12 +18,12 @@ class Pen extends Component {
           data-theme-id={32730}
           data-slug-hash={this.props.dataSlugHash}
           data-default-tab={this.props.dataDefaultTab}
-          data-user="gpmetheny"
+          data-user={this.props.dataUser}
           data-embed-version={2}
           data-pen-title={this.props.dataPenTitle}
           className="codepen"
         >
-          See the Pen <a href={`https://codepen.io/gpmetheny/pen/${this.props.dataSlugHash}/`}>{this.props.dataPenTitle}</a> by Gabbie (<a href="https://codepen.io/gpmetheny">@gpmetheny</a>) on <a href="https://codepen.io">CodePen</a>.
+          See the Pen <a href={`https://codepen.io/${this.props.dataUser}/pen/${this.props.dataSlugHash}/`} target="_blank" rel="noopener noreferrer">{this.props.dataPenTitle}</a> by Gabbie (<a href={`https://codepen.io/${this.props.dataUser}`} target="_blank" rel="noopener noreferrer">@{this.props.dataUser}</a>) on <a href="https://codepen.io" target="_blank" rel="noopener noreferrer">CodePen</a>.
         </p>
       </div>
     );
