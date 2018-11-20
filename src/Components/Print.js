@@ -11,18 +11,22 @@ class Print extends Component {
     document.querySelector('nav').classList.remove('menuActive');
 
     // print
-    document.querySelector('#print-btn').addEventListener('click', () => {
-      try {
-        window.print();
-        let msg = document.createElement('p');
-        msg.innerHTML = `Hooray!`;
-        document.querySelector('#error-msg').appendChild(msg);        
-      } catch (e) {
-        let msg = document.createElement('p');
-        msg.innerHTML = `Oops! ${e}`;
-        document.querySelector('#error-msg').appendChild(msg);
-      }
-    });
+    // add listener if btn was rendered
+    if (document.querySelector('#print-btn')) {
+      document.querySelector('#print-btn').addEventListener('click', () => {
+        try {
+          window.alert('Okay!');
+          window.print();
+          let msg = document.createElement('p');
+          msg.innerHTML = `Hooray!`;
+          document.querySelector('#error-msg').appendChild(msg);        
+        } catch (e) {
+          let msg = document.createElement('p');
+          msg.innerHTML = `Oops! ${e}`;
+          document.querySelector('#error-msg').appendChild(msg);
+        }
+      });
+    }
   }
 
   componentWillUnmount() {
@@ -30,6 +34,12 @@ class Print extends Component {
   }
 
   render() {
+    
+    // ff mobile solution: conditionally render print btn based on whether window.print is a function
+    function supportPrint() {   
+      return (typeof(window.print) === 'function');
+    }
+
     return (
       <div className="jumbotron jumbotron-fluid content-wrapper" id="print">
         <div className="pt-3 d-flex align-items-center justify-content-center success-wrapper">
@@ -42,7 +52,8 @@ class Print extends Component {
               <p>See what happens!</p>
             </div>
             <div className="my-5">
-              <button className="more" id="print-btn">click</button>
+              {/* conditional render based on browser support */}
+              {supportPrint() ? <button className="more" id="print-btn">click</button> : <p>Your browser does not support printing.</p>}
             </div>
             <div id="error-msg"></div>
           </div>
