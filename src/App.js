@@ -14,6 +14,7 @@ import About from './Components/About';
 import Contact from './Components/Contact';
 import Success from './Components/Success';
 import Error from './Components/Error';
+import Print from './Components/Print';
 
 import './App.css';
 
@@ -33,6 +34,7 @@ class App extends Component {
               <Route path="/resume" component={Resume} />
               <Route path="/contact" component={Contact} />
               <Route path="/success" component={Success} />
+              <Route path="/print" component={Print} />
               <Route component={Error} />
             </Switch>
           </main>

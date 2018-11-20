@@ -1,3 +1,11 @@
+#print-btn {
+  font-family: 'Roboto Mono', monospace;
+}
+
+#error-msg {
+  min-height: 4rem;
+}
+
 body {
   overflow-x: hidden;
   min-height: 100%;
