@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-// import {Link} from 'react-router-dom';
 
 class Print extends Component {
   componentDidMount() {
@@ -11,22 +10,18 @@ class Print extends Component {
     document.querySelector('nav').classList.remove('menuActive');
 
     // print
-    // add listener if btn was rendered
-    if (document.querySelector('#print-btn')) {
-      document.querySelector('#print-btn').addEventListener('click', () => {
-        try {
-          window.alert('Okay!');
-          window.print();
-          let msg = document.createElement('p');
-          msg.innerHTML = `Hooray!`;
-          document.querySelector('#error-msg').appendChild(msg);        
-        } catch (e) {
-          let msg = document.createElement('p');
-          msg.innerHTML = `Oops! ${e}`;
-          document.querySelector('#error-msg').appendChild(msg);
-        }
-      });
-    }
+    document.querySelector('#print-btn').addEventListener('click', () => {
+      try {
+        window.print();
+        let msg = document.createElement('p');
+        msg.innerHTML = `Hooray! Your browser supports window.print!`;
+        document.querySelector('#error-msg').appendChild(msg);        
+      } catch (err) {
+        let msg = document.createElement('p');
+        msg.innerHTML = `Oops! ${err}`;
+        document.querySelector('#error-msg').appendChild(msg);
+      }
+    });
   }
 
   componentWillUnmount() {
@@ -34,12 +29,6 @@ class Print extends Component {
   }
 
   render() {
-    
-    // ff mobile solution: conditionally render print btn based on whether window.print is a function
-    function supportPrint() {   
-      return (typeof(window.print) === 'function');
-    }
-
     return (
       <div className="jumbotron jumbotron-fluid content-wrapper" id="print">
         <div className="pt-3 d-flex align-items-center justify-content-center success-wrapper">
@@ -47,13 +36,12 @@ class Print extends Component {
             <div className="mb-5 text-center">
 
               <div className="d-flex flex-column align-items-center justify-content-between mb-3">
-                <h2 className="text-center">printMe({/* <i className="material-icons" style={{color: '#222', fontSize: '1.5rem'}}>done</i> */})</h2>
+                <h2 className="text-center">printMe()</h2>
               </div>
-              <p>See what happens!</p>
+              <p>Can I print?</p>
             </div>
             <div className="my-5">
-              {/* conditional render based on browser support */}
-              {supportPrint() ? <button className="more" id="print-btn">click</button> : <p>Your browser does not support printing.</p>}
+              <button className="more" id="print-btn">click</button>
             </div>
             <div id="error-msg"></div>
           </div>
