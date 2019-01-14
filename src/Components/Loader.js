@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import styled, {keyframes} from 'styled-components';
 
+// move to global variables file
+const colorBrand = '#f94e6d';
+const white = '#fff';
+
 const pulse = keyframes`
   20% {
     opacity: 1;
@@ -32,7 +36,7 @@ const Dot = styled.div`
   align-items: center;
   justify-content: center;
   margin: .5rem;
-  background: #fff;
+  background: ${white};
 
   &,
   &::after {
@@ -43,7 +47,7 @@ const Dot = styled.div`
 
   &::after {
     content: '';
-    background: #F94E6D;
+    background: ${colorBrand};
     opacity: .5;
     animation: ${pulse} .6s ease-in-out 5 both;
   }
