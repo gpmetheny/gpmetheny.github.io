@@ -9,7 +9,7 @@ import SocialIcon from './SocialIcon';
 import monstera from '../SVG/logo';
 import socialList from '../SVG/socialList';
 
-import angry_jack from '../img/angry_jack.jpg';
+import avatar from '../img/angel-city.jpg';
 import portfolioLogo from '../img/portfolio-logo.svg';
 import skills from '../img/skills.svg';
 
@@ -55,7 +55,7 @@ class Resume extends Component {
             <div className="col-md-5 col-lg-4">
               <div id="card">
                 <div className="d-flex" id="card-top">
-                  <img src={angry_jack} alt="Gabbie" id="card-photo" />
+                  <img src={avatar} alt="Gabbie" id="card-photo" />
                   <ul className="d-flex flex-column justify-content-around align-items-center">
                     {socialList.map((social) => {
                       return (

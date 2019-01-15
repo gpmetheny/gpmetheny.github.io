@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import CTA from './CTA';
 
-import angry_jack from '../img/angry_jack.jpg';
+import avatar from '../img/angel-city.jpg';
 
 class About extends Component {
   componentDidMount() {
@@ -26,7 +26,7 @@ class About extends Component {
             <div className="row">
               <div className="col-md-4">
                 <div className="my-2 mx-auto" id="about-img-wrapper">
-                  <img src={angry_jack} alt="Gabbie" />
+                  <img src={avatar} alt="Gabbie" />
                 </div>
               </div>
               <div className="col-md-8">
