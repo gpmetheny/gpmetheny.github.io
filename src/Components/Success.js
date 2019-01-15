@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+
+import CTA from './CTA';
 
 class Success extends Component {
   componentDidMount() {
@@ -42,7 +43,7 @@ class Success extends Component {
               <p>Thanks! I'll be in touch soon!</p>
             </div>
             <div className="my-5">
-              <Link to="/work" className="more">{'<<'} back to my work</Link>
+              <CTA to="/work">{'<<'} back to my work</CTA>
             </div>
           </div>
         </div>

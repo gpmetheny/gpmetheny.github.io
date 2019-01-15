@@ -1,9 +1,5 @@
-import React, {Component} from 'react';
-import styled, {keyframes} from 'styled-components';
-
-// move to global variables file
-const colorBrand = '#f94e6d';
-const white = '#fff';
+import React, { Component } from 'react';
+import styled, { keyframes } from 'styled-components';
 
 const pulse = keyframes`
   20% {
@@ -36,7 +32,7 @@ const Dot = styled.div`
   align-items: center;
   justify-content: center;
   margin: .5rem;
-  background: ${white};
+  background: ${props => props.theme.color.white};
 
   &,
   &::after {
@@ -47,7 +43,7 @@ const Dot = styled.div`
 
   &::after {
     content: '';
-    background: ${colorBrand};
+    background: ${props => props.theme.color.brand};
     opacity: .5;
     animation: ${pulse} .6s ease-in-out 5 both;
   }

@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+
+import CTA from './CTA';
+
 import angry_jack from '../img/angry_jack.jpg';
 
 class About extends Component {
@@ -33,7 +35,7 @@ class About extends Component {
                   <p className="text-dark">Hey there! I am a coder, mama, and avid coffee drinker residing in the Highland Park neighborhood of Los Angeles, California. When I'm not coding, momming, or caffeinating, I'm probably sleeping. Just kidding! I don't sleep. I do, however, enjoy hiking, weightlifting, antiquing, and eating unnatural quantities of avocado toast.</p>
                   <p className="text-dark">I have a solid front-end development background, including experience in React, Bootstrap, jQuery, AJAX, and Fetch, as well as a back-end with Node.js, Express, MongoDB, Python, and Java. While I have an aesthetic eye and love creating SVGs and CSS animations, I also really enjoy digging in to the nitty gritty of JavaScript and programming logic. I am a determined problem solver who welcomes new challenges.</p>
                   <div className="d-flex align-items-center justify-content-center text-center my-5">
-                    <Link to="/resume" className="more">see my resume {'>>'}</Link>
+                    <CTA to="/resume">see my resume {'>>'}</CTA>
                   </div>
                 </div>
               </div>

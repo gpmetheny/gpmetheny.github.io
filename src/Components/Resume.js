@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
+import CTA from './CTA';
 import Loader from './Loader';
 import SVG from './SVG';
 import SocialIcon from './SocialIcon';
@@ -133,7 +134,7 @@ class Resume extends Component {
           </div>
           <div>
             <div className="d-flex align-items-center justify-content-center text-center my-5">
-                <Link to="/contact" className="more">contact me {'>>'}</Link>
+                <CTA to="/contact">contact me {'>>'}</CTA>
             </div>
           </div>
           

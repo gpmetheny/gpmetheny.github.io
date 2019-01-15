@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+
+import CTA from './CTA';
 
 class Error extends Component {
   componentDidMount() {
@@ -28,7 +29,7 @@ class Error extends Component {
               <p>Not Found</p>
             </div>
             <div className="my-5">
-              <Link to="/work" className="more">{'<<'} back to my work</Link>
+              <CTA to="/work">{'<<'} back to my work</CTA>
             </div>
           </div>
         </div>

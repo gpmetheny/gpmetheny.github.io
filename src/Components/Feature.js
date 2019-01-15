@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
 
+import CTA from './CTA';
 import TechIcon from './TechIcon';
 
 import techList from '../SVG/techList';
@@ -66,10 +66,10 @@ class Feature extends Component {
             </div>
             
             <div className="col-12 my-5">
-              <Link to="/work" className="more">
+              <CTA to="/work">
                 see my work
                 <span> {'>>'}</span>
-              </Link>
+              </CTA>
             </div>
 
           </div> {/* end row */}
