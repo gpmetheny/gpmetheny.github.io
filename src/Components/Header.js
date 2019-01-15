@@ -1,134 +1,11 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
-import styled from 'styled-components';
 
+import { Hamburger, HamburgerInner } from './Hamburger';
+import { NavList, NavItem, StyledNavLink } from './Nav';
 import SVG from './SVG';
 
 import monstera from '../SVG/logo';
-
-const NavList = styled.ul`
-  visibility: ${props => props.isExpanded
-                ? 'visible'
-                : 'hidden'};
-  text-align: center;
-  width: 100%;
-  transform: ${props => props.isExpanded
-                ? 'translateY(0)'
-                : 'translateY(-12rem)'};
-  transition: transform .3s .3s;
-
-  @media (min-width: 768px) {
-    visibility: visible;
-    transform: translateY(0);
-    transition: none;
-    display: flex;
-    width: auto;
-  }
-`;
-
-const NavItem = styled.li`
-  font-size: 1.5rem;
-  text-transform: lowercase;
-  font-family: 'Roboto Mono', monospace;
-  height: ${props => props.isExpanded
-                ? '3rem'
-                : 0};
-  opacity: ${props => props.isExpanded
-                ? 1
-                : 0};
-  transition: height .3s .3s, opacity .1s .4s;
-  z-index: 100;
-
-  @media (min-width: 768px) {
-    border: none;
-    margin-left: 1rem;
-    height: initial;
-    opacity: 1;
-  }
-`;
-
-const StyledNavLink = styled(NavLink)`
-  display: ${props => props.isExpanded
-                ? 'block'
-                : 'unset'};
-  height: ${props => props.isExpanded
-                ? '3rem'
-                : 0};
-  transition: all .3 .3s;
-
-  @media (min-width: 768px) {
-    height: initial;
-    padding: .75rem;
-  }
-`;
-
-const Hamburger = styled.button`
-  border: none;
-  outline: none;
-  background: transparent;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: auto 0;
-  padding: 1rem .75rem;
-  width: 3rem;
-  height: 3.5rem;
-  cursor: pointer;
-
-  &:hover {
-    outline: none;
-  }
-
-  @media (min-width: 768px) {
-    display: none;
-  }
-`;
-
-const HamburgerInner = styled.span`
-  width: 1.5rem;
-  height: .25rem;
-  background: ${props => props.menuExpanded
-                ? props.theme.color.brand
-                : props.theme.color.white};
-
-  &:first-child {
-    position: relative;
-    top: ${props => props.menuExpanded
-                ? '.625rem'
-                : 0};
-    transform: ${props => props.menuExpanded
-                ? 'rotateZ(45deg) scaleX(1.2)'
-                : 'none'};
-    /* moves line down to center before rotating and scaling */
-    transition: ${props => props.menuExpanded
-                ? 'top .3s, transform .3s .3s'
-                : 'transform .3s, top .3s .3s, background .3s .3s'};
-  }
-
-  &:nth-child(2) {
-    margin: .375rem 0;
-    opacity: ${props => props.menuExpanded
-                ? 0
-                : 1};
-    transition: ${props => props.menuExpanded
-                ? 'opacity .1s .3s'
-                : 'opacity .3s .2s'};
-  }
-
-  &:nth-child(3) {
-    position: relative;
-    bottom: ${props => props.menuExpanded
-                ? '.625rem'
-                : 0};
-    transform: ${props => props.menuExpanded
-                ? 'rotateZ(-45deg) scaleX(1.2)'
-                : 'none'};
-    /* moves line up to center before rotating and scaling */
-    transition: ${props => props.menuExpanded
-                ? 'bottom .3s, transform .3s .3s'
-                : 'transform .3s, bottom .3s .3s, background .3s .3s'};
-  }
-`;
 
 class Header extends Component {
   constructor(props) {
@@ -191,6 +68,7 @@ class Header extends Component {
 
           </div> {/* end menu wrap */}
 
+          {/* create NavList w/ a function? DRY */}
           <NavList isExpanded={this.state.menuExpanded}>
             <NavItem isExpanded={this.state.menuExpanded}>
               <StyledNavLink
