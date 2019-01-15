@@ -6,6 +6,62 @@ import SVG from './SVG';
 
 import monstera from '../SVG/logo';
 
+const NavList = styled.ul`
+  visibility: ${props => props.isExpanded
+                ? 'visible'
+                : 'hidden'};
+  text-align: center;
+  width: 100%;
+  transform: ${props => props.isExpanded
+                ? 'translateY(0)'
+                : 'translateY(-12rem)'};
+  transition: transform .3s .3s;
+
+  @media (min-width: 768px) {
+    visibility: visible;
+    transform: translateY(0);
+    transition: none;
+    display: flex;
+    width: auto;
+  }
+`;
+
+const NavItem = styled.li`
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  font-family: 'Roboto Mono', monospace;
+  height: ${props => props.isExpanded
+                ? '3rem'
+                : 0};
+  opacity: ${props => props.isExpanded
+                ? 1
+                : 0};
+  transition: height .3s .3s, opacity .1s .4s;
+  z-index: 100;
+
+  @media (min-width: 768px) {
+    border: none;
+    margin-left: 1rem;
+    height: initial;
+    opacity: 1;
+  }
+`;
+
+const StyledNavLink = styled(NavLink)`
+  display: ${props => props.isExpanded
+                ? 'block'
+                : 'unset'};
+  height: ${props => props.isExpanded
+                ? '3rem'
+                : 0};
+  transition: all .3 .3s;
+
+  @media (min-width: 768px) {
+    height: initial;
+    padding: .75rem;
+  }
+`;
+
 const Hamburger = styled.button`
   border: none;
   outline: none;
@@ -88,9 +144,6 @@ class Header extends Component {
     nav.addEventListener('click', (e) => {
       if (e.target.tagName === 'BUTTON' ||
           e.target.parentNode.tagName === 'BUTTON') {
-        // use state to set isExpanded in ul instead
-        // after componentizing ul
-        nav.classList.toggle('menuActive');
         this.setState(prevState => ({
           menuExpanded: !prevState.menuExpanded
         }));
@@ -101,7 +154,9 @@ class Header extends Component {
       // will not fire if focus is on link, button, input, etc.
       // prevents interfering w/ default behavior (ff mobile bug)
       if (e.relatedTarget === null) {
-        nav.classList.remove('menuActive');
+        this.setState({
+          menuExpanded: false
+        });
       }
     });
   }
@@ -136,12 +191,36 @@ class Header extends Component {
 
           </div> {/* end menu wrap */}
 
-          <ul> {/* can add isExpanded here once ul is a component */}
-            <li><NavLink to="/about">About</NavLink></li>
-            <li><NavLink to="/work">Work</NavLink></li>
-            <li><NavLink to="/resume">Resume</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>
-          </ul>
+          <NavList isExpanded={this.state.menuExpanded}>
+            <NavItem isExpanded={this.state.menuExpanded}>
+              <StyledNavLink
+                to="/about"
+                isExpanded={this.state.menuExpanded}>
+                About
+              </StyledNavLink>
+            </NavItem>
+            <NavItem isExpanded={this.state.menuExpanded}>
+              <StyledNavLink
+                to="/work"
+                isExpanded={this.state.menuExpanded}>
+                Work
+              </StyledNavLink>
+            </NavItem>
+            <NavItem isExpanded={this.state.menuExpanded}>
+              <StyledNavLink
+                to="/resume"
+                isExpanded={this.state.menuExpanded}>
+                Resume
+              </StyledNavLink>
+            </NavItem>
+            <NavItem isExpanded={this.state.menuExpanded}>
+              <StyledNavLink
+                to="/contact"
+                isExpanded={this.state.menuExpanded}>
+                Contact
+              </StyledNavLink>
+            </NavItem>
+          </NavList>
 
         </nav>
       </header>
