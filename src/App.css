@@ -145,7 +145,7 @@ a.active-link {
   padding: .75rem;
 }
 
-.icon-wrap {
+/* .icon-wrap {
   border: none;
   outline: none;
   background: transparent;
@@ -157,57 +157,55 @@ a.active-link {
   width: 3rem;
   height: 3.5rem;
   cursor: pointer;
-}
+} */
 
-.icon-wrap:hover {
+/* .icon-wrap:hover {
   outline: none;
-}
+} */
 
-.icon {
+/* .icon {
   width: 1.5rem;
   height: .25rem;
   background: #fff;
-}
+} */
 
-#icon-center {
+/* #icon-center {
   margin: .375rem 0;
   transition: opacity .3s .2s;
-}
+} */
 
-#icon-top {
+/* #icon-top {
   position: relative;
   top: 0;
   transition: transform .3s, top .3s .3s, background .3s .3s;
-}
+} */
 
-#icon-bottom {
+/* #icon-bottom {
   position: relative;
   bottom: 0;
   transition: transform .3s, bottom .3s .3s, background .3s .3s;
-}
+} */
 
-.menuActive .icon {
+/* .menuActive .icon {
   background: #F94E6D;
-}
+} */
 
-.menuActive #icon-center {
+/* .menuActive #icon-center {
   opacity: 0;
   transition: opacity .1s .3s;
-}
+} */
 
-.menuActive #icon-top {
+/* .menuActive #icon-top {
   top: .625rem;
   transform: rotateZ(45deg) scaleX(1.2);
-  /* moves line down to center before rotating and scaling */
   transition: top .3s, transform .3s .3s;
-}
+} */
 
-.menuActive #icon-bottom {
+/* .menuActive #icon-bottom {
   bottom: .625rem;
   transform: rotateZ(-45deg) scaleX(1.2);
-  /* moves line up to center before rotating and scaling */
   transition: bottom .3s, transform .3s .3s;
-}
+} */
 
 nav.menuActive ul {
   visibility: visible;
@@ -605,9 +603,9 @@ footer .row {
 }
 
 @media (min-width: 768px) {
-  .icon-wrap {
+  /* .icon-wrap {
     display: none;
-  }
+  } */
 
   nav {
     flex-direction: row;
