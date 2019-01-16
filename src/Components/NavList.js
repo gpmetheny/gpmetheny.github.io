@@ -15,7 +15,11 @@ const NavList = (props) => {
     <ul className={props.className}>
       {navItems.map(item => {
         return (
-          <li><NavLink to={`/${item}`}>{item}</NavLink></li>
+          <li key={item}>
+            <NavLink to={`/${item}`}>
+              {item}
+            </NavLink>
+          </li>
         );
       })}
     </ul>
