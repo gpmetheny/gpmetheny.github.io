@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
 
-import { Hamburger, HamburgerInner } from './Hamburger';
+import Hamburger from './Hamburger';
 import NavList from './NavList';
 import SVG from './SVG';
 
@@ -60,11 +60,7 @@ class Header extends Component {
                 </h3>
             </NavLink> {/* end logo wrap */}
 
-            <Hamburger>
-              <HamburgerInner menuExpanded={this.state.menuExpanded} />
-              <HamburgerInner menuExpanded={this.state.menuExpanded} />
-              <HamburgerInner menuExpanded={this.state.menuExpanded} />
-            </Hamburger>
+            <Hamburger menuExpanded={this.state.menuExpanded} />
 
           </div> {/* end menu wrap */}
 
