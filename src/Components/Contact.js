@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import CTA from './CTA';
 
 class Contact extends Component {
   componentDidMount() {
@@ -96,7 +97,8 @@ class Contact extends Component {
 
               <div className="form-row text-center">
                 <div className="form-group offset-lg-2 col-lg-10">
-                  <input type="submit" className="btn btn-danger" value="Submit" id="submit" disabled />
+                  <CTA as="input" type="submit" value="submit" id="submit" disabled />
+                  {/* <input type="submit" className="btn btn-danger" value="Submit" id="submit" disabled /> */}
                 </div>
               </div>
                   
