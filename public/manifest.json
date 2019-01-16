@@ -3,8 +3,16 @@
   "name": "Gabbie Metheny | Full-Stack Web Developer",
   "icons": [
     {
-      "src": "./favicon.ico",
+      "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16"
+    },
+    {
+      "src": "../src/img/monstera-128.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "../src/img/monstera-192.png",
+      "sizes": "192x192"
     }
   ],
   "start_url": "./index.html",
