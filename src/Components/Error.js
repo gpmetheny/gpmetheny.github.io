@@ -4,8 +4,8 @@ import CTA from './CTA';
 
 class Error extends Component {
   componentDidMount() {
-    document.querySelector('.logo-wrap').focus();
-    document.querySelector('.logo-wrap').blur();
+    document.querySelector('nav a:first-child').focus();
+    document.querySelector('nav a:first-child').blur();
 
     // menu
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));

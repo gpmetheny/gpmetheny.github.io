@@ -8,7 +8,7 @@ import monstera from '../SVG/logo';
 
 const Brand = (props) => {
   return (
-    <NavLink className={`${props.className} logo-wrap`} to="/">
+    <NavLink className={props.className} to="/">
       <SVG
         viewBox={monstera.viewBox}
         height={monstera.height}

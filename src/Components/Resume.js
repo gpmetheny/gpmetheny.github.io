@@ -15,8 +15,8 @@ import skills from '../img/skills.svg';
 
 class Resume extends Component {
   componentDidMount() {
-    document.querySelector('.logo-wrap').focus();
-    document.querySelector('.logo-wrap').blur();
+    document.querySelector('nav a:first-child').focus();
+    document.querySelector('nav a:first-child').blur();
     
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
     document.querySelector('nav ul li:nth-child(3) a').classList.add('active-link');

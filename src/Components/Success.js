@@ -4,8 +4,8 @@ import CTA from './CTA';
 
 class Success extends Component {
   componentDidMount() {
-    document.querySelector('.logo-wrap').focus();
-    document.querySelector('.logo-wrap').blur();
+    document.querySelector('nav a:first-child').focus();
+    document.querySelector('nav a:first-child').blur();
     
     // twitter script
     let script = document.createElement('script');

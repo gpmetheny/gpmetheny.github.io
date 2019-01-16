@@ -6,8 +6,8 @@ import Pen from './Pen';
 
 class Work extends Component {
   componentDidMount() {
-    document.querySelector('.logo-wrap').focus();
-    document.querySelector('.logo-wrap').blur();
+    document.querySelector('nav a:first-child').focus();
+    document.querySelector('nav a:first-child').blur();
     
     let script = document.createElement('script');
     script.src = 'https://static.codepen.io/assets/embed/ei.js';
