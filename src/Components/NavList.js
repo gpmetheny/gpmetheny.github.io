@@ -11,7 +11,6 @@ const NavList = (props) => {
   ];
 
   return (
-    // need props.className for styled-components
     <ul className={props.className}>
       {navItems.map(item => {
         return (
@@ -27,24 +26,22 @@ const NavList = (props) => {
 };
 
 const StyledNavList = styled(NavList)`
-  ul {
-    visibility: ${props => props.isExpanded
-                  ? 'visible'
-                  : 'hidden'};
-    text-align: center;
-    width: 100%;
-    transform: ${props => props.isExpanded
-                  ? 'translateY(0)'
-                  : 'translateY(-12rem)'};
-    transition: transform .3s .3s;
+  visibility: ${props => props.isExpanded
+                ? 'visible'
+                : 'hidden'};
+  text-align: center;
+  width: 100%;
+  transform: ${props => props.isExpanded
+                ? 'translateY(0)'
+                : 'translateY(-12rem)'};
+  transition: transform .3s .3s;
 
-    @media (min-width: 768px) {
-      visibility: visible;
-      transform: translateY(0);
-      transition: none;
-      display: flex;
-      width: auto;
-    }
+  @media (min-width: 768px) {
+    visibility: visible;
+    transform: translateY(0);
+    transition: none;
+    display: flex;
+    width: auto;
   }
 
   li {
@@ -53,7 +50,6 @@ const StyledNavList = styled(NavList)`
     height: ${props => props.isExpanded
                   ? '3rem'
                   : 0};
-    text-align: center;
     opacity: ${props => props.isExpanded
                   ? 1
                   : 0};
