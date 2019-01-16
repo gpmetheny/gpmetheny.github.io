@@ -128,14 +128,14 @@ a.active-link {
   color: #F94E6D !important;
 }
 
-.menu-wrap {
+/* .menu-wrap {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background: #222;
   z-index: 200;
-}
+} */
 
 /* .logo-wrap {
   display: flex;

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import styled from 'styled-components';
 
 import Brand from './Brand';
 import Hamburger from './Hamburger';
@@ -37,12 +38,12 @@ class Header extends Component {
 
   render() {
     return (
-      <header>
+      <header className={this.props.className}>
         <nav>
-          <div className="menu-wrap">
+          <div className="wrapper">
             <Brand />
             <Hamburger menuExpanded={this.state.menuExpanded} />
-          </div> {/* end menu wrap */}
+          </div>
           <NavList isExpanded={this.state.menuExpanded} />
         </nav>
       </header>
@@ -50,4 +51,15 @@ class Header extends Component {
   }
 }
 
-export default Header;
+const StyledHeader = styled(Header)`
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    z-index: 200;
+  }
+`;
+
+export default StyledHeader;
