@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
 
 import { Hamburger, HamburgerInner } from './Hamburger';
-import { NavList, NavItem, StyledNavLink } from './Nav';
+import NavList from './NavList';
 import SVG from './SVG';
 
 import monstera from '../SVG/logo';
@@ -69,36 +69,7 @@ class Header extends Component {
           </div> {/* end menu wrap */}
 
           {/* create NavList w/ a function? DRY */}
-          <NavList isExpanded={this.state.menuExpanded}>
-            <NavItem isExpanded={this.state.menuExpanded}>
-              <StyledNavLink
-                to="/about"
-                isExpanded={this.state.menuExpanded}>
-                About
-              </StyledNavLink>
-            </NavItem>
-            <NavItem isExpanded={this.state.menuExpanded}>
-              <StyledNavLink
-                to="/work"
-                isExpanded={this.state.menuExpanded}>
-                Work
-              </StyledNavLink>
-            </NavItem>
-            <NavItem isExpanded={this.state.menuExpanded}>
-              <StyledNavLink
-                to="/resume"
-                isExpanded={this.state.menuExpanded}>
-                Resume
-              </StyledNavLink>
-            </NavItem>
-            <NavItem isExpanded={this.state.menuExpanded}>
-              <StyledNavLink
-                to="/contact"
-                isExpanded={this.state.menuExpanded}>
-                Contact
-              </StyledNavLink>
-            </NavItem>
-          </NavList>
+          <NavList isExpanded={this.state.menuExpanded} />
 
         </nav>
       </header>
