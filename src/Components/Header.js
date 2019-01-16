@@ -25,9 +25,9 @@ class Header extends Component {
       }
     });
 
+    // will not fire if focus is on link, button, input, etc.
+    // prevents interfering w/ default behavior (ff mobile bug)
     nav.addEventListener('focusout', (e) => {
-      // will not fire if focus is on link, button, input, etc.
-      // prevents interfering w/ default behavior (ff mobile bug)
       if (e.relatedTarget === null) {
         this.setState({
           menuExpanded: false
