@@ -13,6 +13,10 @@
     {
       "src": "../src/img/monstera-192.png",
       "sizes": "192x192"
+    },
+    {
+      "src": "../src/img/monstera-512.png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "./index.html",
