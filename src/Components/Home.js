@@ -5,7 +5,7 @@ import TechIcon from './TechIcon';
 
 import techList from '../SVG/techList';
 
-class Feature extends Component {
+class Home extends Component {
 
   componentDidMount() {
     document.querySelector('nav a:first-child').focus();
@@ -79,4 +79,4 @@ class Feature extends Component {
   }
 }
 
-export default Feature;
+export default Home;
