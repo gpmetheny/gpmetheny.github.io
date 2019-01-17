@@ -395,7 +395,7 @@ main {
   height: auto;
   /* opacity: 0; */
   /* filter: blur(5px); */
-  filter: hue-rotate(150deg) contrast(2.5);
+  filter: hue-rotate(150deg) contrast(1.5) grayscale(.3);
   /* filter:  */
   border-radius: 50%;
   /* animation: unblur 3s 1.5s forwards, fadein .5s 1s forwards; */
@@ -542,7 +542,7 @@ footer .row {
     width: 12rem;
     height: 12rem;
     border-top-left-radius: .75rem;
-    filter: hue-rotate(150deg) contrast(2.5);
+    filter: hue-rotate(150deg) contrast(1.5) grayscale(.3);
   }
 
   #card-top ul {
