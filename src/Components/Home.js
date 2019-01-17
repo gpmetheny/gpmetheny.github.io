@@ -147,7 +147,7 @@ const italicize = keyframes`
 
 const change = keyframes`
   100% {
-    content: ' */';
+    content: '*/';
     display: inline-block;
     width: 3rem;
     height: 2rem;
@@ -253,7 +253,7 @@ const Home = styled(_Home)`
                ${italicize} .01s 4.3s forwards;
 
     &::before {
-      content: '/* ';
+      content: '/*';
       display: inline-block;
       width: 3rem;
       height: 2rem;
@@ -330,7 +330,7 @@ const Home = styled(_Home)`
   }
 
   a {
-    animation: ${popIn} .2s 5s both;
+    animation: ${popIn} .5s 5s both;
   }
 `;
 
