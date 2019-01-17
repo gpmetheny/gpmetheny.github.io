@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
   min-height: 100%;
   width: 100%;
+  background-color: #fff;
   color: #222;
   font-family: 'Roboto', sans-serif;
 }
@@ -22,6 +23,7 @@ h5,
 h6 {
   color: #F94E6D;
   font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
 }
 
 ul, li {
@@ -37,7 +39,7 @@ a:active,
 a:visited {
   font-family: 'Roboto Mono', monospace;
   color: #222;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: underline;
   transition: all .3s;
 }

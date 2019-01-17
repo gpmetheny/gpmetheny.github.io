@@ -126,15 +126,25 @@ const appear = keyframes`
   }
   100% {
     opacity: 1;
+    width: 1.2rem;
   }
 `;
 
-const center = keyframes`
+const blink = keyframes`
   0% {
-    text-align: left;
+    background-color: #222;
+  }
+  25% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: #222;
+  }
+  75% {
+    background-color: #fff;
   }
   100% {
-    text-align: center;
+    background-color: #222;
   }
 `;
 
@@ -145,13 +155,38 @@ const italicize = keyframes`
   }
 `;
 
-const change = keyframes`
+const pad = keyframes`
+  100% {
+    /* width: 1.8rem; */
+    padding-left: .6rem;
+  }
+`;
+
+const leftComment = keyframes`
+  0% {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
+const rightComment = keyframes`
   100% {
     content: '*/';
     display: inline-block;
-    width: 3rem;
+    width: 3.6rem;
     height: 2rem;
-    margin-right: -4rem;
+    margin-left: .6rem;
     text-align: right;
     background-color: transparent;
     color: gray;
@@ -161,7 +196,7 @@ const change = keyframes`
 const Home = styled(_Home)`
   #name-wrap,
   #title-wrap {
-    width: 17rem;
+    width: 16.8rem;
     height: 3rem;
     align-self: center;
     overflow: visible;
@@ -172,21 +207,21 @@ const Home = styled(_Home)`
   h2 {
     text-align: left;
     font-size: 2rem !important;
-    color: black;
+    font-weight: 400;
+    color: #222;
     margin: 0;
   }
 
   h1 {
-    animation: ${center} .01s 4.3s both;
-
     &::after {
       content: '';
       display: inline-block;
       width: 1rem;
       height: 1.8rem;
       margin-bottom: -.2rem;
-      background-color: black;
-      animation: ${appear} .01s 2.6s both reverse;
+      background-color: #222;
+      animation: ${blink} 1s both 3,
+                 ${appear} .01s 2.6s both reverse;
     }
 
     span {
@@ -249,18 +284,17 @@ const Home = styled(_Home)`
   }
 
   h2 {
-    animation: ${center} .01s 4.3s both,
-               ${italicize} .01s 4.3s forwards;
+    animation: ${italicize} .01s 4.3s forwards;
 
     &::before {
       content: '/*';
       display: inline-block;
-      width: 3rem;
+      width: 3.6rem;
       height: 2rem;
-      margin-left: -4rem;
+      margin-left: -3.6rem;
       text-align: left;
       color: gray;
-      animation: ${appear} .01s 4.3s both;
+      animation: ${leftComment} .01s 4.3s both;
     }
 
     &::after {
@@ -269,16 +303,21 @@ const Home = styled(_Home)`
       width: 1rem;
       height: 1.8rem;
       margin-bottom: -.2rem;
-      background-color: black;
+      background-color: #222;
       animation: ${appear} .01s 2.6s both,
-                 ${change} .01s 4.3s forwards;
+                 ${blink} 1s 2.6s both 2,
+                 ${rightComment} .01s 4.3s forwards;
     }
 
     span {
       opacity: 0;
       animation: ${appear} .01s 2.9s both;
       
-
+      &:first-child {
+        animation: ${appear} .01s 2.9s both,
+                   ${pad} .01s 4.3s forwards;
+      }
+      
       &:nth-child(2) {
         animation-delay: 2.95s;
       }
