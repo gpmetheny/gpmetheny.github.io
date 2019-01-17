@@ -1,26 +1,11 @@
 {
-  "short_name": "Gabbie Metheny",
-  "name": "Gabbie Metheny | Full-Stack Web Developer",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
-      "type": "image/xicon",
-      "sizes": "64x64 32x32 24x24 16x16"
-    },
-    {
-      "src": "./monstera-128.png",
-      "type": "image/png",
-      "sizes": "128x128"
-    },
-    {
-      "src": "./monstera-192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "./monstera-512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
     }
   ],
   "start_url": "./index.html",

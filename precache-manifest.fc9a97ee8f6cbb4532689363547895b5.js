@@ -8,27 +8,27 @@ self.__precacheManifest = [
     "url": "/static/media/portfolio-logo.e7c710ab.svg"
   },
   {
-    "revision": "c8bcd8c59db3b0e7322793e0beaf7492",
-    "url": "/static/media/angry_jack.c8bcd8c5.jpg"
+    "revision": "65a9e3667e1b1b249feebaf3a68a1bca",
+    "url": "/static/media/angel-city.65a9e366.jpg"
   },
   {
     "revision": "229c360febb4351a89df",
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
-    "revision": "af5d49fff4414b423fb8",
-    "url": "/static/js/main.af5d49ff.chunk.js"
+    "revision": "a5959f5b436d19fdfa43",
+    "url": "/static/js/main.a5959f5b.chunk.js"
   },
   {
-    "revision": "7a4189b50fce246e8b9d",
-    "url": "/static/js/1.7a4189b5.chunk.js"
+    "revision": "c271e99786d3aa3cd486",
+    "url": "/static/js/1.c271e997.chunk.js"
   },
   {
-    "revision": "af5d49fff4414b423fb8",
-    "url": "/static/css/main.5add1739.chunk.css"
+    "revision": "a5959f5b436d19fdfa43",
+    "url": "/static/css/main.3d761e6e.chunk.css"
   },
   {
-    "revision": "83185171e592c94674df1af31e95ac5e",
+    "revision": "a0a2d80c0845885115eff3dcccfb1e96",
     "url": "/index.html"
   }
 ];
