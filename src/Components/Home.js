@@ -100,14 +100,16 @@ class _Home extends Component {
   }
 }
 
-const popIn = keyframes`
+const slideIn = keyframes`
   0% {
     opacity: 0;
     pointer-events: none;
+    transform: translateX(-100%);
   }
   100% {
     opacity: 1;
     pointer-events: normal;
+    transform: translateX(0);
   }
 `;
 
@@ -208,7 +210,7 @@ const Home = styled(_Home)`
     text-align: left;
     font-size: 2rem !important;
     font-weight: 400;
-    color: #222;
+    color: #222 !important;
     margin: 0;
   }
 
@@ -219,7 +221,7 @@ const Home = styled(_Home)`
       width: 1rem;
       height: 1.8rem;
       margin-bottom: -.2rem;
-      background-color: #222;
+      background-color: #fff;
       animation: ${blink} 1s both 3,
                  ${appear} .01s 2.6s both reverse;
     }
@@ -369,7 +371,7 @@ const Home = styled(_Home)`
   }
 
   a {
-    animation: ${popIn} .5s 5s both;
+    animation: ${slideIn} .5s 4.7s both;
   }
 `;
 
