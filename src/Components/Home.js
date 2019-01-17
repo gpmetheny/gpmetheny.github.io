@@ -132,34 +132,33 @@ const appear = keyframes`
   }
 `;
 
-const blink = keyframes`
+const blink = (props) => keyframes`
   0% {
-    background-color: #222;
+    background-color: ${props.theme.color.contrast};
   }
   25% {
-    background-color: #fff;
+    background-color: ${props.theme.color.primary};
   }
   50% {
-    background-color: #222;
+    background-color: ${props.theme.color.contrast};
   }
   75% {
-    background-color: #fff;
+    background-color: ${props.theme.color.primary};
   }
   100% {
-    background-color: #222;
+    background-color: ${props.theme.color.contrast};
   }
 `;
 
-const italicize = keyframes`
+const italicize = (props) => keyframes`
   100% {
     font-style: italic;
-    color: gray;
+    color: ${props.theme.color.gray};
   }
 `;
 
 const pad = keyframes`
   100% {
-    /* width: 1.8rem; */
     padding-left: .6rem;
   }
 `;
@@ -182,7 +181,7 @@ const leftComment = keyframes`
   }
 `;
 
-const rightComment = keyframes`
+const rightComment = (props) => keyframes`
   100% {
     content: '*/';
     display: inline-block;
@@ -191,7 +190,7 @@ const rightComment = keyframes`
     margin-left: .6rem;
     text-align: right;
     background-color: transparent;
-    color: gray;
+    color: ${props.theme.color.gray};
   }
 `;
 
@@ -210,7 +209,7 @@ const Home = styled(_Home)`
     text-align: left;
     font-size: 2rem !important;
     font-weight: 400;
-    color: #222 !important;
+    color: ${props => props.theme.color.contrast} !important;
     margin: 0;
   }
 
@@ -221,7 +220,6 @@ const Home = styled(_Home)`
       width: 1rem;
       height: 1.8rem;
       margin-bottom: -.2rem;
-      background-color: #fff;
       animation: ${blink} 1s both 3,
                  ${appear} .01s 2.6s both reverse;
     }
@@ -295,7 +293,7 @@ const Home = styled(_Home)`
       height: 2rem;
       margin-left: -3.6rem;
       text-align: left;
-      color: gray;
+      color: ${props => props.theme.color.gray};
       animation: ${leftComment} .01s 4.3s both;
     }
 
@@ -305,7 +303,6 @@ const Home = styled(_Home)`
       width: 1rem;
       height: 1.8rem;
       margin-bottom: -.2rem;
-      background-color: #222;
       animation: ${appear} .01s 2.6s both,
                  ${blink} 1s 2.6s both 2,
                  ${rightComment} .01s 4.3s forwards;
