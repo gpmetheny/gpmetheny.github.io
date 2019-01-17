@@ -393,10 +393,12 @@ main {
 #about img {
   width: 100%;
   height: auto;
-  opacity: 0;
-  filter: blur(5px);
+  /* opacity: 0; */
+  /* filter: blur(5px); */
+  filter: hue-rotate(150deg) contrast(2.5);
+  /* filter:  */
   border-radius: 50%;
-  animation: unblur 3s 1.5s forwards, fadein .5s 1s forwards;
+  /* animation: unblur 3s 1.5s forwards, fadein .5s 1s forwards; */
 }
 
 #resume-header img {
@@ -540,6 +542,7 @@ footer .row {
     width: 12rem;
     height: 12rem;
     border-top-left-radius: .75rem;
+    filter: hue-rotate(150deg) contrast(2.5);
   }
 
   #card-top ul {
