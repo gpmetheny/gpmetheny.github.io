@@ -22,9 +22,9 @@ const NavList = (props) => {
         );
       })}
       <li>
-        <button onClick={() => props.toggleDarkMode()} id="darkMode" style={{color: 'salmon'}}>
-        {/* dark */}
-          <i className="material-icons" title="toggle dark mode">brightness_2</i>
+        <button onClick={() => props.toggleDarkMode()} id="darkMode">
+          <span>toggle dark mode</span>
+          <i className="material-icons">brightness_2</i>
         </button>
       </li>
     </ul>
@@ -103,17 +103,64 @@ const StyledNavList = styled(NavList)`
   #darkMode:hover,
   #darkMode:focus,
   #darkMode:active {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     padding: .75rem;
     border: none;
-    background-color: transparent;
+    background-color: ${props => props.theme.color.brandLight};;
     cursor: pointer;
+
+    @media (min-width: 768px) {
+      width: fit-content;
+      background-color: transparent;
+    }
+  }
+
+  #darkMode span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    font-size: 1rem;
+    font-family: ${props => props.theme.font.sans};
+
+    @media (min-width: 768px) {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    }
+  }
+
+  #darkMode:hover span {
+    @media (min-width: 768px) {
+      width: fit-content;
+      height: 1.5rem;
+      padding: .5rem;
+      top: 3.5rem;
+      right: 2rem;
+      background-color: ${props => props.theme.color.brandLight};
+      border-radius: 10px;
+      border-top-right-radius: 0;
+      clip: unset;
+    }
   }
 
   .material-icons {
     font-size: 1.5rem;
+    margin-left: auto;
     padding-top: .5rem;
-    color: ${props => props.theme.color.primary};
+    color: ${props => props.theme.color.black};
+    @media (min-width: 768px) {
+      color: ${props => props.theme.color.primary};
+    }
   }
 `;
 
