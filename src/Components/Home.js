@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import styled, { keyframes } from 'styled-components';
 
 import CTA from './CTA';
-import TechIcon from './TechIcon';
+// import TechIcon from './TechIcon';
 
-import techList from '../SVG/techList';
+// import techList from '../SVG/techList';
 
 class _Home extends Component {
 

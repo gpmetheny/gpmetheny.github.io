@@ -73,7 +73,7 @@ const StyledNavList = styled(NavList)`
   a {
     display: ${props => props.isExpanded
                   ? 'block'
-                  : 'unset'};
+                  : 'inline-block'};
     height: ${props => props.isExpanded
                   ? '3rem'
                   : 0};
@@ -103,12 +103,8 @@ const StyledNavList = styled(NavList)`
   #darkMode:hover,
   #darkMode:focus,
   #darkMode:active {
-    /* position: absolute;
-    top: 1rem; */
-    align-self: center;
-    /* outline: none; */
-    padding: 0;
-    margin: 0;
+    display: inline-block;
+    padding: .75rem;
     border: none;
     background-color: transparent;
     cursor: pointer;
