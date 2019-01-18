@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 import CTA from './CTA';
 import Loader from './Loader';
@@ -10,10 +11,10 @@ import monstera from '../SVG/logo';
 import socialList from '../SVG/socialList';
 
 import avatar from '../img/angel-city.jpg';
-import portfolioLogo from '../img/portfolio-logo.svg';
+// import portfolioLogo from '../img/portfolio-logo.svg';
 import skills from '../img/skills.svg';
 
-class Resume extends Component {
+class _Resume extends Component {
   componentDidMount() {
     document.querySelector('nav a:first-child').focus();
     document.querySelector('nav a:first-child').blur();
@@ -29,16 +30,16 @@ class Resume extends Component {
 
   render() {
     return (
-      <div className="jumbotron jumbotron-fluid content-wrapper">
+      <div className={`${this.props.className} jumbotron jumbotron-fluid content-wrapper`}>
         <Loader />
         <div className="container pt-3 pt-lg-5" id="resume">
           <div className="row">
             <div className="col-md-7 col-lg-8">
               <div className="mb-3" id="resume-header">
-                <img src={portfolioLogo} alt="Gabbie Metheny | Full-Stack JavaScript Developer" />
+                {/* <img src={portfolioLogo} alt="Gabbie Metheny | Full-Stack JavaScript Developer" /> */}
               </div>
               <div>
-                <h3 className="pt-md-3">tl;dr</h3>
+                <h3 className="pt-0">tl;dr</h3>
                 <p><strong>I am a self-taught full-stack developer living in Los Angeles, CA.</strong></p>
                 <p>I create engaging front-end user experiences, including original SVGs and CSS animations. I have strong knowledge of common <strong>front-end libraries and frameworks</strong>, and I recently rebuilt <Link to="/">my personal website</Link> using <strong>React</strong>. Some of my <Link to="/work">animations</Link> can be viewed there as well.</p>
                 <p>You can see an example of my back-end and database work with my <a href="https://pb-livin.github.io/bojack-ipsum" target="_blank" rel="noopener noreferrer">lorem ipsum generator</a>, also linked on my website, which pulls random quotes from Netflix's BoJack Horseman to make a user-specified number of paragraphs of dummy text. Check back soon to see a feature allowing the user to request quotes by specific characters.</p>
@@ -143,5 +144,19 @@ class Resume extends Component {
     );
   }
 }
+
+const Resume = styled(_Resume)`
+  #card a,
+  #card a:visited,
+  #card i {
+    color: ${props => props.theme.color.black};
+  }
+
+  #card a:hover,
+  #card a:focus,
+  #card a:active {
+    color: ${props => props.theme.color.brand};
+  }
+`;
 
 export default Resume;

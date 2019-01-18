@@ -21,6 +21,12 @@ const NavList = (props) => {
           </li>
         );
       })}
+      <li>
+        <button onClick={() => props.toggleDarkMode()} id="darkMode" style={{color: 'salmon'}}>
+        {/* dark */}
+          <i className="material-icons" title="toggle dark mode">brightness_2</i>
+        </button>
+      </li>
     </ul>
   );
 };
@@ -77,6 +83,41 @@ const StyledNavList = styled(NavList)`
       height: initial;
       padding: .75rem;
     }
+  }
+  
+  a,
+  a:visited {
+    color: ${props => props.theme.color.primary} !important;
+  }
+
+  a:hover,
+  a:focus {
+    color: ${props => props.theme.color.brand} !important;
+  }
+
+  a.active-link {
+    color: ${props => props.theme.color.brand};
+  }
+    
+  #darkMode,
+  #darkMode:hover,
+  #darkMode:focus,
+  #darkMode:active {
+    /* position: absolute;
+    top: 1rem; */
+    align-self: center;
+    /* outline: none; */
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .material-icons {
+    font-size: 1.5rem;
+    padding-top: .5rem;
+    color: ${props => props.theme.color.primary};
   }
 `;
 

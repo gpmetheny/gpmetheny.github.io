@@ -44,7 +44,7 @@ class Header extends Component {
             <Brand />
             <Hamburger menuExpanded={this.state.menuExpanded} />
           </div>
-          <NavList isExpanded={this.state.menuExpanded} />
+          <NavList isExpanded={this.state.menuExpanded} toggleDarkMode={this.props.toggleDarkMode} />
         </nav>
       </header>
     );
@@ -52,13 +52,26 @@ class Header extends Component {
 }
 
 const StyledHeader = styled(Header)`
+  nav {
+    background-color: ${props => props.theme.color.contrast};
+  }
+
   .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: #222;
+    background-color: ${props => props.theme.color.contrast};
     z-index: 200;
+  }
+
+  a,
+  a:hover,
+  a:focus,
+  a:active,
+  a:visited {
+    font-weight: normal !important;
+    text-decoration: none !important;
   }
 `;
 

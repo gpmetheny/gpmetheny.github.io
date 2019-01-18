@@ -32,7 +32,7 @@ const Dot = styled.div`
   align-items: center;
   justify-content: center;
   margin: .5rem;
-  background: ${props => props.theme.color.white};
+  background: ${props => props.theme.color.primary};
 
   &,
   &::after {

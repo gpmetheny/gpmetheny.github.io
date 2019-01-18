@@ -15,18 +15,18 @@ const CTA = styled(Link)`
 
   &:disabled {
     background-color: ${props => props.theme.color.brandLight};
-    color: ${props => props.theme.color.blackLight};
+    color: ${props => props.theme.color.gray};
     
     &:hover,
     &:focus {
       background-color: ${props => props.theme.color.brandLight};
-      color: ${props => props.theme.color.blackLight};
+      color: ${props => props.theme.color.gray};
     }
   }
 
   &:hover,
   &:focus {
-    background-color: ${props => props.theme.color.black};
+    background-color: ${props => props.theme.color.contrast};
     color: ${props => props.theme.color.brand};
   }
 

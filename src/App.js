@@ -12,15 +12,23 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      mode: 'default'
+      darkMode: true
     };
+  }
+
+  handleDarkMode = () => {
+    this.setState(prevState => {
+      return {
+        darkMode: !prevState.darkMode
+      }
+    });
   }
 
   render() {
     return (
       <HashRouter>
-        <ThemeProvider theme={this.state.mode === 'dark' ? theme.dark : theme.light}>
-          <Main />
+        <ThemeProvider theme={this.state.darkMode ? theme.dark : theme.light}>
+          <Main darkMode={this.state.darkMode} toggleDarkMode={this.handleDarkMode} />
         </ThemeProvider>
       </HashRouter>
     );

@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
+import styled from 'styled-components';
 
 import SocialIcon from './SocialIcon';
 
 import socialList from '../SVG/socialList';
 
-class Footer extends Component {
+class _Footer extends Component {
   render() {
     return (
-      <footer className="container pb-3">
+      <footer className={`${this.props.className} container pb-3`}>
         <div className="row d-flex flex-column-reverse flex-md-row justify-content-between">
 
           <span className="text-center py-1"><small>&copy; 2018 Gabbie Metheny</small></span>
@@ -36,5 +37,20 @@ class Footer extends Component {
     );
   }
 }
+
+const Footer = styled(_Footer)`
+  .social-icon {
+    background-color: ${props => props.theme.color.black};
+    border-color: ${props => props.theme.color.contrast};
+  }
+
+  .social-icon:hover {
+    background-color: ${props => props.theme.color.white};
+  }
+
+  .social-icon a path {
+    fill: ${props => props.theme.color.white};
+  }
+`;
 
 export default Footer;

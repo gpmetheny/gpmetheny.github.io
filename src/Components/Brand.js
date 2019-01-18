@@ -42,6 +42,13 @@ const StyledBrand = styled(Brand)`
     }
   }
 
+  h3 {
+    font-size: 1.5rem;
+    color: ${props => props.theme.color.primary};
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+  }
+
   #gabbie {
     display: none;
   }
