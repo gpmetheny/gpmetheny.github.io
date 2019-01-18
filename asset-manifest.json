@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.66e30c9b.chunk.css",
-  "main.js": "/static/js/main.4f3be89e.chunk.js",
-  "main.js.map": "/static/js/main.4f3be89e.chunk.js.map",
+  "main.js": "/static/js/main.73bc68b6.chunk.js",
+  "main.js.map": "/static/js/main.73bc68b6.chunk.js.map",
   "static/js/1.2652ff25.chunk.js": "/static/js/1.2652ff25.chunk.js",
   "static/js/1.2652ff25.chunk.js.map": "/static/js/1.2652ff25.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -10,6 +10,6 @@
   "static/media/angel-city.jpg": "/static/media/angel-city.65a9e366.jpg",
   "static/media/skills.svg": "/static/media/skills.9f5aa75f.svg",
   "index.html": "/index.html",
-  "precache-manifest.62fbd15eee4b05d649769e0fac29375f.js": "/precache-manifest.62fbd15eee4b05d649769e0fac29375f.js",
+  "precache-manifest.f36f1a33c3dce5c5736549a804ef5061.js": "/precache-manifest.f36f1a33c3dce5c5736549a804ef5061.js",
   "service-worker.js": "/service-worker.js"
 }
