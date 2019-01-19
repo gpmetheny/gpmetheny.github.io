@@ -385,7 +385,8 @@ main {
 #about-img-wrapper {
   width: 200px;
   height: 200px;
-  /* background-color: #888; */
+  background-color: #fdcad3;
+  border: 5px solid transparent;
   border-radius: 50%;
 }
 
