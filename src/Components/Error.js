@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+
+import CTA from './CTA';
 
 class Error extends Component {
   componentDidMount() {
-    document.querySelector('.logo-wrap').focus();
-    document.querySelector('.logo-wrap').blur();
+    document.querySelector('nav a:first-child').focus();
+    document.querySelector('nav a:first-child').blur();
 
     // menu
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
@@ -28,7 +29,7 @@ class Error extends Component {
               <p>Not Found</p>
             </div>
             <div className="my-5">
-              <Link to="/work" className="more">{'<<'} back to my work</Link>
+              <CTA to="/work">{'<<'} back to my work</CTA>
             </div>
           </div>
         </div>

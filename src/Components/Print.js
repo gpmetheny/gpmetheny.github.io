@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
+import CTA from './CTA';
 
 class Print extends Component {
   componentDidMount() {
-    document.querySelector('.logo-wrap').focus();
-    document.querySelector('.logo-wrap').blur();
+    document.querySelector('nav a:first-child').focus();
+    document.querySelector('nav a:first-child').blur();
     
     // menu
     document.querySelectorAll('nav a').forEach(navlink => navlink.classList.remove('active-link'));
@@ -41,7 +42,7 @@ class Print extends Component {
               <p>Can I print?</p>
             </div>
             <div className="my-5">
-              <button className="more" id="print-btn">click</button>
+              <CTA as="button" id="print-btn">click</CTA>
             </div>
             <div id="error-msg"></div>
           </div>

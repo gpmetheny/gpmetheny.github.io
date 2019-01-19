@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
+import CTA from './CTA';
 
 class Contact extends Component {
   componentDidMount() {
-    document.querySelector('.logo-wrap').focus();
-    document.querySelector('.logo-wrap').blur();
+    document.querySelector('nav a:first-child').focus();
+    document.querySelector('nav a:first-child').blur();
     
     // twitter script
     let script = document.createElement('script');
@@ -96,7 +97,8 @@ class Contact extends Component {
 
               <div className="form-row text-center">
                 <div className="form-group offset-lg-2 col-lg-10">
-                  <input type="submit" className="btn btn-danger" value="Submit" id="submit" disabled />
+                  <CTA as="input" type="submit" value="submit" id="submit" disabled />
+                  {/* <input type="submit" className="btn btn-danger" value="Submit" id="submit" disabled /> */}
                 </div>
               </div>
                   

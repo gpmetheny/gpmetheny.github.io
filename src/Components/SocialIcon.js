@@ -22,7 +22,11 @@ class SocialIcon extends Component {
   render() {
     return (
       <li className="social-icon" id={this.props.id}>
-        <a href={this.props.href} target="_blank" rel="noopener noreferrer">
+        <a
+          href={this.props.href}
+          target="_blank"
+          rel={this.props.id === 'mastodon-icon' ? 'noopener noreferrer me' : 'noopener noreferrer'}
+        >
           <SVG
             alt={this.props.id}
             circles={this.props.circles}

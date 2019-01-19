@@ -1,71 +1,78 @@
 import React, {Component} from 'react';
-import {NavLink} from 'react-router-dom';
+import styled from 'styled-components';
 
-import SVG from './SVG';
-
-import monstera from '../SVG/logo';
+import Brand from './Brand';
+import Hamburger from './Hamburger';
+import NavList from './NavList';
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      menuExpanded: false
+    };
+  }
+
   componentDidMount() {
     const nav = document.querySelector('nav');
 
     nav.addEventListener('click', (e) => {
-      if (e.target.className === 'icon' ||
-          e.target.className === 'icon-wrap') {
-        nav.classList.toggle('menuActive');
+      if (e.target.tagName === 'BUTTON' ||
+          e.target.parentNode.tagName === 'BUTTON') {
+        this.setState(prevState => ({
+          menuExpanded: !prevState.menuExpanded
+        }));
       }
     });
 
+    // will not fire if focus is on link, button, input, etc.
+    // prevents interfering w/ default behavior (ff mobile bug)
     nav.addEventListener('focusout', (e) => {
-      // will not fire if focus is on link, button, input, etc.
-      // prevents interfering w/ default behavior (ff mobile bug)
       if (e.relatedTarget === null) {
-        nav.classList.remove('menuActive');
+        this.setState({
+          menuExpanded: false
+        });
       }
     });
   }
 
   render() {
     return (
-      <header>
+      <header className={this.props.className}>
         <nav>
-
-          <div className="menu-wrap">
-
-            <NavLink className="logo-wrap" to="/">
-              <SVG
-                className="pr-2"
-                viewBox={monstera.viewBox}
-                height={monstera.height}
-                paths={monstera.paths}
-              />
-              <h3>
-                <span className="sr-only">Home</span>
-                <span id="regex" aria-hidden={true}>&nbsp;Gab+[iy]e?&nbsp;</span>{
-                  // eslint-disable-next-line
-                }<span id="gabbie" aria-hidden={true}>/* Gabbie */</span>
-                </h3>
-            </NavLink> {/* end logo wrap */}
-
-            <button className="icon-wrap">
-              <span className="icon" id="icon-top"></span>
-              <span className="icon" id="icon-center"></span>
-              <span className="icon" id="icon-bottom"></span>
-            </button> {/* end icon wrap */}
-
-          </div> {/* end menu wrap */}
-
-          <ul>
-            <li><NavLink to="/about">About</NavLink></li>
-            <li><NavLink to="/work">Work</NavLink></li>
-            <li><NavLink to="/resume">Resume</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>
-          </ul>
-
+          <div className="wrapper">
+            <Brand />
+            <Hamburger menuExpanded={this.state.menuExpanded} />
+          </div>
+          <NavList isExpanded={this.state.menuExpanded} toggleDarkMode={this.props.toggleDarkMode} />
         </nav>
       </header>
     );
   }
 }
 
-export default Header;
+const StyledHeader = styled(Header)`
+  nav {
+    background-color: ${props => props.theme.color.contrast};
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: ${props => props.theme.color.contrast};
+    z-index: 200;
+  }
+
+  a,
+  a:hover,
+  a:focus,
+  a:active,
+  a:visited {
+    font-weight: normal !important;
+    text-decoration: none !important;
+  }
+`;
+
+export default StyledHeader;

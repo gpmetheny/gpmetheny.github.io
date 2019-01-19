@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
 
+import CTA from './CTA';
 import Loader from './Loader';
 import Pen from './Pen';
 
 class Work extends Component {
   componentDidMount() {
-    document.querySelector('.logo-wrap').focus();
-    document.querySelector('.logo-wrap').blur();
+    document.querySelector('nav a:first-child').focus();
+    document.querySelector('nav a:first-child').blur();
     
     let script = document.createElement('script');
     script.src = 'https://static.codepen.io/assets/embed/ei.js';
@@ -83,7 +83,7 @@ class Work extends Component {
           </div>
           <div className="d-flex flex-column align-items-center text-center mb-5 mt-3">
             <div className="row my-5">
-              <p><Link to="/about" className="more">more about my work {'>>'}</Link></p>
+              <CTA to="/about">more about my work {'>>'}</CTA>
             </div>
           </div>
         </div>
