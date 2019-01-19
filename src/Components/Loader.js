@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components';
 
-const pulse = keyframes`
+const pulse = props => keyframes`
   20% {
-    opacity: 1;
+    background-color: ${props.theme.color.brand};
+    /* opacity: 1; */
   }
 `;
 
@@ -31,28 +32,18 @@ const Dot = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
   margin: .5rem;
-  background: ${props => props.theme.color.primary};
+  background: ${props => props.theme.color.brandXLight};
+  animation: ${pulse} .6s ease-in-out 5 both;
 
-  &,
-  &::after {
-    height: 1.5rem;
-    width: 1.5rem;
-    border-radius: 50%;
-  }
-
-  &::after {
-    content: '';
-    background: ${props => props.theme.color.brand};
-    opacity: .5;
-    animation: ${pulse} .6s ease-in-out 5 both;
-  }
-
-  &:nth-child(2)::after {
+  &:nth-child(2) {
     animation-delay: .15s;
   }
 
-  &:nth-child(3)::after {
+  &:nth-child(3) {
     animation-delay: .3s;
   }
 `;

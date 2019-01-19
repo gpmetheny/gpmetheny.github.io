@@ -14,13 +14,13 @@ const CTA = styled(Link)`
   transition: all .3s;
 
   &:disabled {
-    background-color: ${props => props.theme.color.brandLight};
-    color: ${props => props.theme.color.gray};
+    background-color: ${props => props.theme.color.brandXLight};
+    color: ${props => props.theme.color.blackLight};
     
     &:hover,
     &:focus {
-      background-color: ${props => props.theme.color.brandLight};
-      color: ${props => props.theme.color.gray};
+      background-color: ${props => props.theme.color.brandXLight};
+      color: ${props => props.theme.color.blackLight};
     }
   }
 
