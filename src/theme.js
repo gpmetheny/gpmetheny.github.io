@@ -108,7 +108,7 @@ const theme = {
       brand: _brand,
       brandInvert: invert(_brand),
       brandLight: lighten(_brand, 20),
-      brandXLight: lighten(_brand, 40),
+      brandXLight: lighten(_brand, 50),
       brandDark: darken(_brand, 60),
       primary: _black,
       contrast: _white,
