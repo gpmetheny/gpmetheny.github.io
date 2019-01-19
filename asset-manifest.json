@@ -1,15 +1,15 @@
 {
-  "main.css": "/static/css/main.7b172a06.chunk.css",
-  "main.js": "/static/js/main.4926a449.chunk.js",
-  "main.js.map": "/static/js/main.4926a449.chunk.js.map",
+  "main.css": "/static/css/main.43bf1cba.chunk.css",
+  "main.js": "/static/js/main.615d6cd3.chunk.js",
+  "main.js.map": "/static/js/main.615d6cd3.chunk.js.map",
   "static/js/1.2652ff25.chunk.js": "/static/js/1.2652ff25.chunk.js",
   "static/js/1.2652ff25.chunk.js.map": "/static/js/1.2652ff25.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.7b172a06.chunk.css.map": "/static/css/main.7b172a06.chunk.css.map",
+  "static/css/main.43bf1cba.chunk.css.map": "/static/css/main.43bf1cba.chunk.css.map",
   "static/media/angel-city.jpg": "/static/media/angel-city.65a9e366.jpg",
   "static/media/skills.svg": "/static/media/skills.9f5aa75f.svg",
   "index.html": "/index.html",
-  "precache-manifest.00c17bc51022236b78d064a908f42524.js": "/precache-manifest.00c17bc51022236b78d064a908f42524.js",
+  "precache-manifest.58debf91346690f415f7c113597b2276.js": "/precache-manifest.58debf91346690f415f7c113597b2276.js",
   "service-worker.js": "/service-worker.js"
 }
