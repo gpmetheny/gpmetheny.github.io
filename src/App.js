@@ -12,18 +12,18 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      darkMode: localStorage.getItem('prefersDarkMode') || false
+      darkMode: JSON.parse(localStorage.getItem('darkMode')) || false
     };
   }
 
   handleDarkMode = () => {
-    let previousState = this.state;
+    // let prevState = this.state;
     this.setState(prevState => {
+      localStorage.setItem('darkMode', !prevState.darkMode);
       return {
         darkMode: !prevState.darkMode
       }
     });
-    return localStorage.setItem('prefersDarkMode', !previousState.darkMode);
   }
 
   render() {
