@@ -134,19 +134,19 @@ const appear = keyframes`
 
 const blink = (props) => keyframes`
   0% {
-    background-color: ${props.theme.color.contrast};
+    background-color: ${props.theme.color.black};
   }
   25% {
-    background-color: ${props.theme.color.primary};
+    background-color: ${props.theme.color.white};
   }
   50% {
-    background-color: ${props.theme.color.contrast};
+    background-color: ${props.theme.color.black};
   }
   75% {
-    background-color: ${props.theme.color.primary};
+    background-color: ${props.theme.color.white};
   }
   100% {
-    background-color: ${props.theme.color.contrast};
+    background-color: ${props.theme.color.black};
   }
 `;
 
