@@ -96,7 +96,7 @@ const StyledNavList = styled(NavList)`
   }
 
   a.active-link {
-    color: ${props => props.theme.color.brand};
+    color: ${props => props.theme.color.brand} !important;
   }
     
   #darkMode,
