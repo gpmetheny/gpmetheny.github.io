@@ -70,14 +70,15 @@ const StyledNavList = styled(NavList)`
     }
   }
 
-  a {
+  a,
+  #darkMode {
     display: ${props => props.isExpanded
                   ? 'block'
                   : 'inline-block'};
     height: ${props => props.isExpanded
                   ? '3rem'
                   : 0};
-    transition: all .3 .3s;
+    transition: all .3s .3s;
 
     @media (min-width: 768px) {
       height: initial;
@@ -107,9 +108,8 @@ const StyledNavList = styled(NavList)`
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: .75rem;
     border: none;
-    background-color: ${props => props.theme.color.brandInvert};;
+    background-color: ${props => props.theme.color.brandInvert};
     cursor: pointer;
 
     @media (min-width: 768px) {
