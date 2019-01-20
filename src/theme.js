@@ -80,7 +80,7 @@ const _gray = '#888';
 
 /* FONT STACK VARIABLES */
 const _monoStack = '"Roboto Mono", monospace';
-const _sansStack = '"Roboto", sans-serif';
+const _sansStack = '"Comfortaa", sans-serif';
 
 /* THEME OBJECT USED BY ThemeProvider */
 
