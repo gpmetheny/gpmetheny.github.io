@@ -47,6 +47,16 @@ const Main = styled(_Main)`
   background-color: ${props => props.theme.color.primary};
   color: ${props => props.theme.color.contrast};
 
+  main {
+    padding-top: 4rem;
+    min-height: calc(${window.innerHeight}px - 7.5rem);
+    overflow-x: hidden;
+
+    @media (min-width: 768px) {
+      min-height: calc(100vh - 5.6rem);
+    }
+  }
+
   a,
   a:hover,
   a:focus,

@@ -87,11 +87,11 @@ nav a:focus {
   color: #F94E6D !important;
 } */
 
-main {
+/* main {
   padding-top: 4rem;
   min-height: calc(100vh - 7.6rem);
   overflow-x: hidden;
-}
+} */
 
 .jumbotron {
   background: transparent;
@@ -481,9 +481,9 @@ footer .row {
     font-size: 1.75rem;
   }
 
-  main {
+  /* main {
     min-height: calc(100vh - 5.6rem);
-  }
+  } */
 
   .logo {
     width: 75%;
