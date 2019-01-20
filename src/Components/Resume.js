@@ -77,6 +77,7 @@ class _Resume extends Component {
                       viewBox={monstera.viewBox}
                       height="32"
                       paths={monstera.paths}
+                      id={`${monstera.id}-card`}
                     />
                     <h4>@gpmetheny</h4>
                   </div>
@@ -156,6 +157,10 @@ const Resume = styled(_Resume)`
   #card a:focus,
   #card a:active {
     color: ${props => props.theme.color.brand};
+  }
+
+  #monstera-card {
+    fill: ${props => props.theme.color.logo};
   }
 `;
 

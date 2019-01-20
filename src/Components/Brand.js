@@ -36,6 +36,7 @@ const StyledBrand = styled(Brand)`
   #monstera {
     height: 1.5rem;
     padding-right: 1rem;
+    fill: ${props => props.theme.color.logo};
 
     @media (min-width: 768px) {
       height: 1.75rem;

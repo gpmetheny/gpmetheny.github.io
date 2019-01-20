@@ -73,6 +73,7 @@ const darken = (hex, amount) => {
 /* COLOR VARIABLES */
 
 const _brand = '#f94e6d';
+const _logo = '#01bd5c';
 const _black = '#222';
 const _white = '#fff';
 const _gray = '#888';
@@ -91,6 +92,8 @@ const theme = {
       brandLight: lighten(_brand, 60),
       brandXLight: lighten(_brand, 80),
       brandDark: darken(_brand, 60),
+      logo: _logo,
+      logoInvert: invert(_logo),
       primary: _white,
       contrast: _black,
       black: _black,
@@ -110,6 +113,8 @@ const theme = {
       brandLight: lighten(_brand, 20),
       brandXLight: lighten(_brand, 70),
       brandDark: darken(_brand, 60),
+      logo: _logo,
+      logoInvert: invert(_logo),
       primary: _black,
       contrast: _white,
       black: _black,
