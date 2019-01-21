@@ -156,9 +156,9 @@ const StyledNavList = styled(NavList)`
   .material-icons {
     font-size: 1.5rem;
     margin-left: auto;
-    padding-top: .5rem;
     color: ${props => props.theme.color.black};
     @media (min-width: 768px) {
+      padding-top: .5rem;
       color: ${props => props.theme.color.primary};
     }
   }
