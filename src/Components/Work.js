@@ -49,7 +49,7 @@ class Work extends Component {
           <div className="d-flex flex-column align-items-center text-center mt-3">
             <div className="row">
               <h6 className="col-10 offset-1">Pure CSS animations using keyframes and transforms.</h6>
-              <p className="col-lg-10 offset-lg-1">Cocktail glass SVG is my original creation, atom and spinning loader animations were built using CSS divs, spans and pseudoelements. All animations are pure CSS (Javascript is used only for the pause buttons). See more of my animations on <a href="https://codepen.io/gpmetheny" target="_blank" rel="noopener noreferrer">Codepen</a>.</p>
+              <p className="col-lg-10 offset-lg-1">Cocktail glass SVG is my original creation, atom and spinning loader animations were built using CSS divs, spans and pseudoelements. All animations are pure CSS (JavaScript is used only for the pause buttons). See more of my animations on <a href="https://codepen.io/gpmetheny" target="_blank" rel="noopener noreferrer">Codepen</a>.</p>
             </div>
           </div> 
           <h2 className="text-center">FizzBuzz</h2>
