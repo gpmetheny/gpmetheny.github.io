@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import CTA from './CTA';
+import styled from 'styled-components';
 
-class Contact extends Component {
+class _Contact extends Component {
   componentDidMount() {
     document.querySelector('nav a:first-child').focus();
     document.querySelector('nav a:first-child').blur();
@@ -44,7 +45,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="jumbotron jumbotron-fluid content-wrapper" id="contact">
+      <div className={`${this.props.className} jumbotron jumbotron-fluid content-wrapper`} id="contact">
         <div className="d-flex align-items-center justify-content-center my-auto contact-wrapper pt-3 mb-3">
           <div className="container d-flex flex-column flex-lg-row align-items-center justify-content-center px-md-5 mx-md-5">
             <div className="d-flex flex-column align-items-center justify-content-between mb-3">
@@ -110,5 +111,26 @@ class Contact extends Component {
     );
   }
 }
+
+const Contact = styled(_Contact)`
+  input:not([type="submit"]),
+  textarea {
+    background-color: ${props => props.theme.color.contrastMild};
+    color: ${props => props.theme.color.contrast};
+    /* removes red outline from textarea in FF */
+    box-shadow: none;
+
+    &:focus {
+      background-color: ${props => props.theme.color.primary};
+      color: ${props => props.theme.color.contrast};
+      border-color: ${props => props.theme.color.brandLight};
+      box-shadow: 0 0 0 0.2rem ${props => props.theme.color.brandLight};
+    }
+
+    &::placeholder {
+      color: ${props => props.theme.color.contrast};
+    }
+  }
+`;
 
 export default Contact;
