@@ -113,6 +113,11 @@ class _Contact extends Component {
 }
 
 const Contact = styled(_Contact)`
+  /* prevents edge bug where () break to separate line */
+  h2 {
+    white-space: nowrap;
+  }
+
   input:not([type="submit"]),
   textarea {
     background-color: ${props => props.theme.color.contrastMild};
