@@ -21,19 +21,25 @@ class _Contact extends Component {
     document.querySelector('nav').classList.remove('menuActive');
 
     // form listener
-    document.querySelector('form').addEventListener('keyup', () => {
-      let count=0;
-      document.querySelectorAll('.required').forEach(field => {
-        if (field.value !== '') {
-          count += 1;
-          if (count === document.querySelectorAll('.required').length) {
-            document.querySelector('#submit').disabled = false;
-            return;
-          } else {
-            document.querySelector('#submit').disabled = true;
+    document.querySelector('form').addEventListener('keyup', (event) => {
+      // should only fire on required form fields
+      // prevents focus bug when navigating w/ keyboard
+      if (event.target.classList.contains('required')) {
+        
+        const requiredFields = Array.from(document.querySelectorAll('.required'));
+        const submitButton = document.querySelector('#submit');
+
+        requiredFields.reduce((count, field) => {
+          if (field.value) {
+            count += 1;
+            count >= requiredFields.length
+              ? submitButton.disabled = false
+              : submitButton.disabled = true;
+            return count;
           }
-        }
-      });
+          return null;
+        }, 0);
+      }
     });
   }
 
