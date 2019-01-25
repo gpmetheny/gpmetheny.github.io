@@ -49,7 +49,7 @@ const Main = styled(_Main)`
 
   main {
     padding-top: 4rem;
-    min-height: calc(${window.innerHeight}px - 7.5rem);
+    min-height: calc(${props => props.availableVH} - 7.5rem);
     overflow-x: hidden;
 
     @media (min-width: 768px) {
