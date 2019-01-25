@@ -139,7 +139,7 @@ const Contact = styled(_Contact)`
     }
 
     &::placeholder {
-      color: ${props => props.theme.color.contrast};
+      color: ${props => props.theme.color.contrastMedium};
     }
   }
 `;
