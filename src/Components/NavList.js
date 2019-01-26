@@ -141,7 +141,7 @@ const StyledNavList = styled(NavList)`
 
   #darkMode:hover span {
     @media (min-width: 768px) {
-      width: fit-content;
+      width: auto;
       height: 1.5rem;
       padding: .5rem;
       top: 3.5rem;
