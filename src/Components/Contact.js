@@ -65,31 +65,31 @@ class _Contact extends Component {
             
               <div className="form-row text-center">
                 <div className="form-group offset-lg-2 col-lg-5">
-                  <input type="text" className="form-control required" name="firstName" placeholder="First Name" required />
+                  <input type="text" className="form-control required" name="firstName" aria-label="First Name" placeholder="First Name" required />
                 </div>
                 <div className="form-group col-lg-5">
-                  <input type="text" className="form-control required" name="lastName" placeholder="Last Name" required />
+                  <input type="text" className="form-control required" name="lastName" aria-label="Last Name" placeholder="Last Name" required />
                 </div>
               </div>
 
               <div className="form-row text-center">
                 <div className="form-group offset-lg-2 col-lg-5">
-                  <input type="text" className="form-control" name="company" placeholder="Company (optional)" />
+                  <input type="text" className="form-control" name="company" aria-label="Company (optional)" placeholder="Company (optional)" />
                 </div>
                 <div className="form-group col-lg-5">
-                  <input type="text" className="form-control" name="title" placeholder="Title (optional)" />
+                  <input type="text" className="form-control" name="title" aria-label="Job Title (optional)" placeholder="Title (optional)" />
                 </div>
               </div>
 
               <div className="form-row text-center">
                 <div className="form-group offset-lg-2 col-lg-10">
-                  <input type="email" className="form-control required" name="_replyto" placeholder="Email" required />
+                  <input type="email" className="form-control required" name="_replyto" aria-label="Email" placeholder="Email" required />
                 </div>
               </div>
 
               <div className="form-row text-center">
                 <div className="form-group offset-lg-2 col-lg-10 mb-0">
-                  <textarea className="form-control required" name="message" placeholder="Say hi..." rows="10" cols="60" required></textarea>
+                  <textarea className="form-control required" name="message" aria-label="Message" placeholder="Say hi..." rows="10" cols="60" required></textarea>
                 </div>
                 <div className="form-group offset-lg-2 col-lg-10">
                   <small>contact form powered by <a href="https://formspree.io/" target="_blank" rel="noopener noreferrer">Formspree</a></small>
