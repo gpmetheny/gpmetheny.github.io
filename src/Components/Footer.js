@@ -39,6 +39,10 @@ class _Footer extends Component {
 }
 
 const Footer = styled(_Footer)`
+  position: relative;
+  color: ${props => props.theme.color.contrastMedium};
+  /* background-color: ${props => props.theme.color.primary}; */
+
   .social-icon {
     background-color: ${props => props.theme.color.black};
     border-color: ${props => props.theme.color.contrast};

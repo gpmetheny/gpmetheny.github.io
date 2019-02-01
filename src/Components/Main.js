@@ -49,11 +49,11 @@ const Main = styled(_Main)`
 
   main {
     padding-top: 4rem;
-    min-height: calc(${props => props.availableVH} - 7.5rem);
+    min-height: calc(${props => props.availableVH} - 6.5rem);
     overflow-x: hidden;
 
     @media (min-width: 768px) {
-      min-height: calc(100vh - 5.6rem);
+      min-height: calc(100vh - 4.6rem);
     }
   }
 
@@ -78,6 +78,7 @@ const Main = styled(_Main)`
   hr {
     background-color: ${props => props.theme.color.contrast};
     opacity: .1;
+    margin-top: 0;
   }
 
   #skills-graph {

@@ -109,7 +109,7 @@ const StyledNavList = styled(NavList)`
     justify-content: center;
     width: 100%;
     border: none;
-    background-color: ${props => props.theme.color.brandInvert};
+    background-color: ${props => props.theme.color.brand};
     cursor: pointer;
 
     @media (min-width: 768px) {
@@ -146,7 +146,7 @@ const StyledNavList = styled(NavList)`
       padding: .5rem;
       top: 3.5rem;
       right: 2rem;
-      background-color: ${props => props.theme.color.brandInvert};
+      background-color: ${props => props.theme.color.brand};
       border-radius: 10px;
       border-top-right-radius: 0;
       clip: unset;
