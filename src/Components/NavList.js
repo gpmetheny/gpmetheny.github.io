@@ -24,7 +24,7 @@ const NavList = (props) => {
       <li>
         <button onClick={() => props.toggleDarkMode()} id="darkMode">
           <span>toggle dark mode</span>
-          <i className="material-icons">brightness_2</i>
+          <i className="material-icons">{props.darkMode ? 'wb_sunny' : 'brightness_3'}</i>
         </button>
       </li>
     </ul>
@@ -114,6 +114,7 @@ const StyledNavList = styled(NavList)`
 
     @media (min-width: 768px) {
       width: fit-content;
+      height: 3.7rem;
       background-color: transparent;
     }
   }
@@ -157,6 +158,7 @@ const StyledNavList = styled(NavList)`
     font-size: 1.5rem;
     margin-left: auto;
     color: ${props => props.theme.color.black};
+
     @media (min-width: 768px) {
       padding-top: .5rem;
       color: ${props => props.theme.color.primary};

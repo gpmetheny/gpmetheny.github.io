@@ -1,3 +1,7 @@
+* {
+  outline-color: #f94e6d !important;
+}
+
 #print-btn {
   font-family: 'Roboto Mono', monospace;
 }

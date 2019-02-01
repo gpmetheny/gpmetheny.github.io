@@ -48,7 +48,8 @@ const Footer = styled(_Footer)`
     border-color: ${props => props.theme.color.contrast};
   }
 
-  .social-icon:hover {
+  .social-icon:hover,
+  .social-icon:focus {
     background-color: ${props => props.theme.color.white};
   }
 

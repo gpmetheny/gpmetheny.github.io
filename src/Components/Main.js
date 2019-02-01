@@ -19,7 +19,7 @@ class _Main extends Component {
     return (
       <div className={`${this.props.className} App`}>
         
-        <Header toggleDarkMode={this.props.toggleDarkMode} />
+        <Header darkMode={this.props.darkMode} toggleDarkMode={this.props.toggleDarkMode} />
 
         <main className="d-flex flex-column align-items-center justify-content-center">
           <Switch>

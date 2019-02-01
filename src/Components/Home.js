@@ -28,7 +28,7 @@ class _Home extends Component {
           <div className="row w-100">
 
             <div className="col-12 d-flex flex-column justify-content-center my-4">
-              <h1>I'm Gabbie,<br />a web developer who creates <span>engaging</span>, <span>accessible</span> designs.</h1>
+              <h1>I'm Gabbie,<br />a web developer who creates <span>engaging</span>, accessible designs.</h1>
             </div>
             
             <div className="col-12 my-5">
@@ -51,6 +51,19 @@ const fadeIn = keyframes`
   }
   100% {
     opacity: 1;
+  }
+`;
+
+const bounce = keyframes`
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+    text-shadow: 1.5px 6px 4px black;
+  }
+  100% {
+    transform: translateY(0);
   }
 `;
 
@@ -84,7 +97,7 @@ const Home = styled(_Home)`
     opacity: .8;
 
     @media (min-width: 768px) {
-      background-image: linear-gradient(130deg, rgba(0, 0, 0, .8), transparent, transparent), url(${cityHall});
+      /* background-image: linear-gradient(130deg, rgba(0, 0, 0, .8), transparent, transparent), url(${cityHall}); */
       background-position: top center;
     }
   }
@@ -95,7 +108,7 @@ const Home = styled(_Home)`
     font-weight: bold !important;
     font-size: 1.5rem;
     text-align: left;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .7);
     color: white !important;
     text-shadow: 1px 4px 3px black;
 
@@ -103,16 +116,14 @@ const Home = styled(_Home)`
       width: 50%;
       min-width: 700px;
       margin-right: auto;
-      padding-left: 5rem;
-      background-color: unset;
+      padding-left: 2rem;
+      /* background-color: unset; */
       font-size: 3.5rem !important;
     }
 
-    span {
-      /* font-style: italic; */
-      /* border-bottom: 6px solid ${props => props.theme.color.brand}; */
-      /* border-bottom-style: groove; */
-      
+    &:hover span {
+      display: inline-block;
+      animation: ${bounce} .6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
     }
   }
 
