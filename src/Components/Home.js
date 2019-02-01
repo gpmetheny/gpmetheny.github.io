@@ -28,7 +28,7 @@ class _Home extends Component {
           <div className="row w-100">
 
             <div className="col-12 d-flex flex-column justify-content-center my-4">
-              <h1>I'm Gabbie,<br />a web developer focused on creating <span>engaging</span>, <span>accessible</span> designs.</h1>
+              <h1>I'm Gabbie,<br />a web developer who creates <span>engaging</span>, <span>accessible</span> designs.</h1>
             </div>
             
             <div className="col-12 my-5">
@@ -84,10 +84,8 @@ const Home = styled(_Home)`
     opacity: .8;
 
     @media (min-width: 768px) {
-      background-image: linear-gradient(130deg, rgba(0, 0, 0, .8), transparent, transparent),
-                      url(${cityHall});
-    background-position: top center;
-      opacity: .8;
+      background-image: linear-gradient(130deg, rgba(0, 0, 0, .8), transparent, transparent), url(${cityHall});
+      background-position: top center;
     }
   }
 
