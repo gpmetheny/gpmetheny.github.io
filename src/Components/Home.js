@@ -93,7 +93,7 @@ const Home = styled(_Home)`
     background-image: url(${cityHall});
     background-size: cover;
     background-position: top right 30%;
-    filter: hue-rotate(70deg) contrast(4) invert(.2) brightness(.85);
+    filter: hue-rotate(70deg) contrast(4) invert(.2) brightness(1.2);
     opacity: .8;
 
     @media (min-width: 768px) {
