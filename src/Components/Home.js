@@ -92,7 +92,6 @@ const Home = styled(_Home)`
   }
 
   h1 {
-    margin-top: 30vh;
     padding: 1rem;
     font-family: ${props => props.theme.font.sans};
     font-weight: bold !important;
@@ -101,10 +100,6 @@ const Home = styled(_Home)`
     background-color: rgba(0, 0, 0, .8);
     color: white !important;
     text-shadow: 1px 4px 3px black;
-
-    @media (min-width: 500px) {
-      margin-top: 0;
-    }
 
     @media (min-width: 768px) {
       width: 50%;
