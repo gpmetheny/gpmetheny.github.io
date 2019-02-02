@@ -24,7 +24,7 @@ const NavList = (props) => {
       <li>
         <button onClick={() => props.toggleDarkMode()} id="darkMode">
           <span>toggle dark mode</span>
-          <i className="material-icons">brightness_2</i>
+          <i className="material-icons">{props.darkMode ? 'wb_sunny' : 'brightness_3'}</i>
         </button>
       </li>
     </ul>
@@ -109,11 +109,12 @@ const StyledNavList = styled(NavList)`
     justify-content: center;
     width: 100%;
     border: none;
-    background-color: ${props => props.theme.color.brandInvert};
+    background-color: ${props => props.theme.color.brand};
     cursor: pointer;
 
     @media (min-width: 768px) {
       width: fit-content;
+      height: 3.7rem;
       background-color: transparent;
     }
   }
@@ -139,14 +140,15 @@ const StyledNavList = styled(NavList)`
     }
   }
 
-  #darkMode:hover span {
+  #darkMode:hover span,
+  #darkMode:focus span {
     @media (min-width: 768px) {
       width: auto;
       height: 1.5rem;
       padding: .5rem;
       top: 3.5rem;
       right: 2rem;
-      background-color: ${props => props.theme.color.brandInvert};
+      background-color: ${props => props.theme.color.brand};
       border-radius: 10px;
       border-top-right-radius: 0;
       clip: unset;
@@ -157,6 +159,7 @@ const StyledNavList = styled(NavList)`
     font-size: 1.5rem;
     margin-left: auto;
     color: ${props => props.theme.color.black};
+
     @media (min-width: 768px) {
       padding-top: .5rem;
       color: ${props => props.theme.color.primary};

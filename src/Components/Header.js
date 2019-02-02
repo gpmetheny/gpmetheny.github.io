@@ -44,7 +44,7 @@ class Header extends Component {
             <Brand />
             <Hamburger menuExpanded={this.state.menuExpanded} />
           </div>
-          <NavList isExpanded={this.state.menuExpanded} toggleDarkMode={this.props.toggleDarkMode} />
+          <NavList isExpanded={this.state.menuExpanded} darkMode={this.props.darkMode} toggleDarkMode={this.props.toggleDarkMode} />
         </nav>
       </header>
     );

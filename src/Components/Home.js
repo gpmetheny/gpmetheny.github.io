@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import styled, { keyframes } from 'styled-components';
 
-import CTA from './CTA';
-// import TechIcon from './TechIcon';
+import cityHall from '../img/city-hall-dtla.jpg';
 
-// import techList from '../SVG/techList';
+import CTA from './CTA';
 
 class _Home extends Component {
 
@@ -20,71 +19,17 @@ class _Home extends Component {
     window.scrollTo(0, 0);
   }
 
-  /* typeLetters = (letters) => {
-    let output = '';
-    for (let letter of letters) {
-      // setInterval(() => {
-        output += letter;
-      // }, 100);
-    }
-    return output;
-  } */
-
   render() {
-    let nameText = 'Gabbie Metheny';
-    let titleText = 'web developer';
-    let nameLetters = nameText.split('');
-    let titleLetters = titleText.split('');
 
     return (
       <div className={`${this.props.className} jumbotron jumbotron-fluid d-flex content-wrapper`} id="feature">
+        <div id="banner-img-wrap"></div>
         <div className="container-fluid d-flex flex-column align-items-center justify-content-center text-center align-self-center" id="welcome">
           <div className="row w-100">
 
             <div className="col-12 d-flex flex-column justify-content-center my-4">
-              <div id="name-wrap">
-                <h1>{nameLetters.map((letter, index) => {
-                  return <span key={`${letter}-${index}`}>{letter}</span>;
-                })}</h1>
-              </div>
-              <div id="title-wrap">
-                <h2>{titleLetters.map((letter, index) => {
-                  return <span key={`${letter}-${index}`}>{letter}</span>;
-                })}</h2>
-              </div>
+              <h1>I'm Gabbie,<br />a web developer who creates <span>engaging</span>, accessible designs.</h1>
             </div>
-
-            {/* <div className="col-12 d-flex justify-content-center px-0">
-              {techList
-                .filter((tech, index) => index <= techList.length / 2)
-                .map((tech) => {
-                  return (
-                    <TechIcon
-                      key={tech.id}
-                      id={tech.id}
-                      paths={tech.paths}
-                      circles={tech.circles}
-                    />
-                  );
-                })
-              }
-            </div>
-
-            <div className="col-12 d-flex justify-content-center px-0 mb-5">
-              {techList
-                .filter((tech, index) => index > techList.length / 2)
-                .map((tech) => {
-                  return (
-                    <TechIcon
-                      key={tech.id}
-                      id={tech.id}
-                      paths={tech.paths}
-                      circles={tech.circles}
-                    />
-                  );
-                })
-              }
-            </div> */}
             
             <div className="col-12 my-5">
               <CTA to="/work">
@@ -100,6 +45,28 @@ class _Home extends Component {
   }
 }
 
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
+const bounce = keyframes`
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+    text-shadow: 1.5px 6px 4px black;
+  }
+  100% {
+    transform: translateY(0);
+  }
+`;
+
 const slideIn = keyframes`
   0% {
     opacity: 0;
@@ -113,262 +80,72 @@ const slideIn = keyframes`
   }
 `;
 
-const appear = keyframes`
-  0% {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    width: 1.2rem;
-  }
-`;
-
-const blink = (props) => keyframes`
-  0% {
-    background-color: ${props.theme.color.black};
-  }
-  25% {
-    background-color: ${props.theme.color.white};
-  }
-  50% {
-    background-color: ${props.theme.color.black};
-  }
-  75% {
-    background-color: ${props.theme.color.white};
-  }
-  100% {
-    background-color: ${props.theme.color.black};
-  }
-`;
-
-const italicize = (props) => keyframes`
-  100% {
-    font-style: italic;
-    color: ${props.theme.color.gray};
-  }
-`;
-
-const pad = keyframes`
-  100% {
-    padding-left: .6rem;
-  }
-`;
-
-const leftComment = keyframes`
-  0% {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`;
-
-const rightComment = (props) => keyframes`
-  100% {
-    content: '*/';
-    display: inline-block;
-    width: 3.6rem;
-    height: 2rem;
-    margin-left: .6rem;
-    text-align: right;
-    background-color: transparent;
-    color: ${props.theme.color.gray};
-  }
-`;
-
 const Home = styled(_Home)`
-  #name-wrap,
-  #title-wrap {
-    width: 16.8rem;
-    height: 3rem;
-    align-self: center;
-    overflow: visible;
-    white-space: nowrap;
-  }
+  animation: ${fadeIn} .5s .5s both;
 
-  h1,
-  h2 {
-    text-align: left;
-    font-size: 2rem !important;
-    font-weight: 400;
-    color: ${props => props.theme.color.contrast} !important;
-    margin: 0;
+  #banner-img-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: ${props => props.theme.color.black};
+    background-image: linear-gradient(130deg, ${props => props.theme.color.logo}, ${props => props.theme.color.brandInvert});
+    /* background-position: top right 30%; */
+
+    @media (min-width: 768px) {
+      /* background-image: linear-gradient(130deg, rgba(0, 0, 0, .8), transparent, transparent), url(${cityHall}); */
+      background-image: url(${cityHall});
+      background-size: cover;
+      filter: hue-rotate(70deg) contrast(4) invert(.2) brightness(1.5);
+      opacity: .8;
+      background-position: top center;
+    }
   }
 
   h1 {
-    &::after {
-      content: '';
-      display: inline-block;
-      width: 1rem;
-      height: 1.8rem;
-      margin-bottom: -.2rem;
-      animation: ${blink} 1s both 3,
-                 ${appear} .01s 2.6s both reverse;
+    padding: 2rem;
+    font-family: ${props => props.theme.font.sans};
+    font-weight: bold !important;
+    font-size: 1.5rem;
+    text-align: left;
+    background-color: ${props => props.theme.color.primary};
+    color: ${props => props.theme.color.contrast} !important;
+    box-shadow: 16px 16px 0 ${props => props.theme.color.contrastTransparent};
+    /* border: 4px solid ${props => props.theme.color.logo};
+    border-right-color: ${props => props.theme.color.brandInvert};
+    border-bottom-color: ${props => props.theme.color.brandInvert}; */
+    /* text-shadow: 1px 4px 3px black; */
+
+    @media (min-width: 768px) {
+      width: 50%;
+      min-width: 700px;
+      margin-right: auto;
+      padding-left: 3rem;
+      padding-right: 1rem;
+      border: none;
+      /* background-color: ${props => props.theme.color.primaryTransparent}; */
+      /* background-color: unset; */
+      font-size: 3.5rem !important;
+      /* box-shadow: -16px -16px 0 ${props => props.theme.color.logo}, 16px 16px 0 ${props => props.theme.color.brandInvert}; */
     }
 
-    span {
-      opacity: 0;
-      animation: ${appear} .01s 1.1s both;
-      
-
-      &:nth-child(2) {
-        animation-delay: 1.2s;
-      }
-
-      &:nth-child(3) {
-        animation-delay: 1.3s;
-      }
-
-      &:nth-child(4) {
-        animation-delay: 1.35s;
-      }
-
-      &:nth-child(5) {
-        animation-delay: 1.5s;
-      }
-
-      &:nth-child(6) {
-        animation-delay: 1.6s;
-      }
-
-      &:nth-child(7) {
-        animation-delay: 1.75s;
-      }
-
-      &:nth-child(8) {
-        animation-delay: 1.9s;
-      }
-
-      &:nth-child(9) {
-        animation-delay: 2s;
-      }
-
-      &:nth-child(10) {
-        animation-delay: 2.1s;
-      }
-
-      &:nth-child(11) {
-        animation-delay: 2.15s;
-      }
-
-      &:nth-child(12) {
-        animation-delay: 2.25s;
-      }
-
-      &:nth-child(13) {
-        animation-delay: 2.35s;
-      }
-
-      &:nth-child(14) {
-        animation-delay: 2.5s;
-      }
-    }
-  }
-
-  h2 {
-    animation: ${italicize} .01s 4.3s forwards;
-
-    &::before {
-      content: '/*';
-      display: inline-block;
-      width: 3.6rem;
-      height: 2rem;
-      margin-left: -3.6rem;
-      text-align: left;
-      color: ${props => props.theme.color.gray};
-      animation: ${leftComment} .01s 4.3s both;
-    }
-
-    &::after {
-      content: '';
-      display: inline-block;
-      width: 1rem;
-      height: 1.8rem;
-      margin-bottom: -.2rem;
-      animation: ${appear} .01s 2.6s both,
-                 ${blink} 1s 2.6s both 2,
-                 ${rightComment} .01s 4.3s forwards;
-    }
-
-    span {
-      opacity: 0;
-      animation: ${appear} .01s 2.9s both;
-      
-      &:first-child {
-        animation: ${appear} .01s 2.9s both,
-                   ${pad} .01s 4.3s forwards;
-      }
-      
-      &:nth-child(2) {
-        animation-delay: 2.95s;
-      }
-
-      &:nth-child(3) {
-        animation-delay: 3.05s;
-      }
-
-      &:nth-child(4) {
-        animation-delay: 3.1s;
-      }
-
-      &:nth-child(5) {
-        animation-delay: 3.2s;
-      }
-
-      &:nth-child(6) {
-        animation-delay: 3.25s;
-      }
-
-      &:nth-child(7) {
-        animation-delay: 3.35s;
-      }
-
-      &:nth-child(8) {
-        animation-delay: 3.45s;
-      }
-
-      &:nth-child(9) {
-        animation-delay: 3.55s;
-      }
-
-      &:nth-child(10) {
-        animation-delay: 3.6s;
-      }
-
-      &:nth-child(11) {
-        animation-delay: 3.65s;
-      }
-
-      &:nth-child(12) {
-        animation-delay: 3.8s;
-      }
-
-      &:nth-child(13) {
-        animation-delay: 3.9s;
-      }
+    &:hover span {
+      /* display: inline-block; */
+      /* animation: ${bounce} .6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; */
     }
   }
 
   a {
-    animation: ${slideIn} .5s 4.7s both;
+    background-color: ${props => props.theme.color.contrastTransparent};
+    color: ${props => props.theme.color.primary} !important;
+    border: 4px solid ${props => props.theme.color.primary};
+    /* box-shadow: 4px 4px 0 ${props => props.theme.color.contrast}; */
+    animation: ${slideIn} .5s 2s backwards;
+
+    @media (min-width: 768px) {
+      /* box-shadow: 8px 8px 0 ${props => props.theme.color.contrast}; */
+    }
   }
 `;
 

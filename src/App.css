@@ -1,3 +1,7 @@
+* {
+  outline-color: #f94e6d !important;
+}
+
 #print-btn {
   font-family: 'Roboto Mono', monospace;
 }
@@ -91,6 +95,10 @@ nav a:focus {
   padding-top: 4rem;
   min-height: calc(100vh - 7.6rem);
   overflow-x: hidden;
+} */
+
+/* main ~ footer {
+  color: white;
 } */
 
 .jumbotron {
