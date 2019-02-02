@@ -110,7 +110,7 @@ const Home = styled(_Home)`
     text-align: left;
     background-color: ${props => props.theme.color.primary};
     color: ${props => props.theme.color.contrast} !important;
-    box-shadow: -8px -8px 0 ${props => props.theme.color.logo}, 8px 8px 0 ${props => props.theme.color.brandInvert};
+    box-shadow: -16px -16px 0 ${props => props.theme.color.logo}, 16px 16px 0 ${props => props.theme.color.brandInvert};
     /* text-shadow: 1px 4px 3px black; */
 
     @media (min-width: 768px) {
@@ -123,7 +123,7 @@ const Home = styled(_Home)`
       /* background-color: unset; */
       font-size: 3.5rem !important;
       /* box-shadow: 16px 16px 0 ${props => props.theme.color.contrastTransparent}; */
-      box-shadow: -16px -16px 0 ${props => props.theme.color.logo}, 16px 16px 0 ${props => props.theme.color.brandInvert};
+      /* box-shadow: -16px -16px 0 ${props => props.theme.color.logo}, 16px 16px 0 ${props => props.theme.color.brandInvert}; */
     }
 
     &:hover span {
