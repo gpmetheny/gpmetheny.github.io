@@ -90,7 +90,7 @@ const Home = styled(_Home)`
     width: 100vw;
     height: 100vh;
     background-color: ${props => props.theme.color.black};
-    background-image: linear-gradient(130deg, ${props => props.theme.color.logo}, ${props => props.theme.color.brandInvert}, ${props => props.theme.color.brand});
+    background-image: linear-gradient(130deg, ${props => props.theme.color.logo}, ${props => props.theme.color.brandInvert});
     /* background-position: top right 30%; */
 
     @media (min-width: 768px) {
