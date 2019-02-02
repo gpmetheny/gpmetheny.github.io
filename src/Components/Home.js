@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import styled, { keyframes } from 'styled-components';
 
-import cityHall from '../img/city-hall-dtla.jpg';
-
 import CTA from './CTA';
 
 class _Home extends Component {
@@ -54,16 +52,12 @@ const fadeIn = keyframes`
   }
 `;
 
-const bounce = keyframes`
+const rotateGradient = keyframes`
   0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-    text-shadow: 1.5px 6px 4px black;
+    filter: hue-rotate(0);
   }
   100% {
-    transform: translateY(0);
+    filter: hue-rotate(180deg);
   }
 `;
 
@@ -91,16 +85,7 @@ const Home = styled(_Home)`
     height: 100vh;
     background-color: ${props => props.theme.color.black};
     background-image: linear-gradient(130deg, ${props => props.theme.color.logo}, ${props => props.theme.color.brandInvert});
-    /* background-position: top right 30%; */
-
-    @media (min-width: 768px) {
-      /* background-image: linear-gradient(130deg, rgba(0, 0, 0, .8), transparent, transparent), url(${cityHall}); */
-      background-image: url(${cityHall});
-      background-size: cover;
-      filter: hue-rotate(70deg) contrast(4) invert(.2) brightness(1.5);
-      opacity: .8;
-      background-position: top center;
-    }
+    animation: ${rotateGradient} 5s linear 2s both;
   }
 
   h1 {
@@ -112,27 +97,16 @@ const Home = styled(_Home)`
     background-color: ${props => props.theme.color.primary};
     color: ${props => props.theme.color.contrast} !important;
     box-shadow: 16px 16px 0 ${props => props.theme.color.contrastTransparent};
-    /* border: 4px solid ${props => props.theme.color.logo};
-    border-right-color: ${props => props.theme.color.brandInvert};
-    border-bottom-color: ${props => props.theme.color.brandInvert}; */
-    /* text-shadow: 1px 4px 3px black; */
 
     @media (min-width: 768px) {
-      width: 50%;
-      min-width: 700px;
+      max-width: 800px;
+      margin-left: auto;
       margin-right: auto;
-      padding-left: 3rem;
-      padding-right: 1rem;
+      padding: 4rem;
+      padding-left: 5rem;
+      padding-right: 2rem;
       border: none;
-      /* background-color: ${props => props.theme.color.primaryTransparent}; */
-      /* background-color: unset; */
-      font-size: 3.5rem !important;
-      /* box-shadow: -16px -16px 0 ${props => props.theme.color.logo}, 16px 16px 0 ${props => props.theme.color.brandInvert}; */
-    }
-
-    &:hover span {
-      /* display: inline-block; */
-      /* animation: ${bounce} .6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; */
+      font-size: 2.5rem !important;
     }
   }
 
@@ -140,12 +114,7 @@ const Home = styled(_Home)`
     background-color: ${props => props.theme.color.contrastTransparent};
     color: ${props => props.theme.color.primary} !important;
     border: 4px solid ${props => props.theme.color.primary};
-    /* box-shadow: 4px 4px 0 ${props => props.theme.color.contrast}; */
-    animation: ${slideIn} .5s 2s backwards;
-
-    @media (min-width: 768px) {
-      /* box-shadow: 8px 8px 0 ${props => props.theme.color.contrast}; */
-    }
+    animation: ${slideIn} .5s 3s backwards;
   }
 `;
 

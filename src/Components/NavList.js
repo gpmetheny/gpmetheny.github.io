@@ -152,6 +152,7 @@ const StyledNavList = styled(NavList)`
       border-radius: 10px;
       border-top-right-radius: 0;
       clip: unset;
+      box-shadow: 0 2px 3px black;
     }
   }
 

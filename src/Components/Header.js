@@ -54,6 +54,7 @@ class Header extends Component {
 const StyledHeader = styled(Header)`
   nav {
     background-color: ${props => props.theme.color.contrast};
+    box-shadow: 0 2px 2px black;
   }
 
   .wrapper {
