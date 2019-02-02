@@ -90,14 +90,15 @@ const Home = styled(_Home)`
     width: 100vw;
     height: 100vh;
     background-color: ${props => props.theme.color.black};
-    background-image: url(${cityHall});
-    background-size: cover;
-    background-position: top right 30%;
-    filter: hue-rotate(70deg) contrast(4) invert(.2) brightness(1.5);
-    opacity: .8;
+    background-image: linear-gradient(130deg, ${props => props.theme.color.logo}, ${props => props.theme.color.brandInvert}, ${props => props.theme.color.brand});
+    /* background-position: top right 30%; */
 
     @media (min-width: 768px) {
       /* background-image: linear-gradient(130deg, rgba(0, 0, 0, .8), transparent, transparent), url(${cityHall}); */
+      background-image: url(${cityHall});
+      background-size: cover;
+      filter: hue-rotate(70deg) contrast(4) invert(.2) brightness(1.5);
+      opacity: .8;
       background-position: top center;
     }
   }
@@ -110,7 +111,10 @@ const Home = styled(_Home)`
     text-align: left;
     background-color: ${props => props.theme.color.primary};
     color: ${props => props.theme.color.contrast} !important;
-    box-shadow: -16px -16px 0 ${props => props.theme.color.logo}, 16px 16px 0 ${props => props.theme.color.brandInvert};
+    box-shadow: 16px 16px 0 ${props => props.theme.color.contrastTransparent};
+    /* border: 4px solid ${props => props.theme.color.logo};
+    border-right-color: ${props => props.theme.color.brandInvert};
+    border-bottom-color: ${props => props.theme.color.brandInvert}; */
     /* text-shadow: 1px 4px 3px black; */
 
     @media (min-width: 768px) {
@@ -119,10 +123,10 @@ const Home = styled(_Home)`
       margin-right: auto;
       padding-left: 3rem;
       padding-right: 1rem;
+      border: none;
       /* background-color: ${props => props.theme.color.primaryTransparent}; */
       /* background-color: unset; */
       font-size: 3.5rem !important;
-      /* box-shadow: 16px 16px 0 ${props => props.theme.color.contrastTransparent}; */
       /* box-shadow: -16px -16px 0 ${props => props.theme.color.logo}, 16px 16px 0 ${props => props.theme.color.brandInvert}; */
     }
 
