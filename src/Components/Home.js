@@ -108,9 +108,10 @@ const Home = styled(_Home)`
     font-weight: bold !important;
     font-size: 1.5rem;
     text-align: left;
-    background-color: rgba(0, 0, 0, .7);
-    color: white !important;
-    text-shadow: 1px 4px 3px black;
+    background-color: ${props => props.theme.color.primaryTransparent};
+    color: ${props => props.theme.color.contrast} !important;
+    box-shadow: 16px 16px 0 ${props => props.theme.color.contrastTransparent};
+    /* text-shadow: 1px 4px 3px black; */
 
     @media (min-width: 768px) {
       width: 50%;
@@ -128,9 +129,11 @@ const Home = styled(_Home)`
   }
 
   a {
-    background-color: ${props => props.theme.color.primaryTransparent};
-    border: 2px solid ${props => props.theme.color.contrast};
-    animation: ${slideIn} .5s 2s both;
+    background-color: ${props => props.theme.color.contrastTransparent};
+    color: ${props => props.theme.color.primary} !important;
+    border: 4px solid ${props => props.theme.color.primary};
+    box-shadow: 8px 8px 0 ${props => props.theme.color.contrast};
+    animation: ${slideIn} .5s 2s backwards;
   }
 `;
 
