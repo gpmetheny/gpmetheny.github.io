@@ -140,7 +140,8 @@ const StyledNavList = styled(NavList)`
     }
   }
 
-  #darkMode:hover span {
+  #darkMode:hover span,
+  #darkMode:focus span {
     @media (min-width: 768px) {
       width: auto;
       height: 1.5rem;
