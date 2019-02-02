@@ -108,8 +108,9 @@ const Home = styled(_Home)`
     font-weight: bold !important;
     font-size: 1.5rem;
     text-align: left;
-    background-color: ${props => props.theme.color.primaryTransparent};
+    background-color: ${props => props.theme.color.primary};
     color: ${props => props.theme.color.contrast} !important;
+    box-shadow: -8px -8px 0 ${props => props.theme.color.logo}, 8px 8px 0 ${props => props.theme.color.brandInvert};
     /* text-shadow: 1px 4px 3px black; */
 
     @media (min-width: 768px) {
@@ -118,9 +119,11 @@ const Home = styled(_Home)`
       margin-right: auto;
       padding-left: 3rem;
       padding-right: 1rem;
+      /* background-color: ${props => props.theme.color.primaryTransparent}; */
       /* background-color: unset; */
       font-size: 3.5rem !important;
-      box-shadow: 16px 16px 0 ${props => props.theme.color.contrastTransparent};
+      /* box-shadow: 16px 16px 0 ${props => props.theme.color.contrastTransparent}; */
+      box-shadow: -16px -16px 0 ${props => props.theme.color.logo}, 16px 16px 0 ${props => props.theme.color.brandInvert};
     }
 
     &:hover span {
@@ -133,10 +136,11 @@ const Home = styled(_Home)`
     background-color: ${props => props.theme.color.contrastTransparent};
     color: ${props => props.theme.color.primary} !important;
     border: 4px solid ${props => props.theme.color.primary};
+    /* box-shadow: 4px 4px 0 ${props => props.theme.color.contrast}; */
     animation: ${slideIn} .5s 2s backwards;
 
     @media (min-width: 768px) {
-      box-shadow: 8px 8px 0 ${props => props.theme.color.contrast};
+      /* box-shadow: 8px 8px 0 ${props => props.theme.color.contrast}; */
     }
   }
 `;
