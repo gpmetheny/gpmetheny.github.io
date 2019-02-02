@@ -24,6 +24,9 @@ const _Main = (props) => {
         <Switch>
           {/* routes that are styled components are causing error: */}
           {/* Warning: Failed prop type: Invalid prop `component` of type `object` supplied to `Route`, expected `function`. */}
+          {/* Fixed in react-router #6447: merged, but not released */}
+          {/* https://github.com/ReactTraining/react-router/issues/6471 */}
+          {/* https://github.com/ReactTraining/react-router/pull/6447 */}
           <Route path="/" exact component={Home} />{/* error */}
           <Route path="/work" component={Work} />
           <Route path="/about" component={About} />
