@@ -122,8 +122,8 @@ const Home = styled(_Home)`
     }
 
     &:hover span {
-      display: inline-block;
-      animation: ${bounce} .6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+      /* display: inline-block; */
+      /* animation: ${bounce} .6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; */
     }
   }
 
