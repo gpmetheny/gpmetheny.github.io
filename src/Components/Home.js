@@ -83,8 +83,9 @@ const Home = styled(_Home)`
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: ${props => props.theme.color.black};
+    /* background-color: ${props => props.theme.color.black}; */
     background-image: linear-gradient(130deg, ${props => props.theme.color.logo}, ${props => props.theme.color.brandInvert});
+    opacity: .7;
     animation: ${rotateGradient} 5s linear 2s both;
   }
 
