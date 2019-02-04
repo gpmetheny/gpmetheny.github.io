@@ -37,7 +37,7 @@ const StyledHamburger = styled(Hamburger)`
     height: .25rem;
     background: ${props => props.menuExpanded
                   ? props.theme.color.brand
-                  : props.theme.color.primary};
+                  : props.theme.color.contrast};
 
     &:first-child {
       position: relative;

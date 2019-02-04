@@ -88,7 +88,7 @@ const StyledNavList = styled(NavList)`
   
   a,
   a:visited {
-    color: ${props => props.theme.color.primary} !important;
+    color: ${props => props.theme.color.contrast} !important;
   }
 
   a:hover,
@@ -109,7 +109,7 @@ const StyledNavList = styled(NavList)`
     justify-content: center;
     width: 100%;
     border: none;
-    background-color: ${props => props.theme.color.brand};
+    background-color: ${props => props.theme.color.brandXLight};
     cursor: pointer;
 
     @media (min-width: 768px) {
@@ -152,6 +152,7 @@ const StyledNavList = styled(NavList)`
       border-radius: 10px;
       border-top-right-radius: 0;
       clip: unset;
+      box-shadow: 0 2px 3px black;
     }
   }
 
@@ -162,7 +163,7 @@ const StyledNavList = styled(NavList)`
 
     @media (min-width: 768px) {
       padding-top: .5rem;
-      color: ${props => props.theme.color.primary};
+      color: ${props => props.theme.color.contrast};
     }
   }
 `;

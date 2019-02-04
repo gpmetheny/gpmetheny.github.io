@@ -45,7 +45,7 @@ const StyledBrand = styled(Brand)`
 
   h3 {
     font-size: 1.5rem;
-    color: ${props => props.theme.color.primary};
+    color: ${props => props.theme.color.contrast};
     font-family: 'Roboto Mono', monospace;
     margin: 0;
   }
