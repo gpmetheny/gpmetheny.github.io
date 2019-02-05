@@ -28,7 +28,8 @@ class _Home extends Component {
     return (
       <div className={`${this.props.className} jumbotron jumbotron-fluid d-flex content-wrapper`} id="feature">
         <div className="container-fluid d-flex flex-column align-items-center justify-content-center text-center align-self-center" id="welcome">
-
+              
+              <h1 className="sr-only">Hi, I'm Gabbie! I create engaging, accessible designs for the web.</h1>
               <svg id="laptop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 545.5 405.714" width="545.5" height="405.714">
                 <g filter="url(#Hs9G5u7OcHjE9dqZmxM2PodtQqLYNfvL)">
                   <path id="laptop-monitor" d=" M 461.298 285.69 C 461.298 292.317 455.984 309.571 449.357 309.571 L 91.143 309.571 C 84.576 309.571 79.202 292.317 79.202 285.69 L 79.202 34.94 C 79.202 28.346 84.548 23 91.143 23 L 449.357 23 C 455.984 23 461.298 28.314 461.298 34.94 L 461.298 285.69 Z " fill="rgb(142,253,244)"/>
