@@ -8,6 +8,7 @@ import {
 
 const _brand = '#f94e6d';
 const _logo = '#01bd5c';
+const _cyan = '#1dfbe8';
 const _black = '#222';
 const _white = '#fff';
 const _gray = '#888';
@@ -32,12 +33,15 @@ const theme = {
       primaryTransparent: 'rgba(255, 255, 255, .7)',
       contrast: _black,
       contrastTransparent: 'rgba(0, 0, 0, .7)',
-      contrastMild: lighten(.4, _gray),
+      contrastMild: lighten(.35, _gray),
       contrastMedium: darken(.1, _gray),
       black: _black,
       blackLight: lighten(.3, _black),
       white: _white,
-      gray: _gray
+      gray: _gray,
+      laptopMonitor: lighten(.2, _cyan),
+      laptopBase: _cyan,
+      laptopHeart: _brand
     },
     font: {
       mono: _monoStack,
@@ -62,7 +66,10 @@ const theme = {
       black: _black,
       blackLight: lighten(.3, _black),
       white: _white,
-      gray: _gray
+      gray: _gray,
+      laptopMonitor: lighten(.15, _brand),
+      laptopBase: lighten(.05, _brand),
+      laptopHeart: darken(.05, _cyan)
     },
     font: {
       mono: _monoStack,

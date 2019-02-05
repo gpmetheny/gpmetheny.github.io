@@ -148,7 +148,8 @@ const StyledNavList = styled(NavList)`
       padding: .5rem;
       top: 3.5rem;
       right: 2rem;
-      background-color: ${props => props.theme.color.brand};
+      background-color: ${props => props.theme.color.contrast};
+      color: ${props => props.theme.color.primary};
       border-radius: 10px;
       border-top-right-radius: 0;
       clip: unset;
