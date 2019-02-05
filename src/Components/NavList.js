@@ -110,7 +110,7 @@ const StyledNavList = styled(NavList)`
     width: 100%;
     padding: 0 1rem;
     border: none;
-    background-color: ${props => props.theme.color.brandXLight};
+    background-color: ${props => props.theme.color.cyanLight};
     cursor: pointer;
 
     @media (min-width: 768px) {
