@@ -107,7 +107,7 @@ const Home = styled(_Home)`
 
   #laptop {
     height: auto;
-    max-width: 100%;
+    max-width: 100vw;
   }
 
   #laptop-monitor {
