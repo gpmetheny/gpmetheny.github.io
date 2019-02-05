@@ -108,6 +108,7 @@ const StyledNavList = styled(NavList)`
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding: 0 1rem;
     border: none;
     background-color: ${props => props.theme.color.brandXLight};
     cursor: pointer;
@@ -115,6 +116,7 @@ const StyledNavList = styled(NavList)`
     @media (min-width: 768px) {
       width: fit-content;
       height: 3.7rem;
+      padding: 0;
       background-color: transparent;
     }
   }
@@ -163,7 +165,7 @@ const StyledNavList = styled(NavList)`
     color: ${props => props.theme.color.black};
 
     @media (min-width: 768px) {
-      padding-top: .5rem;
+      padding-top: .1rem;
       color: ${props => props.theme.color.contrast};
     }
   }
