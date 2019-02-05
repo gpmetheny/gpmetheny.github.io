@@ -95,7 +95,7 @@ const slideIn = keyframes`
 `;
 
 const Home = styled(_Home)`
-  animation: ${fadeIn} .5s .5s both;
+  animation: ${fadeIn} .3s .3s both;
 
   #banner-img-wrap {
     position: absolute;
@@ -162,8 +162,7 @@ const Home = styled(_Home)`
   a {
     background-color: ${props => props.theme.color.contrastTransparent};
     color: ${props => props.theme.color.primary} !important;
-    border: 4px solid ${props => props.theme.color.primary};
-    animation: ${slideIn} .5s 3s backwards;
+    animation: ${slideIn} .5s 2.5s backwards;
   }
 `;
 

@@ -41,7 +41,7 @@ const theme = {
       gray: _gray,
       laptopMonitor: lighten(.2, _cyan),
       laptopBase: _cyan,
-      laptopHeart: _brand
+      laptopHeart: lighten(.1, _brand)
     },
     font: {
       mono: _monoStack,
@@ -69,7 +69,7 @@ const theme = {
       gray: _gray,
       laptopMonitor: lighten(.15, _brand),
       laptopBase: lighten(.05, _brand),
-      laptopHeart: darken(.05, _cyan)
+      laptopHeart: _brand
     },
     font: {
       mono: _monoStack,
