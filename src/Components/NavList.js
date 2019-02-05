@@ -116,7 +116,7 @@ const StyledNavList = styled(NavList)`
     @media (min-width: 768px) {
       width: fit-content;
       height: 3.7rem;
-      padding: 0;
+      padding: auto;
       background-color: transparent;
     }
   }
