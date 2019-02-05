@@ -1,13 +1,8 @@
 import React, {Component} from 'react';
 import styled, { keyframes } from 'styled-components';
-import {
-  darken,
-  lighten
-} from 'polished';
+import { lighten } from 'polished';
 
 import CTA from './CTA';
-
-import laptop from '../img/laptop.svg';
 
 class _Home extends Component {
 
