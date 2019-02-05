@@ -67,7 +67,7 @@ const theme = {
       blackLight: lighten(.3, _black),
       white: _white,
       gray: _gray,
-      laptopMonitor: lighten(.15, _brand),
+      laptopMonitor: lighten(.1, _brand),
       laptopBase: lighten(.05, _brand),
       laptopHeart: _brand
     },
