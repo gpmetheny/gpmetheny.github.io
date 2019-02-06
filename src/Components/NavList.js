@@ -110,14 +110,13 @@ const StyledNavList = styled(NavList)`
     width: 100%;
     padding: 0 1rem;
     border: none;
-    background-color: ${props => props.theme.color.cyanLight};
+    background-color: transparent;
     cursor: pointer;
 
     @media (min-width: 768px) {
       width: fit-content;
       height: 3.7rem;
       padding: auto;
-      background-color: transparent;
     }
   }
 
@@ -128,6 +127,7 @@ const StyledNavList = styled(NavList)`
     margin-right: auto;
     font-size: 1rem;
     font-family: ${props => props.theme.font.sans};
+    color: ${props => props.theme.color.contrast};
 
     @media (min-width: 768px) {
       border: 0;
@@ -162,11 +162,10 @@ const StyledNavList = styled(NavList)`
   .material-icons {
     font-size: 1.5rem;
     margin-left: auto;
-    color: ${props => props.theme.color.black};
+    color: ${props => props.theme.color.contrast};
 
     @media (min-width: 768px) {
       padding-top: .1rem;
-      color: ${props => props.theme.color.contrast};
     }
   }
 `;

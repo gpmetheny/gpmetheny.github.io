@@ -9,6 +9,7 @@ import {
 const _brand = '#f94e6d';
 const _logo = '#01bd5c';
 const _cyan = '#1dfbe8';
+const _mint = '#59e5b2';
 const _black = '#222';
 const _white = '#fff';
 const _gray = '#888';
@@ -33,16 +34,18 @@ const theme = {
       primaryTransparent: 'rgba(255, 255, 255, .7)',
       contrast: _black,
       contrastTransparent: 'rgba(0, 0, 0, .7)',
-      contrastMild: lighten(.35, _gray),
+      contrastMild: lighten(.4, _gray),
       contrastMedium: darken(.1, _gray),
       black: _black,
       blackLight: lighten(.3, _black),
       white: _white,
       gray: _gray,
-      laptopMonitor: lighten(.2, _cyan),
-      laptopBase: _cyan,
+      laptopMonitor: _mint,
+      laptopBase: lighten(.1, _mint),
       laptopHeart: lighten(.1, _brand),
-      cyanLight: lighten(.3, _cyan)
+      cyanLight: lighten(.3, _cyan),
+      mugBody: _black,
+      mugText: _mint
     },
     font: {
       mono: _monoStack,
@@ -69,9 +72,11 @@ const theme = {
       white: _white,
       gray: _gray,
       laptopMonitor: lighten(.1, _brand),
-      laptopBase: lighten(.05, _brand),
+      laptopBase: lighten(.15, _brand),
       laptopHeart: _brand,
-      cyanLight: lighten(.3, _cyan)
+      cyanLight: lighten(.3, _cyan),
+      mugBody: _mint,
+      mugText: _black
     },
     font: {
       mono: _monoStack,
