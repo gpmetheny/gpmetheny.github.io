@@ -125,6 +125,10 @@ const Home = styled(_Home)`
         fill: ${props => props.theme.color.mugBody};
       }
 
+      #mug-heart path {
+        fill: ${props => props.theme.color.mugHeart};
+      }
+
       #mug-text path {
         fill: ${props => props.theme.color.mugText};
       }
