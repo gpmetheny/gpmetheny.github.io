@@ -45,7 +45,7 @@ const theme = {
       laptopHeart: lighten(.1, _brand),
       cyanLight: lighten(.3, _cyan),
       mugBody: _black,
-      mugText: _mint
+      mugText: lighten(.1, _mint),
     },
     font: {
       mono: _monoStack,
