@@ -63,40 +63,46 @@ class _Contact extends Component {
 
             <form action="https://formspree.io/gabbie.metheny@gmail.com" method="POST">
             
-              <div className="form-row text-center">
-                <div className="form-group offset-lg-2 col-lg-5">
-                  <input type="text" className="form-control required" name="firstName" aria-label="First Name" placeholder="First Name" required />
+              <div className="form-row">
+                <div className="form-group offset-lg-2 col-lg-5 mb-0">
+                  <label className="mb-0" for="firstName"><small>First Name<span>*</span></small></label>
+                  <input type="text" className="form-control required" name="firstName" id="firstName" required />
                 </div>
-                <div className="form-group col-lg-5">
-                  <input type="text" className="form-control required" name="lastName" aria-label="Last Name" placeholder="Last Name" required />
-                </div>
-              </div>
-
-              <div className="form-row text-center">
-                <div className="form-group offset-lg-2 col-lg-5">
-                  <input type="text" className="form-control" name="company" aria-label="Company (optional)" placeholder="Company (optional)" />
-                </div>
-                <div className="form-group col-lg-5">
-                  <input type="text" className="form-control" name="title" aria-label="Job Title (optional)" placeholder="Title (optional)" />
+                <div className="form-group col-lg-5 mb-0">
+                  <label className="mb-0" for="lastName"><small>Last Name<span>*</span></small></label>
+                  <input type="text" className="form-control required" name="lastName" id="lastName" required />
                 </div>
               </div>
 
-              <div className="form-row text-center">
-                <div className="form-group offset-lg-2 col-lg-10">
-                  <input type="email" className="form-control required" name="_replyto" aria-label="Email" placeholder="Email" required />
+              <div className="form-row">
+                <div className="form-group offset-lg-2 col-lg-5 mb-0">
+                  <label className="mb-0" for="company"><small>Company</small></label>
+                  <input type="text" className="form-control" name="company" id="company" />
+                </div>
+                <div className="form-group col-lg-5 mb-0">
+                  <label className="mb-0" for="jobTitle"><small>Job Title</small></label>
+                  <input type="text" className="form-control" name="jobTitle" id="jobTitle" />
                 </div>
               </div>
 
-              <div className="form-row text-center">
+              <div className="form-row">
                 <div className="form-group offset-lg-2 col-lg-10 mb-0">
-                  <textarea className="form-control required" name="message" aria-label="Message" placeholder="Say hi..." rows="10" cols="60" required></textarea>
+                  <label className="mb-0" for="_replyto"><small>Email<span>*</span></small></label>
+                  <input type="email" className="form-control required" name="_replyto" id="_replyto" required />
                 </div>
-                <div className="form-group offset-lg-2 col-lg-10">
+              </div>
+
+              <div className="form-row">
+                <div className="form-group offset-lg-2 col-lg-10 mb-0">
+                  <label className="mb-0" for="message"><small>Message<span>*</span></small></label>
+                  <textarea className="form-control required" name="message" id="message" rows="10" cols="60" required></textarea>
+                </div>
+                <div className="form-group offset-lg-2 col-lg-10 text-center">
                   <small>contact form powered by <a href="https://formspree.io/" target="_blank" rel="noopener noreferrer">Formspree</a></small>
                 </div>
               </div>
 
-              <div className="form-row text-center" id="hiddenFields">
+              <div className="form-row" id="hiddenFields">
                 <input type="hidden" name="_subject" value="Website Contact" />
                 <input type="hidden" name="_next" value={"#success"} />
                 <input type="text" name="_gotcha" style={{display: 'none'}} />
@@ -122,6 +128,14 @@ const Contact = styled(_Contact)`
   /* prevents edge bug where () break to separate line */
   h2 {
     white-space: nowrap;
+  }
+
+  label {
+    font-family: ${props => props.theme.font.mono};
+
+    span {
+      color: ${props => props.theme.color.brand};      
+    }
   }
 
   input:not([type="submit"]),
