@@ -346,8 +346,7 @@ nav a:focus {
   animation: fadein .5s forwards;
 }
 
-#work,
-#resume {
+#work {
   opacity: 0;
   transition: opacity .5s;
   animation: fadein .5s 2.5s forwards;

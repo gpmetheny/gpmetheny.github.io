@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import CTA from './CTA';
-import Loader from './Loader';
+// import Loader from './Loader';
 import SVG from './SVG';
 import SocialIcon from './SocialIcon';
 
@@ -31,7 +31,7 @@ class _Resume extends Component {
   render() {
     return (
       <div className={`${this.props.className} jumbotron jumbotron-fluid content-wrapper`}>
-        <Loader />
+        {/* <Loader /> */}
         <div className="container pt-3 pt-lg-5" id="resume">
           <div className="row">
             <div className="col-md-7 col-lg-8">
