@@ -76,12 +76,12 @@ class _Contact extends Component {
 
               <div className="form-row">
                 <div className="form-group offset-lg-2 col-lg-5 mb-0">
-                  <label className="mb-0" for="company"><small>Company</small></label>
-                  <input type="text" className="form-control" name="company" id="company" />
-                </div>
-                <div className="form-group col-lg-5 mb-0">
                   <label className="mb-0" for="jobTitle"><small>Job Title</small></label>
                   <input type="text" className="form-control" name="jobTitle" id="jobTitle" />
+                </div>
+                <div className="form-group col-lg-5 mb-0">
+                  <label className="mb-0" for="company"><small>Company</small></label>
+                  <input type="text" className="form-control" name="company" id="company" />
                 </div>
               </div>
 
