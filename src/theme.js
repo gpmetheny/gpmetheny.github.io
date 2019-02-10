@@ -8,7 +8,7 @@ import {
 
 const _brand = '#f94e6d';
 const _logo = '#01bd5c';
-const _cyan = '#1dfbe8';
+// const _cyan = '#1dfbe8';
 const _mint = '#59e5b2';
 const _yellow = '#ffc003';
 const _black = '#222';

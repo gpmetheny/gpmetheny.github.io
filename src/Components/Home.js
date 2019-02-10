@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import styled, { keyframes } from 'styled-components';
-import { lighten } from 'polished';
 
 import CTA from './CTA';
 
@@ -64,24 +63,6 @@ class _Home extends Component {
     );
   }
 }
-
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`;
-
-const rotateGradient = keyframes`
-  0% {
-    filter: hue-rotate(-180deg);
-  }
-  100% {
-    filter: hue-rotate(0);
-  }
-`;
 
 const slideIn = keyframes`
   0% {
