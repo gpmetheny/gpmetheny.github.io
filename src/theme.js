@@ -10,13 +10,14 @@ const _brand = '#f94e6d';
 const _logo = '#01bd5c';
 const _cyan = '#1dfbe8';
 const _mint = '#59e5b2';
+const _yellow = '#ffc003';
 const _black = '#222';
 const _white = '#fff';
 const _gray = '#888';
 
 /* FONT STACK VARIABLES */
 const _monoStack = '"Roboto Mono", monospace';
-const _sansStack = '"Comfortaa", sans-serif';
+const _sansStack = '"Roboto", sans-serif';
 
 /* THEME OBJECT USED BY ThemeProvider */
 
@@ -29,7 +30,7 @@ const theme = {
       brandXLight: lighten(.2, _brand),
       brandDark: darken(.2, _brand),
       logo: _logo,
-      logoInvert: invert(_logo),
+      brandContrast: invert(_brand),
       mint: _mint,
       primary: _white,
       primaryTransparent: 'rgba(255, 255, 255, .7)',
@@ -43,7 +44,8 @@ const theme = {
       gray: _gray,
       laptopMonitor: _mint,
       laptopBase: lighten(.1, _mint),
-      cyanLight: lighten(.3, _cyan),
+      flash: _yellow,
+      // cyanLight: lighten(.3, _cyan),
       mugBody: _black,
       mugText: _white,
       mugHeart: _brand
@@ -61,7 +63,7 @@ const theme = {
       brandXLight: lighten(.2, _brand),
       brandDark: darken(.2, _brand),
       logo: _logo,
-      logoInvert: invert(_logo),
+      brandContrast: _mint,
       mint: _mint,
       primary: _black,
       primaryTransparent: 'rgba(0, 0, 0, .7)',
@@ -75,7 +77,8 @@ const theme = {
       gray: _gray,
       laptopMonitor: _mint,
       laptopBase: lighten(.1, _mint),
-      cyanLight: lighten(.3, _cyan),
+      flash: _yellow,
+      // cyanLight: lighten(.3, _cyan),
       mugBody: _white,
       mugText: _black,
       mugHeart: _mint

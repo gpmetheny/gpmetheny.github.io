@@ -97,7 +97,6 @@ const slideIn = keyframes`
 `;
 
 const Home = styled(_Home)`
-  /* animation: ${fadeIn} .3s .3s both; */
 
   #banner-img-wrap {
     position: absolute;
@@ -105,10 +104,6 @@ const Home = styled(_Home)`
     left: 0;
     width: 100vw;
     height: 100vh;
-    /* background-color: ${props => props.theme.color.black}; */
-    /* background-image: linear-gradient(130deg, ${props => lighten(.1, props.theme.color.logoInvert)}, ${props => lighten(.1, props.theme.color.brand)}); */
-    /* opacity: .7; */
-    /* animation: ${rotateGradient} 5s linear 2s both; */
   }
 
   #mug {

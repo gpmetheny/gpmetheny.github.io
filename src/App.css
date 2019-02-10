@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
   min-height: 100%;
   width: 100%;
-  font-family: 'Comfortaa', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,
@@ -472,9 +472,9 @@ footer .row {
   fill: #000000;
 }
 
-/* #treehouse-icon:hover path {
+#treehouse-icon:hover path {
   fill: #5FCF80;
-} */
+}
 
 @media (min-width: 768px) {
 
@@ -549,7 +549,7 @@ footer .row {
     width: 12rem;
     height: 12rem;
     border-top-left-radius: .75rem;
-    filter: hue-rotate(150deg) contrast(1.5) grayscale(.3);
+    /* filter: hue-rotate(150deg) contrast(1.5) grayscale(.3); */
   }
 
   #card-top ul {

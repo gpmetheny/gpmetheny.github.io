@@ -69,6 +69,7 @@ const Main = styled(_Main)`
     color: ${props => props.theme.color.contrast};
     font-weight: 700;
     text-decoration: underline;
+    border-radius: 2px;
     transition: all .3s;
   }
 
@@ -76,12 +77,17 @@ const Main = styled(_Main)`
   a:focus,
   a:active {
     color: ${props => props.theme.color.brand};
+    /* background-color: ${props => props.theme.color.flash}; */
   }
 
   hr {
     background-color: ${props => props.theme.color.contrast};
     opacity: .1;
     margin-top: 0;
+  }
+
+  #name {
+    filter: ${props => props.darkMode ? 'invert(1) hue-rotate(-180deg) brightness(2.5)' : 'none'};
   }
 
   #skills-graph {
