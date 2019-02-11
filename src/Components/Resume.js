@@ -34,7 +34,7 @@ class _Resume extends Component {
         {/* <Loader /> */}
         <div className="container pt-3 pt-lg-5" id="resume">
           <div className="row">
-            <div className="col-md-7 col-lg-8">
+            <div className="col-md-7 col-lg-6 offset-lg-1">
               <div className="mb-3" id="resume-header">
                 <h1 className="sr-only">Gabbie Metheny</h1>
                 <img src={name} id="name" alt="Gabbie Metheny" />
