@@ -58,7 +58,7 @@ class Work extends Component {
               className="pens col-12 py-3"
               dataPenTitle="FizzBuzz"
               dataSlugHash="mXYELw"
-              dataHeight={250}
+              dataHeight={275}
               dataDefaultTab="js,result"
             />
           </div>
