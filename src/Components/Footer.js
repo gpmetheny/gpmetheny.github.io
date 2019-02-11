@@ -16,7 +16,7 @@ class _Footer extends Component {
           <div className="py-1">
             <ul className="d-flex justify-content-center">
               {socialList
-                // .filter((social) => social.id !== 'treehouse-icon')
+                .filter((social) => social.id !== 'treehouse-icon')
                 .map((social) => {
                   return (
                     <SocialIcon

@@ -3,15 +3,16 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import CTA from './CTA';
-import Loader from './Loader';
-import SVG from './SVG';
+// import Loader from './Loader';
+import NameHeader from './NameHeader';
 import SocialIcon from './SocialIcon';
+import SVG from './SVG';
 
 import monstera from '../SVG/logo';
 import socialList from '../SVG/socialList';
 
 import avatar from '../img/angel-city.jpg';
-// import portfolioLogo from '../img/portfolio-logo.svg';
+// import name from '../img/name.svg';
 import skills from '../img/skills.svg';
 
 class _Resume extends Component {
@@ -31,20 +32,22 @@ class _Resume extends Component {
   render() {
     return (
       <div className={`${this.props.className} jumbotron jumbotron-fluid content-wrapper`}>
-        <Loader />
+        {/* <Loader /> */}
         <div className="container pt-3 pt-lg-5" id="resume">
           <div className="row">
-            <div className="col-md-7 col-lg-8">
+            <div className="col-md-7 col-lg-6 offset-lg-1">
               <div className="mb-3" id="resume-header">
-                {/* <img src={portfolioLogo} alt="Gabbie Metheny | Full-Stack JavaScript Developer" /> */}
+                <h1 className="sr-only">Gabbie Metheny</h1>
+                <NameHeader />
+                {/* <img src={name} id="name" alt="Gabbie Metheny" /> */}
               </div>
               <div>
                 <h3 className="pt-0">tl;dr</h3>
-                <p><strong>I am a self-taught full-stack developer living in Los Angeles, CA.</strong></p>
-                <p>I create engaging front-end user experiences, including original SVGs and CSS animations. I have strong knowledge of common <strong>front-end libraries and frameworks</strong>, and I recently rebuilt <Link to="/">my personal website</Link> using <strong>React</strong>. Some of my <Link to="/work">animations</Link> can be viewed there as well.</p>
-                <p>You can see an example of my back-end and database work with my <a href="https://pb-livin.github.io/bojack-ipsum" target="_blank" rel="noopener noreferrer">lorem ipsum generator</a>, also linked on my website, which pulls random quotes from Netflix's BoJack Horseman to make a user-specified number of paragraphs of dummy text. Check back soon to see a feature allowing the user to request quotes by specific characters.</p>
-                <p>While building the lorem ipsum generator, I found I needed a reliable way to get episode transcripts. I created a <strong>Node.js parser</strong> that converts <strong>XML-formatted</strong> Netflix subtitles into proper transcripts, complete with human-readable timestamps.</p>
-                <p>In addition to Node.js, I've picked up essential <strong>Java</strong> and <strong>Python</strong>, and I have a high comfort level with the command line. I am always looking for new things to learn.</p>
+                <p>I am a self-taught full-stack developer in Los Angeles, California. I love SVGs, CSS and all things JavaScript.</p>
+                <p>I create engaging, accessible user experiences, including original designs and animations. I am skilled in common front-end libraries and frameworks, and I recently rebuilt my <Link to="/">portfolio website</Link> using React and Styled Components. You can see some of my <Link to="/work">animations</Link> there as well.</p>
+                <p>While first learning JavaScript, I built a <a href="https://pb-livin.github.io/bojack-ipsum" target="_blank" rel="noopener noreferrer">lorem ipsum generator</a> that outputs random dummy text from <a href="https://www.netflix.com/title/70300800" target="_blank" rel="noopener noreferrer">Netflix's <em>BoJack Horseman</em></a>. In need of a reliable way to get episode transcripts, I wrote a Node.js parser that converts .xml Netflix subtitles into readable .txt transcripts, complete with formatted timestamps. It works on nearly all of Netflix's content, including subtitles in many different languages.</p>
+                <p>As a freelance developer working as part of a remote team, I cooperatively produced a responsive single page quiz app for a large company, and in the process learned a lot about handling animations in React. I also led a complete redesign of a static website for a professional speaker.</p>
+                <p>Much of my work is viewable on my <Link to="/work">portfolio site</Link>, and additional screenshots are available upon request.</p>
               </div>
               <div>
                 <h3 className="pt-md-3">skills</h3>
@@ -52,22 +55,37 @@ class _Resume extends Component {
                   <img src={skills} alt="Technical and soft skills graphs" className="pb-2" id="skills-graph" />
                 </div>
               </div>
+            {/* <div className="col-12"> */}
+              <div id="education">
+                <h3 className="pt-md-3">education</h3>
+                <p>
+                  <strong>Wheaton College</strong> - B.A. Christian Education<br />
+                  <span>AUG 2003 - MAY 2007, WHEATON, IL</span>
+                  <span>GPA: 3.0/4.0   GPA IN MAJOR: 3.75/4.0</span>
+                  Took courses in theater, film, photography and creative writing. Interned as a Youth Leader at a local church. Played video games with the Math and CS majors. Ate a lot of ramen.
+                </p>
+                
+              </div>
+              
+            {/* </div> */}
             </div>
             <div className="col-md-5 col-lg-4">
               <div id="card">
                 <div className="d-flex" id="card-top">
                   <img src={avatar} alt="Gabbie" id="card-photo" />
                   <ul className="d-flex flex-column justify-content-around align-items-center">
-                    {socialList.map((social) => {
-                      return (
-                        <SocialIcon
-                          href={social.href}
-                          key={social.id}
-                          id={social.id}
-                          paths={social.paths}
-                          circles={social.circles}
-                        />
-                      );
+                    {socialList
+                      .filter((social) => social.id !== 'mastodon-icon')
+                      .map((social) => {
+                        return (
+                          <SocialIcon
+                            href={social.href}
+                            key={social.id}
+                            id={social.id}
+                            paths={social.paths}
+                            circles={social.circles}
+                          />
+                        );
                     })}                    
                   </ul>
                 </div>
@@ -93,45 +111,34 @@ class _Resume extends Component {
               <div id="experience">
                 <h3 className="pt-md-5">experience</h3>
                 <p>
-                  <strong>Self</strong> -
-                  Code-At-Home Mom<br />
-                  <small><em>FEB 2014 - PRESENT,
-                  LOS ANGELES</em></small><br />
-                  Raising two small humans, coding when they sleep.<br />
-                  <u>Relevant skills</u>:<br />
+                  <strong>Self</strong> -<br/>
+                  Freelance Web Developer/Coding Student/Mom<br />
+                  <span>FEB 2014 - PRESENT,
+                  LOS ANGELES</span>
+                  Learning to code and making cool things with computers while raising two small humans.<br />
+                  Member: Tech Ladies, PB Livin', Fempire, Treehouse.<br/>
+                  <span>Relevant skills:</span>
                   Time management, determination, communication.
                 </p>
                 <p>
-                  <strong>Chase Bank</strong> -
+                  <strong>Chase Bank</strong> -<br/>
                   ATM Custodian/Teller<br />
-                  <small><em>MAR 2012 - JAN 2014,
-                  SAN FRANCISCO/SEATTLE/LOS ANGELES</em></small><br />
+                  <span>MAR 2012 - JAN 2014,
+                  SAN FRANCISCO/SEATTLE/LOS ANGELES</span>
                   Greeted customers, conducted transactions, handled large quantities of cash and sensitive information.<br />
-                  <u>Relevant skills</u>:<br />
-                  Security, precision, efficiency.
+                  <span>Relevant skills:</span>
+                  Security, precision, empathy.
                 </p>
                 <p>
-                  <strong>Borders Books & Music</strong> -
+                  <strong>Borders Books & Music</strong> -<br/>
                   Training Supervisor/Inventory Team/Bookseller<br />
-                  <small><em>APR 2008 - JAN 2010,
-                  CHICAGO/LOS ANGELES</em></small><br />
+                  <span>APR 2008 - JAN 2010,
+                  CHICAGO/LOS ANGELES</span>
                   Helped customers, organized and sold books, trained new and existing employees.<br />
-                  <u>Relevant skills</u>:<br />
-                  User experience, organization, teaching.
+                  <span>Relevant skills:</span>
+                  UX, organization, teaching.
                 </p>
               </div>
-            </div>
-            <div className="col-12">
-              <div>
-                <h3 className="pt-md-3">education</h3>
-                <p>
-                  <strong>Wheaton College</strong> - B.A.<br />
-                  <small><em>AUG 2003 - MAY 2007, WHEATON, IL</em></small><br />
-                  Prepared for future hackathons with all-night study parties the night before any big exam or due date. Hung out with Math and CS majors, when I wasn't busy with the Philosophy and Theater kids. Ate a lot of ramen.
-                </p>
-                
-              </div>
-              
             </div>
           </div>
           <div>
@@ -147,6 +154,23 @@ class _Resume extends Component {
 }
 
 const Resume = styled(_Resume)`
+  h3 {
+    font-weight: bold;
+  }
+
+  #education span,
+  #experience span {
+    display: block;
+    font-size: .75rem;
+    font-weight: bold;
+    color: ${props => props.theme.color.brand};
+  }
+
+  #experience span:nth-of-type(2) {
+    font-weight: normal;
+    font-family: ${props => props.theme.font.mono};
+  }
+
   #card a,
   #card a:visited,
   #card i {
@@ -157,6 +181,7 @@ const Resume = styled(_Resume)`
   #card a:focus,
   #card a:active {
     color: ${props => props.theme.color.brand};
+    /* background-color: transparent; */
   }
 
   #monstera-card {

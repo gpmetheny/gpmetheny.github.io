@@ -65,36 +65,36 @@ class _Contact extends Component {
             
               <div className="form-row">
                 <div className="form-group offset-lg-2 col-lg-5 mb-0">
-                  <label className="mb-0" for="firstName"><small>First Name<span>*</span></small></label>
+                  <label className="mb-0" for="firstName"><small>First Name<span> *</span></small></label>
                   <input type="text" className="form-control required" name="firstName" id="firstName" required />
                 </div>
                 <div className="form-group col-lg-5 mb-0">
-                  <label className="mb-0" for="lastName"><small>Last Name<span>*</span></small></label>
+                  <label className="mb-0" for="lastName"><small>Last Name<span> *</span></small></label>
                   <input type="text" className="form-control required" name="lastName" id="lastName" required />
                 </div>
               </div>
 
               <div className="form-row">
                 <div className="form-group offset-lg-2 col-lg-5 mb-0">
-                  <label className="mb-0" for="company"><small>Company</small></label>
-                  <input type="text" className="form-control" name="company" id="company" />
-                </div>
-                <div className="form-group col-lg-5 mb-0">
                   <label className="mb-0" for="jobTitle"><small>Job Title</small></label>
                   <input type="text" className="form-control" name="jobTitle" id="jobTitle" />
+                </div>
+                <div className="form-group col-lg-5 mb-0">
+                  <label className="mb-0" for="company"><small>Company</small></label>
+                  <input type="text" className="form-control" name="company" id="company" />
                 </div>
               </div>
 
               <div className="form-row">
                 <div className="form-group offset-lg-2 col-lg-10 mb-0">
-                  <label className="mb-0" for="_replyto"><small>Email<span>*</span></small></label>
+                  <label className="mb-0" for="_replyto"><small>Email<span> *</span></small></label>
                   <input type="email" className="form-control required" name="_replyto" id="_replyto" required />
                 </div>
               </div>
 
               <div className="form-row">
                 <div className="form-group offset-lg-2 col-lg-10 mb-0">
-                  <label className="mb-0" for="message"><small>Message<span>*</span></small></label>
+                  <label className="mb-0" for="message"><small>Message<span> *</span></small></label>
                   <textarea className="form-control required" name="message" id="message" rows="10" cols="60" required></textarea>
                 </div>
                 <div className="form-group offset-lg-2 col-lg-10 text-center">

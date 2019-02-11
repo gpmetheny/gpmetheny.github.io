@@ -48,26 +48,26 @@ class Work extends Component {
           </div>
           <div className="d-flex flex-column align-items-center text-center mt-3">
             <div className="row">
-              <h6 className="col-10 offset-1">Pure CSS animations using keyframes and transforms.</h6>
-              <p className="col-lg-10 offset-lg-1">Cocktail glass SVG is my original creation, atom and spinning loader animations were built using CSS divs, spans and pseudoelements. All animations are pure CSS (JavaScript is used only for the pause buttons). See more of my animations on <a href="https://codepen.io/gpmetheny" target="_blank" rel="noopener noreferrer">Codepen</a>.</p>
+              <h6 className="col-12">Pure CSS animations using keyframes and transforms.</h6>
+              <p className="col-lg-8 offset-lg-2">Cocktail glass SVG is my original creation, atom and spinning loader animations were built using CSS divs, spans and pseudoelements. All animations are pure CSS (JavaScript is used only for the pause buttons). See more of my animations on <a href="https://codepen.io/gpmetheny" target="_blank" rel="noopener noreferrer">Codepen</a>.</p>
             </div>
           </div> 
-          <h2 className="text-center">FizzBuzz</h2>
+          <h2 className="text-center mt-lg-5">FizzBuzz</h2>
           <div className="pens-wrapper row d-flex" id="fizzbuzz">
             <Pen
               className="pens col-12 py-3"
               dataPenTitle="FizzBuzz"
               dataSlugHash="mXYELw"
-              dataHeight={250}
+              dataHeight={275}
               dataDefaultTab="js,result"
             />
           </div>
-          <div className="d-flex flex-column align-items-center text-center mb-5 mt-3">
+          <div className="d-flex flex-column align-items-center text-center mt-3">
             <div className="row">
-              <h6>My JavaScript solution to the classic coder conundrum.</h6>
+              <p>My JavaScript solution to the classic coder conundrum.</p>
             </div>
           </div>
-          <h2 className="text-center">Websites</h2>
+          <h2 className="text-center mt-lg-5">Websites</h2>
           <div className="row d-flex">
             <div className="col-12 py-3 mb-3" id="bojack-frame">
               <iframe title="BoJack Ipsum" src="https://pb-livin.github.io/bojack-ipsum/" frameBorder="1" width="100%" height="100%" />
@@ -75,9 +75,8 @@ class Work extends Component {
           </div>
           <div className="d-flex flex-column align-items-center text-center mb-5 mt-3">
             <div className="row">
-              <h6 className="col-10 offset-1">BoJack Ipsum (NSFW)</h6>
-              <p className="col-lg-10 offset-lg-1"><a href="https://pb-livin.github.io/bojack-ipsum/" target="_blank" rel="noopener noreferrer">Lorem Ipsum generator</a> that uses JavaScript and the Fetch API to return dummy text randomly generated from transcripts of <a href="https://www.netflix.com/title/70300800" target="_blank" rel="noopener noreferrer">Netflix's BoJack Horseman</a>.</p>
-              <p className="col-lg-10 offset-lg-1">Users can select the number of paragraphs desired, choose between plain text and HTML, and copy the result to their clipboard. (HTML version available on large screens only.)</p>
+              <h6 className="col-12">BoJack Ipsum (NSFW)</h6>
+              <p className="col-lg-8 offset-lg-2"><a href="https://pb-livin.github.io/bojack-ipsum/" target="_blank" rel="noopener noreferrer">Lorem Ipsum generator</a> that uses JavaScript and the Fetch API to return dummy text randomly generated from transcripts of <a href="https://www.netflix.com/title/70300800" target="_blank" rel="noopener noreferrer">Netflix's <em>BoJack Horseman</em></a>. Users can select the number of paragraphs desired, choose between plain text and HTML, and copy the result to their clipboard. (HTML version available on large screens only.)</p>
               <p className="col-lg-10 offset-lg-1"><small>view source code on <a href="https://github.com/pb-livin/bojack-ipsum/tree/gh-pages" target="_blank" rel="noopener noreferrer">GitHub</a></small></p>
             </div>
           </div>
