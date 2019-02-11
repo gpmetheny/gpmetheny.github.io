@@ -4,14 +4,15 @@ import styled from 'styled-components';
 
 import CTA from './CTA';
 // import Loader from './Loader';
-import SVG from './SVG';
+import NameHeader from './NameHeader';
 import SocialIcon from './SocialIcon';
+import SVG from './SVG';
 
 import monstera from '../SVG/logo';
 import socialList from '../SVG/socialList';
 
 import avatar from '../img/angel-city.jpg';
-import name from '../img/name.svg';
+// import name from '../img/name.svg';
 import skills from '../img/skills.svg';
 
 class _Resume extends Component {
@@ -37,7 +38,8 @@ class _Resume extends Component {
             <div className="col-md-7 col-lg-6 offset-lg-1">
               <div className="mb-3" id="resume-header">
                 <h1 className="sr-only">Gabbie Metheny</h1>
-                <img src={name} id="name" alt="Gabbie Metheny" />
+                <NameHeader />
+                {/* <img src={name} id="name" alt="Gabbie Metheny" /> */}
               </div>
               <div>
                 <h3 className="pt-0">tl;dr</h3>
