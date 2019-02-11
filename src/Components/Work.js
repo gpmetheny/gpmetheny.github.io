@@ -52,7 +52,7 @@ class Work extends Component {
               <p className="col-lg-8 offset-lg-2">Cocktail glass SVG is my original creation, atom and spinning loader animations were built using CSS divs, spans and pseudoelements. All animations are pure CSS (JavaScript is used only for the pause buttons). See more of my animations on <a href="https://codepen.io/gpmetheny" target="_blank" rel="noopener noreferrer">Codepen</a>.</p>
             </div>
           </div> 
-          <h2 className="text-center mt-5">FizzBuzz</h2>
+          <h2 className="text-center mt-lg-5">FizzBuzz</h2>
           <div className="pens-wrapper row d-flex" id="fizzbuzz">
             <Pen
               className="pens col-12 py-3"
@@ -67,7 +67,7 @@ class Work extends Component {
               <p>My JavaScript solution to the classic coder conundrum.</p>
             </div>
           </div>
-          <h2 className="text-center mt-5">Websites</h2>
+          <h2 className="text-center mt-lg-5">Websites</h2>
           <div className="row d-flex">
             <div className="col-12 py-3 mb-3" id="bojack-frame">
               <iframe title="BoJack Ipsum" src="https://pb-livin.github.io/bojack-ipsum/" frameBorder="1" width="100%" height="100%" />
