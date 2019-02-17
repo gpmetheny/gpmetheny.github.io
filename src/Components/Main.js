@@ -86,12 +86,14 @@ const Main = styled(_Main)`
     margin-top: 0;
   }
 
-  #name {
-    filter: ${props => props.darkMode ? 'invert(1) hue-rotate(-180deg) brightness(2.5)' : 'none'};
-  }
-
+  /* resume pie chart img */
   #skills-graph {
     filter: ${props => props.darkMode ? 'invert(1)' : 'none'};
+  }
+
+  /* codepen embed */
+  .cp_embed_wrapper {
+    border: 1px solid ${props => props.theme.color.gray} !important;
   }
 `;
 

@@ -352,13 +352,20 @@ nav a:focus {
   animation: fadein .5s 2.5s forwards;
 }
 
-#animations .codepen,
 #animations .cp_embed_wrapper {
+  height: 352px;
+}
+
+#animations .codepen {
   height: 350px;
 }
 
-#fizzbuzz .codepen,
+
 #fizzbuzz .cp_embed_wrapper {
+  height: 277px;
+}
+
+#fizzbuzz .codepen {
   height: 275px;
 }
 
