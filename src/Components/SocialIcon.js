@@ -25,7 +25,7 @@ class SocialIcon extends Component {
         <a
           href={this.props.href}
           target="_blank"
-          rel="noopener noreferrer"
+          rel={this.props.id === 'mastodon-icon' ? 'noopener noreferrer me' : 'noopener noreferrer'}
         >
           <SVG
             alt={this.props.id}
