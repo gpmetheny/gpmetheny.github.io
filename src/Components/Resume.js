@@ -100,10 +100,9 @@ class _Resume extends Component {
                     <h4>@gpmetheny</h4>
                   </div>
                   <div className="d-flex">
-                    <ul className="d-flex flex-column mx-auto p-2">
-                      <li><strong><i className="material-icons">phone</i><a href="tel:+1-630-618-1915">(630) 618-1915</a></strong></li>
-                      <li><i className="material-icons">mail_outline</i><Link to="/contact">gabbie.metheny@gmail.com</Link></li>
-                      <li><Link to="/">https://gpmetheny.github.io</Link></li>
+                    <ul className="d-flex flex-column mx-auto mb-3 p-2">
+                      <li className="d-flex align-items-center"><i className="material-icons">link</i><Link to="/">gabbie.dev</Link></li>
+                      <li className="d-flex align-items-center"><i className="material-icons">mail_outline</i><Link to="/contact">gabbie.metheny@gmail.com</Link></li>
                     </ul>
                   </div>
                 </div>
