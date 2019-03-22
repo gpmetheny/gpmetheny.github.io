@@ -4,8 +4,9 @@ import styled from 'styled-components';
 
 class _Contact extends Component {
   componentDidMount() {
-    document.querySelector('nav a:first-child').focus();
-    document.querySelector('nav a:first-child').blur();
+    // currently setting focus on this page to the first form field using HTML `autofocus` attr
+    // document.querySelector('nav a:first-child').focus();
+    // document.querySelector('nav a:first-child').blur();
     
     // twitter script
     let script = document.createElement('script');
@@ -66,7 +67,7 @@ class _Contact extends Component {
               <div className="form-row">
                 <div className="form-group offset-lg-2 col-lg-5 mb-0">
                   <label className="mb-0" for="firstName"><small>First Name<span> *</span></small></label>
-                  <input type="text" className="form-control required" name="firstName" id="firstName" required />
+                  <input type="text" className="form-control required" name="firstName" id="firstName" required autoFocus />
                 </div>
                 <div className="form-group col-lg-5 mb-0">
                   <label className="mb-0" for="lastName"><small>Last Name<span> *</span></small></label>
@@ -98,7 +99,7 @@ class _Contact extends Component {
                   <textarea className="form-control required" name="message" id="message" rows="10" cols="60" required></textarea>
                 </div>
                 <div className="form-group offset-lg-2 col-lg-10 text-center">
-                  <small>contact form powered by <a href="https://formspree.io/" target="_blank" rel="noopener noreferrer">Formspree</a></small>
+                  <small>contact form powered by <a href="https://formspree.io/" target="_blank" rel="noopener noreferrer" tabIndex={-1}>Formspree</a></small>
                 </div>
               </div>
 
