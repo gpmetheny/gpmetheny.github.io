@@ -27,6 +27,11 @@ class Blog extends Component {
               <p><small>4/1/19</small></p>
             </div> */}
             <div className="row">
+              <div className="sr-only">
+                <h1>April Fools!</h1>
+                <p>Sorry there's nothing here!</p>
+                <a href="/">Go home</a>
+              </div>
               <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?start=42&autoplay=1&mute=1" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
           </div>
