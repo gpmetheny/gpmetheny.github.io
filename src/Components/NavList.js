@@ -7,8 +7,7 @@ const NavList = (props) => {
     'about',
     'work',
     'resume',
-    'contact',
-    'blog'
+    'contact'
   ];
 
   return (

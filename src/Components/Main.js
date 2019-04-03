@@ -13,7 +13,6 @@ import Contact from './Contact';
 import Success from './Success';
 import Error from './Error';
 import Print from './Print';
-import Blog from './Blog';
 
 const _Main = (props) => {
   return (
@@ -35,7 +34,6 @@ const _Main = (props) => {
           <Route path="/contact" component={Contact} />{/* error */}
           <Route path="/success" component={Success} />{/* error */}
           <Route path="/print" component={Print} />
-          <Route path="/blog" component={Blog} />
           <Route component={Error} />
         </Switch>
       </main>
@@ -49,17 +47,6 @@ const _Main = (props) => {
 };
 
 const Main = styled(_Main)`
-  /* blog iframe */
-  #about iframe {
-    width: ${props => props.availableVW};
-    height: calc(${props => props.availableVW} / 16 * 9);
-
-    @media (min-width: 560px) {
-      width: 560px;
-      height: 315px;
-    }
-  }
-
   background-color: ${props => props.theme.color.primary};
   color: ${props => props.theme.color.contrast};
 

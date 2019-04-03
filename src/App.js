@@ -14,8 +14,7 @@ class App extends Component {
     this.state = {
       darkMode: JSON.parse(localStorage.getItem('darkMode'))
                 || false,
-      availableVH: window.innerHeight + 'px',
-      availableVW: window.innerWidth + 'px'
+      availableVH: window.innerHeight + 'px'
     };
   }
 
@@ -32,8 +31,7 @@ class App extends Component {
 
   handleResize = () => {
     this.setState({
-      availableVH: window.innerHeight + 'px',
-      availableVW: window.innerWidth + 'px'
+      availableVH: window.innerHeight + 'px'
     });
   }
 
@@ -54,7 +52,6 @@ class App extends Component {
             darkMode={this.state.darkMode}
             toggleDarkMode={this.handleDarkMode}
             availableVH={this.state.availableVH}
-            availableVW={this.state.availableVW}
            />
         </ThemeProvider>
       </HashRouter>
