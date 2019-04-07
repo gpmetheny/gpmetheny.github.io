@@ -99,9 +99,9 @@ class _Contact extends Component {
                   <label className="mb-0" htmlFor="message"><small>Message<span> *</span></small></label>
                   <textarea className="form-control required" name="message" id="message" rows="10" cols="60" required></textarea>
                 </div>
-                <div className="form-group offset-lg-2 col-lg-10 text-center">
+                {/* <div className="form-group offset-lg-2 col-lg-10 text-center">
                   <small>contact form powered by <a href="https://formspree.io/" target="_blank" rel="noopener noreferrer" tabIndex={-1}>Formspree</a></small>
-                </div>
+                </div> */}
               </div>
 
               <div className="form-row" id="hiddenFields">
@@ -112,7 +112,7 @@ class _Contact extends Component {
 
               <div className="form-row text-center">
                 <div className="form-group offset-lg-2 col-lg-10">
-                  <CTA as="input" type="submit" value="submit" id="submit" disabled />
+                  <CTA as="input" type="submit" value="submit" id="submit" className="mt-3 mt-lg-5" disabled />
                   {/* <input type="submit" className="btn btn-danger" value="Submit" id="submit" disabled /> */}
                 </div>
               </div>
