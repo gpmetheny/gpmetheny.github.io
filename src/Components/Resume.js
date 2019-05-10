@@ -74,9 +74,7 @@ class _Resume extends Component {
                 <div className="d-flex" id="card-top">
                   <img src={avatar} alt="Gabbie" id="card-photo" />
                   <ul className="d-flex flex-column justify-content-around align-items-center">
-                    {socialList
-                      .filter((social) => social.id !== 'mastodon-icon')
-                      .map((social) => {
+                    {socialList.map((social) => {
                         return (
                           <SocialIcon
                             href={social.href}

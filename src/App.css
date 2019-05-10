@@ -463,10 +463,6 @@ footer .row {
   fill: #1DA1F2;
 }
 
-#mastodon-icon:hover path {
-  fill: #3088d4;
-}
-
 #linkedin-icon:hover path {
   fill: #0077B5;
 }
