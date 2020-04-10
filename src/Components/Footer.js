@@ -11,7 +11,7 @@ class _Footer extends Component {
       <footer className={`${this.props.className} container pb-3`}>
         <div className="row d-flex flex-column-reverse flex-md-row justify-content-between">
 
-          <span className="text-center py-1"><small>&copy; 2018 Gabbie Metheny</small></span>
+          <span className="text-center py-1"><small>&copy; {`${new Date().getFullYear()}`} Gabbie Metheny</small></span>
 
           <div className="py-1">
             <ul className="d-flex justify-content-center">
